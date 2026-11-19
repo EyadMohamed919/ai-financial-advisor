@@ -10,6 +10,7 @@ The output matches the ERD: `extracted_data` is stored in chat_messages.extracte
 """
 from .amounts import extract_amount
 from .data import TX_INTENTS
+from .rules import ALLOWED
 from .spacy_model import SpacyApproach
 from .tfidf import TfidfApproach
 
@@ -55,6 +56,24 @@ class Assistant:
                 "item": ents.get("item"), "merchant": ents.get("merchant"), "date": ents.get("date"),
                 "person": ents.get("person")}
 
+        return self._finish(data)
+
+    def follow_up(self, draft, text=None, category=None):
+        """Complete a `needs_info` draft with the user's next answer (an amount or a chosen category)."""
+        data = dict(draft)
+        if category is not None and category in ALLOWED.get(data["intent"], ()):
+            data["category"], data["category_confidence"] = category, 1.0
+        elif text is not None and "amount" in data.get("missing", []):
+            amount = extract_amount(text)
+            if amount["amount"] is None:
+                return {"status": "needs_info", "extracted_data": data, "reply": "مش لاقي مبلغ 🤔 اكتب الرقم بس، زي «350»."}
+            data["amount"], data["currency"] = amount["amount"], amount["currency"]
+        else:
+            return self.handle(text or "")
+        return self._finish(data)
+
+    def _finish(self, data):
+        intent = data["intent"]
         what = data["item"] or data["merchant"] or "ده"
         if data["amount"] is None:
             data["missing"] = ["amount"]
@@ -62,7 +81,8 @@ class Assistant:
         if data["category"] is None or (data["category_confidence"] or 0) < CATEGORY_CONFIDENCE_MIN:
             data["missing"] = ["category"]
             guess = f" (أقرب تخمين: {CATEGORY_AR[data['category']]})" if data["category"] else ""
-            return {"status": "needs_info", "extracted_data": data,
+            options = [{"value": c, "label": CATEGORY_AR[c]} for c in sorted(ALLOWED[intent])]
+            return {"status": "needs_info", "extracted_data": data, "category_options": options,
                     "reply": f"{_money(data['amount'], data['currency'])} على {what}… أحطها تحت أنهي فئة؟{guess}"}
 
         data["missing"] = []
