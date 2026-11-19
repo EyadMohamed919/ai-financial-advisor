@@ -66,13 +66,23 @@ message → amount: rules → intent + category: TF-IDF → item/merchant/date: 
 
 `status` and `extracted_data` map directly to `chat_messages.extraction_status` and `chat_messages.extracted_data` in the ERD.
 
+## Chat UI
+
+`python -m nlp_proto.web` opens a small Arabic (RTL) chat page for trying the pipeline:
+
+- Every reply shows the extracted type, amount, category with its confidence, item and merchant, plus the raw JSON.
+- **تأكيد / إلغاء** buttons. Confirmed transactions appear in the side panel with income, expense and balance totals. They are stored in the browser's localStorage only.
+- When the amount is missing, the next message is treated as the answer ("اشتريت جاكيت جديد" → "ب ١٨٥٠").
+- When category confidence is low, the bot shows category buttons instead of guessing.
+
 ## Run it
 
 ```sh
 cd ai-orchestrator/nlp_prototype
 pip install -r requirements.txt
 python -m nlp_proto.train            # trains on all 2,000 messages (~3 min, CPU)
-python -m nlp_proto.chat             # interactive Egyptian-Arabic chat demo
+python -m nlp_proto.web              # chat UI in the browser: http://localhost:8765
+python -m nlp_proto.chat             # same pipeline in the terminal
 python -m nlp_proto.chat "دفعت ميتين جنيه بنزين" "سلفت صاحبي ٥٠٠"
 python -m nlp_proto.evaluate         # re-run the comparison
 python -m unittest discover -s tests -t .
@@ -91,6 +101,8 @@ nlp_proto/spacy_model.py    approach C
 nlp_proto/evaluate.py       trains and compares A, B and C
 nlp_proto/pipeline.py       recommended pipeline + reply templates
 nlp_proto/chat.py           terminal demo
+nlp_proto/web.py            local web server for the chat UI (standard library only)
+web/index.html              chat UI: confirm/cancel, category buttons, amount follow-up, saved transactions
 results/                    latest comparison output
 ```
 
