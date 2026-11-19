@@ -1,0 +1,501 @@
+id,description,type,category,item,merchant,amount,currency,language,source,template_family
+ENG-0001,Paid Uber 90 EGP for ride.,Expense,Transportation,ride,Uber,90,EGP,English,synthetic,9
+ENG-0002,my internship transferred 3500 EGP to me for my work.,Income,Salary,,,3500,EGP,English,synthetic,salary_2
+ENG-0003,I was charged 50 EGP for bus ticket at the bus station.,Expense,Transportation,bus ticket,,50,EGP,English,synthetic,4
+ENG-0004,Received 2250 EGP as salary from the company.,Income,Salary,,,2250,EGP,English,synthetic,salary_0
+ENG-0005,My apartment rent payment of 7800 EGP came through.,Income,Rental Income,apartment rent,my tenant,7800,EGP,English,synthetic,income_generated_4
+ENG-0006,"Today I received 15175 EGP, monthly rent.",Income,Rental Income,monthly rent,my tenant,15175,EGP,English,synthetic,income_generated_9
+ENG-0007,my uncle paid me 5875 EGP for holiday gift.,Income,Gifts,holiday gift,my uncle,5875,EGP,English,synthetic,income_generated_2
+ENG-0008,I bought groceries from Carrefour for 2025 EGP.,Expense,Groceries,groceries,Carrefour,2025,EGP,English,synthetic,0
+ENG-0009,5675 EGP arrived from a tenant for shop rental.,Income,Rental Income,shop rental,a tenant,5675,EGP,English,synthetic,income_generated_5
+ENG-0010,"Orange: phone recharge, 75 EGP.",Expense,Bills & Utilities,phone recharge,Orange,75,EGP,English,synthetic,5
+ENG-0011,My video game purchase at PlayStation Store cost 1420 EGP.,Expense,Entertainment,video game,PlayStation Store,1420,EGP,English,synthetic,3
+ENG-0012,Just paid 240 pounds for vegetables.,Expense,Groceries,vegetables,,240,EGP,English,synthetic,6
+ENG-0013,Just paid 130 pounds for coffee.,Expense,Food & Dining,coffee,Costa Coffee,130,EGP,English,synthetic,6
+ENG-0014,"Today I received 30475 EGP, business service.",Income,Business Income,business service,a customer,30475,EGP,English,synthetic,income_generated_9
+ENG-0015,Just paid 495 pounds for online lesson.,Expense,Education,online lesson,Udemy,495,EGP,English,synthetic,6
+ENG-0016,my tenant paid me 34725 EGP for monthly rent.,Income,Rental Income,monthly rent,my tenant,34725,EGP,English,synthetic,income_generated_2
+ENG-0017,I received 35800 pounds as online store sale.,Income,Business Income,online store sale,a customer,35800,EGP,English,synthetic,income_generated_7
+ENG-0018,My monthly paycheck was 6250 EGP.,Income,Salary,,,6250,EGP,English,synthetic,salary_6
+ENG-0019,Received 9000 EGP as salary from my employer.,Income,Salary,,,9000,EGP,English,synthetic,salary_0
+ENG-0020,Income received: 24000 Egyptian pounds from the company.,Income,Salary,,,24000,EGP,English,synthetic,salary_5
+ENG-0021,Got paid 3000 EGP for my job.,Income,Salary,,,3000,EGP,English,synthetic,salary_4
+ENG-0022,I paid 585 EGP for video game at PlayStation Store.,Expense,Entertainment,video game,PlayStation Store,585,EGP,English,synthetic,1
+ENG-0023,Today I spent 230 Egyptian pounds on phone case.,Expense,Shopping,phone case,Jumia,230,EGP,English,synthetic,8
+ENG-0024,"Today I received 18150 EGP, birthday gift.",Income,Gifts,birthday gift,my family,18150,EGP,English,synthetic,income_generated_9
+ENG-0025,The bread from a bakery was 65 EGP.,Expense,Groceries,bread,,65,EGP,English,synthetic,7
+ENG-0026,Received 42175 EGP for monthly rent from my tenant.,Income,Rental Income,monthly rent,my tenant,42175,EGP,English,synthetic,income_generated_0
+ENG-0027,Got paid 30575 LE for consulting assignment by a client.,Income,Freelance,consulting assignment,a client,30575,EGP,English,synthetic,income_generated_6
+ENG-0028,"Today I received 15675 EGP, cash gift.",Income,Gifts,cash gift,a relative,15675,EGP,English,synthetic,income_generated_9
+ENG-0029,I paid 65 EGP for dessert at a bakery.,Expense,Food & Dining,dessert,,65,EGP,English,synthetic,1
+ENG-0030,I bought chicken meal from KFC for 485 EGP.,Expense,Food & Dining,chicken meal,KFC,485,EGP,English,synthetic,0
+ENG-0031,Just paid 205 pounds for lunch.,Expense,Food & Dining,lunch,,205,EGP,English,synthetic,6
+ENG-0032,I paid 545 EGP for medicine at a pharmacy.,Expense,Healthcare,medicine,,545,EGP,English,synthetic,1
+ENG-0033,I bought bread from a bakery for 35 EGP.,Expense,Groceries,bread,,35,EGP,English,synthetic,0
+ENG-0034,I received 5575 pounds as birthday gift.,Income,Gifts,birthday gift,my family,5575,EGP,English,synthetic,income_generated_7
+ENG-0035,graduation gift brought in 37925 EGP today.,Income,Gifts,graduation gift,my parents,37925,EGP,English,synthetic,income_generated_3
+ENG-0036,"Vodafone: mobile bill, 130 EGP.",Expense,Bills & Utilities,mobile bill,Vodafone,130,EGP,English,synthetic,5
+ENG-0037,Today I spent 220 Egyptian pounds on medicine.,Expense,Healthcare,medicine,,220,EGP,English,synthetic,8
+ENG-0038,37700 EGP arrived from my client for translation work.,Income,Freelance,translation work,my client,37700,EGP,English,synthetic,income_generated_5
+ENG-0039,shop rental brought in 25300 EGP today.,Income,Rental Income,shop rental,a tenant,25300,EGP,English,synthetic,income_generated_3
+ENG-0040,I paid 280 EGP for ride at Careem.,Expense,Transportation,ride,Careem,280,EGP,English,synthetic,1
+ENG-0041,I paid 840 EGP for exam registration at a testing center.,Expense,Education,exam registration,,840,EGP,English,synthetic,1
+ENG-0042,I paid 315 EGP for sunglasses at a shop.,Expense,Shopping,sunglasses,,315,EGP,English,synthetic,1
+ENG-0043,My museum ticket purchase at a museum cost 90 EGP.,Expense,Entertainment,museum ticket,,90,EGP,English,synthetic,3
+ENG-0044,my tenant paid me 30000 EGP for apartment rent.,Income,Rental Income,apartment rent,my tenant,30000,EGP,English,synthetic,income_generated_2
+ENG-0045,Paid Netflix 90 EGP for streaming subscription.,Expense,Entertainment,streaming subscription,Netflix,90,EGP,English,synthetic,9
+ENG-0046,Paid a pharmacy 500 EGP for medicine.,Expense,Healthcare,medicine,,500,EGP,English,synthetic,9
+ENG-0047,I earned 17000 EGP from my employer.,Income,Salary,,,17000,EGP,English,synthetic,salary_3
+ENG-0048,Spent 80 EGP on train ticket from the railway station.,Expense,Transportation,train ticket,,80,EGP,English,synthetic,2
+ENG-0049,Spent 445 EGP on game subscription from Steam.,Expense,Entertainment,game subscription,Steam,445,EGP,English,synthetic,2
+ENG-0050,I got 37375 Egyptian pounds from my uncle for holiday gift.,Income,Gifts,holiday gift,my uncle,37375,EGP,English,synthetic,income_generated_1
+ENG-0051,30725 EGP arrived from my tenant for monthly rent.,Income,Rental Income,monthly rent,my tenant,30725,EGP,English,synthetic,income_generated_5
+ENG-0052,my project client transferred 23250 EGP to me for my work.,Income,Freelance,,,23250,EGP,English,synthetic,salary_2
+ENG-0053,I got 11200 Egyptian pounds from a client for website project.,Income,Freelance,website project,a client,11200,EGP,English,synthetic,income_generated_1
+ENG-0054,Received 5250 pounds as work income.,Income,Salary,,,5250,EGP,English,synthetic,salary_7
+ENG-0055,Spent 1205 EGP on exam registration from a testing center.,Expense,Education,exam registration,,1205,EGP,English,synthetic,2
+ENG-0056,Just paid 485 pounds for amusement park entry.,Expense,Entertainment,amusement park entry,,485,EGP,English,synthetic,6
+ENG-0057,I bought ride from Careem for 255 EGP.,Expense,Transportation,ride,Careem,255,EGP,English,synthetic,0
+ENG-0058,Received 13300 EGP for cash gift from a relative.,Income,Gifts,cash gift,a relative,13300,EGP,English,synthetic,income_generated_0
+ENG-0059,I paid 330 EGP for medicine at a pharmacy.,Expense,Healthcare,medicine,,330,EGP,English,synthetic,1
+ENG-0060,"a stationery shop: notebook, 65 EGP.",Expense,Education,notebook,,65,EGP,English,synthetic,5
+ENG-0061,My shop rental payment of 38150 EGP came through.,Income,Rental Income,shop rental,a tenant,38150,EGP,English,synthetic,income_generated_4
+ENG-0062,I paid 370 EGP for maintenance fee at the building office.,Expense,Bills & Utilities,maintenance fee,,370,EGP,English,synthetic,1
+ENG-0063,Got paid 27525 LE for online store sale by a customer.,Income,Business Income,online store sale,a customer,27525,EGP,English,synthetic,income_generated_6
+ENG-0064,"Today I received 13475 EGP, monthly rent.",Income,Rental Income,monthly rent,my tenant,13475,EGP,English,synthetic,income_generated_9
+ENG-0065,customers paid me 21175 EGP for bakery sales.,Income,Business Income,bakery sales,customers,21175,EGP,English,synthetic,income_generated_2
+ENG-0066,Just paid 230 pounds for sandwich.,Expense,Food & Dining,sandwich,Subway,230,EGP,English,synthetic,6
+ENG-0067,Income received: 14500 Egyptian pounds from a freelance client.,Income,Freelance,,,14500,EGP,English,synthetic,salary_5
+ENG-0068,my workplace transferred 6000 EGP to me for my work.,Income,Salary,,,6000,EGP,English,synthetic,salary_2
+ENG-0069,Spent 140 EGP on streaming subscription from Netflix.,Expense,Entertainment,streaming subscription,Netflix,140,EGP,English,synthetic,2
+ENG-0070,"Today I received 21475 EGP, cash gift.",Income,Gifts,cash gift,a relative,21475,EGP,English,synthetic,income_generated_9
+ENG-0071,a relative paid me 9825 EGP for cash gift.,Income,Gifts,cash gift,a relative,9825,EGP,English,synthetic,income_generated_2
+ENG-0072,"Today I received 41500 EGP, cash gift.",Income,Gifts,cash gift,a relative,41500,EGP,English,synthetic,income_generated_9
+ENG-0073,5125 EGP arrived from a client for website project.,Income,Freelance,website project,a client,5125,EGP,English,synthetic,income_generated_5
+ENG-0074,I received 9600 pounds as consulting assignment.,Income,Freelance,consulting assignment,a client,9600,EGP,English,synthetic,income_generated_7
+ENG-0075,Spent 235 EGP on bowling session from a bowling alley.,Expense,Entertainment,bowling session,,235,EGP,English,synthetic,2
+ENG-0076,I bought fruit from a market for 205 EGP.,Expense,Groceries,fruit,,205,EGP,English,synthetic,0
+ENG-0077,My prescription refill purchase at a pharmacy cost 385 EGP.,Expense,Healthcare,prescription refill,,385,EGP,English,synthetic,3
+ENG-0078,25300 EGP arrived from a customer for shop sales.,Income,Business Income,shop sales,a customer,25300,EGP,English,synthetic,income_generated_5
+ENG-0079,The pizza from Pizza Hut was 240 EGP.,Expense,Food & Dining,pizza,Pizza Hut,240,EGP,English,synthetic,7
+ENG-0080,I bought vitamins from a pharmacy for 380 EGP.,Expense,Healthcare,vitamins,,380,EGP,English,synthetic,0
+ENG-0081,My home internet purchase at Etisalat cost 530 EGP.,Expense,Bills & Utilities,home internet,Etisalat,530,EGP,English,synthetic,3
+ENG-0082,Spent 100 EGP on vegetables from a market.,Expense,Groceries,vegetables,,100,EGP,English,synthetic,2
+ENG-0083,I bought rice from a grocery store for 120 EGP.,Expense,Groceries,rice,,120,EGP,English,synthetic,0
+ENG-0084,Received 23000 EGP as salary from my part-time job.,Income,Salary,,,23000,EGP,English,synthetic,salary_0
+ENG-0085,Just paid 590 pounds for online lesson.,Expense,Education,online lesson,Udemy,590,EGP,English,synthetic,6
+ENG-0086,Got paid 23750 EGP for my job.,Income,Salary,,,23750,EGP,English,synthetic,salary_4
+ENG-0087,My phone case purchase at Jumia cost 265 EGP.,Expense,Shopping,phone case,Jumia,265,EGP,English,synthetic,3
+ENG-0088,The phone recharge from Orange was 155 EGP.,Expense,Bills & Utilities,phone recharge,Orange,155,EGP,English,synthetic,7
+ENG-0089,Got paid 24700 LE for birthday gift by my family.,Income,Gifts,birthday gift,my family,24700,EGP,English,synthetic,income_generated_6
+ENG-0090,Just paid 160 pounds for ride.,Expense,Transportation,ride,Uber,160,EGP,English,synthetic,6
+ENG-0091,Spent 1795 EGP on jacket from LC Waikiki.,Expense,Shopping,jacket,LC Waikiki,1795,EGP,English,synthetic,2
+ENG-0092,Spent 1520 EGP on language class from a language school.,Expense,Education,language class,,1520,EGP,English,synthetic,2
+ENG-0093,Received 40650 EGP for shop sales from a customer.,Income,Business Income,shop sales,a customer,40650,EGP,English,synthetic,income_generated_0
+ENG-0094,I got 9600 Egyptian pounds from customers for bakery sales.,Income,Business Income,bakery sales,customers,9600,EGP,English,synthetic,income_generated_1
+ENG-0095,My website project payment of 9225 EGP came through.,Income,Freelance,website project,a client,9225,EGP,English,synthetic,income_generated_4
+ENG-0096,Got paid 19075 LE for website project by a client.,Income,Freelance,website project,a client,19075,EGP,English,synthetic,income_generated_6
+ENG-0097,Got paid 16850 LE for cash gift by a relative.,Income,Gifts,cash gift,a relative,16850,EGP,English,synthetic,income_generated_6
+ENG-0098,Paid a testing center 2260 EGP for exam registration.,Expense,Education,exam registration,,2260,EGP,English,synthetic,9
+ENG-0099,I received 24400 pounds as property rent.,Income,Rental Income,property rent,a tenant,24400,EGP,English,synthetic,income_generated_7
+ENG-0100,Just paid 485 pounds for doctor consultation.,Expense,Healthcare,doctor consultation,,485,EGP,English,synthetic,6
+ENG-0101,My household supplies purchase at Metro Market cost 525 EGP.,Expense,Groceries,household supplies,Metro Market,525,EGP,English,synthetic,3
+ENG-0102,"Orange: phone recharge, 70 EGP.",Expense,Bills & Utilities,phone recharge,Orange,70,EGP,English,synthetic,5
+ENG-0103,The amusement park entry from an amusement park was 170 EGP.,Expense,Entertainment,amusement park entry,,170,EGP,English,synthetic,7
+ENG-0104,Received 3250 EGP as salary from my workplace.,Income,Salary,,,3250,EGP,English,synthetic,salary_0
+ENG-0105,I bought eggs from a supermarket for 155 EGP.,Expense,Groceries,eggs,,155,EGP,English,synthetic,0
+ENG-0106,Just paid 190 pounds for blood test.,Expense,Healthcare,blood test,,190,EGP,English,synthetic,6
+ENG-0107,Got paid 16275 LE for birthday gift by my family.,Income,Gifts,birthday gift,my family,16275,EGP,English,synthetic,income_generated_6
+ENG-0108,my parents sent 21750 EGP as graduation gift.,Income,Gifts,graduation gift,my parents,21750,EGP,English,synthetic,income_generated_8
+ENG-0109,I bought notebook from a stationery shop for 125 EGP.,Expense,Education,notebook,,125,EGP,English,synthetic,0
+ENG-0110,My taxi trip purchase at a taxi cost 255 EGP.,Expense,Transportation,taxi trip,,255,EGP,English,synthetic,3
+ENG-0111,I received 30050 pounds as property rent.,Income,Rental Income,property rent,a tenant,30050,EGP,English,synthetic,income_generated_7
+ENG-0112,holiday gift brought in 25275 EGP today.,Income,Gifts,holiday gift,my uncle,25275,EGP,English,synthetic,income_generated_3
+ENG-0113,Received 20775 EGP for design project from a client.,Income,Freelance,design project,a client,20775,EGP,English,synthetic,income_generated_0
+ENG-0114,The bus ticket from the bus station was 15 EGP.,Expense,Transportation,bus ticket,,15,EGP,English,synthetic,7
+ENG-0115,Received 14150 EGP for business service from a customer.,Income,Business Income,business service,a customer,14150,EGP,English,synthetic,income_generated_0
+ENG-0116,birthday gift brought in 23200 EGP today.,Income,Gifts,birthday gift,my family,23200,EGP,English,synthetic,income_generated_3
+ENG-0117,I got 17400 Egyptian pounds from my uncle for holiday gift.,Income,Gifts,holiday gift,my uncle,17400,EGP,English,synthetic,income_generated_1
+ENG-0118,I bought dinner from a restaurant for 600 EGP.,Expense,Food & Dining,dinner,,600,EGP,English,synthetic,0
+ENG-0119,my uncle sent 4750 EGP as holiday gift.,Income,Gifts,holiday gift,my uncle,4750,EGP,English,synthetic,income_generated_8
+ENG-0120,a tenant sent 9450 EGP as property rent.,Income,Rental Income,property rent,a tenant,9450,EGP,English,synthetic,income_generated_8
+ENG-0121,Paid a pharmacy 120 EGP for vitamins.,Expense,Healthcare,vitamins,,120,EGP,English,synthetic,9
+ENG-0122,My salary payment of 4500 EGP arrived today.,Income,Salary,,,4500,EGP,English,synthetic,salary_1
+ENG-0123,I got 29325 Egyptian pounds from my customer for product order.,Income,Business Income,product order,my customer,29325,EGP,English,synthetic,income_generated_1
+ENG-0124,Just paid 205 pounds for bowling session.,Expense,Entertainment,bowling session,,205,EGP,English,synthetic,6
+ENG-0125,"Subway: sandwich, 270 EGP.",Expense,Food & Dining,sandwich,Subway,270,EGP,English,synthetic,5
+ENG-0126,I paid 220 EGP for vegetables at a market.,Expense,Groceries,vegetables,,220,EGP,English,synthetic,1
+ENG-0127,design project brought in 12325 EGP today.,Income,Freelance,design project,a client,12325,EGP,English,synthetic,income_generated_3
+ENG-0128,Today I spent 565 Egyptian pounds on video game.,Expense,Entertainment,video game,PlayStation Store,565,EGP,English,synthetic,8
+ENG-0129,My holiday gift payment of 3925 EGP came through.,Income,Gifts,holiday gift,my uncle,3925,EGP,English,synthetic,income_generated_4
+ENG-0130,My salary payment of 3500 EGP arrived today.,Income,Salary,,,3500,EGP,English,synthetic,salary_1
+ENG-0131,Got paid 16725 LE for online store sale by a customer.,Income,Business Income,online store sale,a customer,16725,EGP,English,synthetic,income_generated_6
+ENG-0132,36775 EGP arrived from my tenant for monthly rent.,Income,Rental Income,monthly rent,my tenant,36775,EGP,English,synthetic,income_generated_5
+ENG-0133,Income received: 3500 Egyptian pounds from my project client.,Income,Freelance,,,3500,EGP,English,synthetic,salary_5
+ENG-0134,I was charged 345 EGP for vitamins at a pharmacy.,Expense,Healthcare,vitamins,,345,EGP,English,synthetic,4
+ENG-0135,"Steam: game subscription, 840 EGP.",Expense,Entertainment,game subscription,Steam,840,EGP,English,synthetic,5
+ENG-0136,My property rent payment of 38450 EGP came through.,Income,Rental Income,property rent,a tenant,38450,EGP,English,synthetic,income_generated_4
+ENG-0137,4875 EGP arrived from a customer for shop sales.,Income,Business Income,shop sales,a customer,4875,EGP,English,synthetic,income_generated_5
+ENG-0138,"McDonalds: burger, 225 EGP.",Expense,Food & Dining,burger,McDonalds,225,EGP,English,synthetic,5
+ENG-0139,Spent 1480 EGP on jeans from H&M.,Expense,Shopping,jeans,H&M,1480,EGP,English,synthetic,2
+ENG-0140,freelance writing brought in 8475 EGP today.,Income,Freelance,freelance writing,a customer,8475,EGP,English,synthetic,income_generated_3
+ENG-0141,a friend paid me 17375 EGP for gift money.,Income,Gifts,gift money,a friend,17375,EGP,English,synthetic,income_generated_2
+ENG-0142,I received 18750 pounds as consulting assignment.,Income,Freelance,consulting assignment,a client,18750,EGP,English,synthetic,income_generated_7
+ENG-0143,My phone recharge purchase at Orange cost 160 EGP.,Expense,Bills & Utilities,phone recharge,Orange,160,EGP,English,synthetic,3
+ENG-0144,My rice purchase at a grocery store cost 160 EGP.,Expense,Groceries,rice,,160,EGP,English,synthetic,3
+ENG-0145,Received 37700 EGP for online store sale from a customer.,Income,Business Income,online store sale,a customer,37700,EGP,English,synthetic,income_generated_0
+ENG-0146,a client paid me 21900 EGP for website project.,Income,Freelance,website project,a client,21900,EGP,English,synthetic,income_generated_2
+ENG-0147,I paid 50 EGP for school supplies at a stationery shop.,Expense,Education,school supplies,,50,EGP,English,synthetic,1
+ENG-0148,I received 28175 pounds as consulting assignment.,Income,Freelance,consulting assignment,a client,28175,EGP,English,synthetic,income_generated_7
+ENG-0149,freelance writing brought in 31550 EGP today.,Income,Freelance,freelance writing,a customer,31550,EGP,English,synthetic,income_generated_3
+ENG-0150,Today I spent 480 Egyptian pounds on phone case.,Expense,Shopping,phone case,Jumia,480,EGP,English,synthetic,8
+ENG-0151,I bought metro ticket from the metro station for 30 EGP.,Expense,Transportation,metro ticket,,30,EGP,English,synthetic,0
+ENG-0152,a customer sent 19575 EGP as shop sales.,Income,Business Income,shop sales,a customer,19575,EGP,English,synthetic,income_generated_8
+ENG-0153,I earned 9000 EGP from my workplace.,Income,Salary,,,9000,EGP,English,synthetic,salary_3
+ENG-0154,I received 41250 pounds as gift money.,Income,Gifts,gift money,a friend,41250,EGP,English,synthetic,income_generated_7
+ENG-0155,I got 17800 Egyptian pounds from my tenant for apartment rent.,Income,Rental Income,apartment rent,my tenant,17800,EGP,English,synthetic,income_generated_1
+ENG-0156,Today I spent 100 Egyptian pounds on online lesson.,Expense,Education,online lesson,Udemy,100,EGP,English,synthetic,8
+ENG-0157,My salary payment of 6000 EGP arrived today.,Income,Salary,,,6000,EGP,English,synthetic,salary_1
+ENG-0158,My vegetables purchase at a market cost 125 EGP.,Expense,Groceries,vegetables,,125,EGP,English,synthetic,3
+ENG-0159,I bought headphones from Amazon for 3000 EGP.,Expense,Shopping,headphones,Amazon,3000,EGP,English,synthetic,0
+ENG-0160,I received 400 pounds as graduation gift.,Income,Gifts,graduation gift,my parents,400,EGP,English,synthetic,income_generated_7
+ENG-0161,Spent 75 EGP on parking from the parking garage.,Expense,Transportation,parking,,75,EGP,English,synthetic,2
+ENG-0162,I received 1550 pounds as gift money.,Income,Gifts,gift money,a friend,1550,EGP,English,synthetic,income_generated_7
+ENG-0163,My shop rental payment of 21600 EGP came through.,Income,Rental Income,shop rental,a tenant,21600,EGP,English,synthetic,income_generated_4
+ENG-0164,Paid a bakery 70 EGP for dessert.,Expense,Food & Dining,dessert,,70,EGP,English,synthetic,9
+ENG-0165,31125 EGP arrived from my client for translation work.,Income,Freelance,translation work,my client,31125,EGP,English,synthetic,income_generated_5
+ENG-0166,my workplace sent 19350 EGP as part-time salary.,Income,Salary,part-time salary,my workplace,19350,EGP,English,synthetic,income_generated_8
+ENG-0167,Today I spent 630 Egyptian pounds on jacket.,Expense,Shopping,jacket,LC Waikiki,630,EGP,English,synthetic,8
+ENG-0168,my part-time job transferred 11000 EGP to me for my work.,Income,Salary,,,11000,EGP,English,synthetic,salary_2
+ENG-0169,I bought home internet from Etisalat for 690 EGP.,Expense,Bills & Utilities,home internet,Etisalat,690,EGP,English,synthetic,0
+ENG-0170,Got paid 20875 LE for freelance writing by a customer.,Income,Freelance,freelance writing,a customer,20875,EGP,English,synthetic,income_generated_6
+ENG-0171,I received 26250 pounds as birthday gift.,Income,Gifts,birthday gift,my family,26250,EGP,English,synthetic,income_generated_7
+ENG-0172,I bought fruit from a market for 270 EGP.,Expense,Groceries,fruit,,270,EGP,English,synthetic,0
+ENG-0173,Paid a grocery store 50 EGP for rice.,Expense,Groceries,rice,,50,EGP,English,synthetic,9
+ENG-0174,Paid a bookstore 780 EGP for textbook.,Expense,Education,textbook,,780,EGP,English,synthetic,9
+ENG-0175,I got 34800 Egyptian pounds from my parents for graduation gift.,Income,Gifts,graduation gift,my parents,34800,EGP,English,synthetic,income_generated_1
+ENG-0176,The language class from a language school was 665 EGP.,Expense,Education,language class,,665,EGP,English,synthetic,7
+ENG-0177,My monthly paycheck was 16000 EGP.,Income,Salary,,,16000,EGP,English,synthetic,salary_6
+ENG-0178,"a supermarket: milk, 60 EGP.",Expense,Groceries,milk,,60,EGP,English,synthetic,5
+ENG-0179,Got paid 43300 LE for salary by my employer.,Income,Salary,salary,my employer,43300,EGP,English,synthetic,income_generated_6
+ENG-0180,Got paid 28550 LE for business service by a customer.,Income,Business Income,business service,a customer,28550,EGP,English,synthetic,income_generated_6
+ENG-0181,I got 22150 Egyptian pounds from a customer for shop sales.,Income,Business Income,shop sales,a customer,22150,EGP,English,synthetic,income_generated_1
+ENG-0182,"the metro station: metro ticket, 10 EGP.",Expense,Transportation,metro ticket,,10,EGP,English,synthetic,5
+ENG-0183,Today I spent 585 Egyptian pounds on chicken meal.,Expense,Food & Dining,chicken meal,KFC,585,EGP,English,synthetic,8
+ENG-0184,I was charged 400 EGP for doctor consultation at a clinic.,Expense,Healthcare,doctor consultation,,400,EGP,English,synthetic,4
+ENG-0185,I got 24550 Egyptian pounds from a customer for shop sales.,Income,Business Income,shop sales,a customer,24550,EGP,English,synthetic,income_generated_1
+ENG-0186,My monthly paycheck was 10250 EGP.,Income,Salary,,,10250,EGP,English,synthetic,salary_6
+ENG-0187,Spent 260 EGP on prescription refill from a pharmacy.,Expense,Healthcare,prescription refill,,260,EGP,English,synthetic,2
+ENG-0188,600 EGP arrived from a customer for freelance writing.,Income,Freelance,freelance writing,a customer,600,EGP,English,synthetic,income_generated_5
+ENG-0189,Spent 60 EGP on notebook from a stationery shop.,Expense,Education,notebook,,60,EGP,English,synthetic,2
+ENG-0190,"Today I received 24800 EGP, apartment rent.",Income,Rental Income,apartment rent,my tenant,24800,EGP,English,synthetic,income_generated_9
+ENG-0191,42100 EGP arrived from my client for translation work.,Income,Freelance,translation work,my client,42100,EGP,English,synthetic,income_generated_5
+ENG-0192,I paid 210 EGP for mobile bill at Vodafone.,Expense,Bills & Utilities,mobile bill,Vodafone,210,EGP,English,synthetic,1
+ENG-0193,freelance writing brought in 14450 EGP today.,Income,Freelance,freelance writing,a customer,14450,EGP,English,synthetic,income_generated_3
+ENG-0194,I received 42925 pounds as online store sale.,Income,Business Income,online store sale,a customer,42925,EGP,English,synthetic,income_generated_7
+ENG-0195,I earned 11250 EGP from my employer.,Income,Salary,,,11250,EGP,English,synthetic,salary_3
+ENG-0196,Received 35175 EGP for salary from my employer.,Income,Salary,salary,my employer,35175,EGP,English,synthetic,income_generated_0
+ENG-0197,"the metro station: metro ticket, 40 EGP.",Expense,Transportation,metro ticket,,40,EGP,English,synthetic,5
+ENG-0198,Just paid 195 pounds for dessert.,Expense,Food & Dining,dessert,,195,EGP,English,synthetic,6
+ENG-0199,my uncle paid me 4000 EGP for holiday gift.,Income,Gifts,holiday gift,my uncle,4000,EGP,English,synthetic,income_generated_2
+ENG-0200,My taxi trip purchase at a taxi cost 205 EGP.,Expense,Transportation,taxi trip,,205,EGP,English,synthetic,3
+ENG-0201,I bought ride from Careem for 335 EGP.,Expense,Transportation,ride,Careem,335,EGP,English,synthetic,0
+ENG-0202,"Jumia: phone case, 355 EGP.",Expense,Shopping,phone case,Jumia,355,EGP,English,synthetic,5
+ENG-0203,the company transferred 14000 EGP to me for my work.,Income,Salary,,,14000,EGP,English,synthetic,salary_2
+ENG-0204,I was charged 15 EGP for metro ticket at the metro station.,Expense,Transportation,metro ticket,,15,EGP,English,synthetic,4
+ENG-0205,The mobile bill from Vodafone was 190 EGP.,Expense,Bills & Utilities,mobile bill,Vodafone,190,EGP,English,synthetic,7
+ENG-0206,Received 9100 EGP for design project from a client.,Income,Freelance,design project,a client,9100,EGP,English,synthetic,income_generated_0
+ENG-0207,my family paid me 13400 EGP for birthday gift.,Income,Gifts,birthday gift,my family,13400,EGP,English,synthetic,income_generated_2
+ENG-0208,The sandwich from Subway was 265 EGP.,Expense,Food & Dining,sandwich,Subway,265,EGP,English,synthetic,7
+ENG-0209,I got 44900 Egyptian pounds from my customer for product order.,Income,Business Income,product order,my customer,44900,EGP,English,synthetic,income_generated_1
+ENG-0210,The fruit from a market was 200 EGP.,Expense,Groceries,fruit,,200,EGP,English,synthetic,7
+ENG-0211,a customer sent 5000 EGP as freelance writing.,Income,Freelance,freelance writing,a customer,5000,EGP,English,synthetic,income_generated_8
+ENG-0212,I paid 425 EGP for gas bill at the gas company.,Expense,Bills & Utilities,gas bill,,425,EGP,English,synthetic,1
+ENG-0213,The dinner from a restaurant was 280 EGP.,Expense,Food & Dining,dinner,,280,EGP,English,synthetic,7
+ENG-0214,I got 5650 Egyptian pounds from my workplace for part-time salary.,Income,Salary,part-time salary,my workplace,5650,EGP,English,synthetic,income_generated_1
+ENG-0215,Received 19500 pounds as work income.,Income,Salary,,,19500,EGP,English,synthetic,salary_7
+ENG-0216,Paid an amusement park 385 EGP for amusement park entry.,Expense,Entertainment,amusement park entry,,385,EGP,English,synthetic,9
+ENG-0217,a customer paid me 1675 EGP for shop sales.,Income,Business Income,shop sales,a customer,1675,EGP,English,synthetic,income_generated_2
+ENG-0218,Received 18250 pounds as work income.,Income,Salary,,,18250,EGP,English,synthetic,salary_7
+ENG-0219,Received 21500 EGP as salary from my project client.,Income,Freelance,,,21500,EGP,English,synthetic,salary_0
+ENG-0220,Just paid 195 pounds for movie ticket.,Expense,Entertainment,movie ticket,VOX Cinemas,195,EGP,English,synthetic,6
+ENG-0221,I earned 8750 EGP from my project client.,Income,Freelance,,,8750,EGP,English,synthetic,salary_3
+ENG-0222,Spent 280 EGP on course fee from Coursera.,Expense,Education,course fee,Coursera,280,EGP,English,synthetic,2
+ENG-0223,my internship transferred 19000 EGP to me for my work.,Income,Salary,,,19000,EGP,English,synthetic,salary_2
+ENG-0224,I bought medicine from a pharmacy for 70 EGP.,Expense,Healthcare,medicine,,70,EGP,English,synthetic,0
+ENG-0225,Paid a concert venue 1400 EGP for concert ticket.,Expense,Entertainment,concert ticket,,1400,EGP,English,synthetic,9
+ENG-0226,Received 13300 EGP for room rent from my tenant.,Income,Rental Income,room rent,my tenant,13300,EGP,English,synthetic,income_generated_0
+ENG-0227,The jacket from LC Waikiki was 1835 EGP.,Expense,Shopping,jacket,LC Waikiki,1835,EGP,English,synthetic,7
+ENG-0228,Got paid 14350 LE for online store sale by a customer.,Income,Business Income,online store sale,a customer,14350,EGP,English,synthetic,income_generated_6
+ENG-0229,I bought groceries from Carrefour for 1490 EGP.,Expense,Groceries,groceries,Carrefour,1490,EGP,English,synthetic,0
+ENG-0230,Today I spent 45 Egyptian pounds on parking.,Expense,Transportation,parking,,45,EGP,English,synthetic,8
+ENG-0231,42950 EGP arrived from my tenant for monthly rent.,Income,Rental Income,monthly rent,my tenant,42950,EGP,English,synthetic,income_generated_5
+ENG-0232,I was charged 330 EGP for sandwich at Subway.,Expense,Food & Dining,sandwich,Subway,330,EGP,English,synthetic,4
+ENG-0233,My exam registration purchase at a testing center cost 1445 EGP.,Expense,Education,exam registration,,1445,EGP,English,synthetic,3
+ENG-0234,My sunglasses purchase at a shop cost 230 EGP.,Expense,Shopping,sunglasses,,230,EGP,English,synthetic,3
+ENG-0235,Received 37850 EGP for birthday gift from my family.,Income,Gifts,birthday gift,my family,37850,EGP,English,synthetic,income_generated_0
+ENG-0236,"Today I received 20200 EGP, holiday gift.",Income,Gifts,holiday gift,my uncle,20200,EGP,English,synthetic,income_generated_9
+ENG-0237,Paid a language school 430 EGP for language class.,Expense,Education,language class,,430,EGP,English,synthetic,9
+ENG-0238,My birthday gift payment of 5350 EGP came through.,Income,Gifts,birthday gift,my family,5350,EGP,English,synthetic,income_generated_4
+ENG-0239,birthday gift brought in 11725 EGP today.,Income,Gifts,birthday gift,my family,11725,EGP,English,synthetic,income_generated_3
+ENG-0240,Today I spent 1615 Egyptian pounds on training workshop.,Expense,Education,training workshop,,1615,EGP,English,synthetic,8
+ENG-0241,"a supermarket: eggs, 145 EGP.",Expense,Groceries,eggs,,145,EGP,English,synthetic,5
+ENG-0242,I received 36375 pounds as consulting assignment.,Income,Freelance,consulting assignment,a client,36375,EGP,English,synthetic,income_generated_7
+ENG-0243,My bread purchase at a bakery cost 65 EGP.,Expense,Groceries,bread,,65,EGP,English,synthetic,3
+ENG-0244,Just paid 260 pounds for prescription refill.,Expense,Healthcare,prescription refill,,260,EGP,English,synthetic,6
+ENG-0245,I was charged 420 EGP for backpack at a clothing store.,Expense,Shopping,backpack,,420,EGP,English,synthetic,4
+ENG-0246,room rent brought in 17800 EGP today.,Income,Rental Income,room rent,my tenant,17800,EGP,English,synthetic,income_generated_3
+ENG-0247,Got paid 21750 EGP for my job.,Income,Salary,,,21750,EGP,English,synthetic,salary_4
+ENG-0248,I paid 760 EGP for fuel at a gas station.,Expense,Transportation,fuel,,760,EGP,English,synthetic,1
+ENG-0249,I paid 250 EGP for prescription refill at a pharmacy.,Expense,Healthcare,prescription refill,,250,EGP,English,synthetic,1
+ENG-0250,Today I spent 115 Egyptian pounds on eggs.,Expense,Groceries,eggs,,115,EGP,English,synthetic,8
+ENG-0251,Today I spent 410 Egyptian pounds on chicken meal.,Expense,Food & Dining,chicken meal,KFC,410,EGP,English,synthetic,8
+ENG-0252,Just paid 880 pounds for eye exam.,Expense,Healthcare,eye exam,,880,EGP,English,synthetic,6
+ENG-0253,The maintenance fee from the building office was 870 EGP.,Expense,Bills & Utilities,maintenance fee,,870,EGP,English,synthetic,7
+ENG-0254,I received 3150 pounds as gift money.,Income,Gifts,gift money,a friend,3150,EGP,English,synthetic,income_generated_7
+ENG-0255,My monthly paycheck was 5250 EGP.,Income,Salary,,,5250,EGP,English,synthetic,salary_6
+ENG-0256,Spent 50 EGP on gas bill from the gas company.,Expense,Bills & Utilities,gas bill,,50,EGP,English,synthetic,2
+ENG-0257,36550 EGP arrived from my tenant for monthly rent.,Income,Rental Income,monthly rent,my tenant,36550,EGP,English,synthetic,income_generated_5
+ENG-0258,I received 29775 pounds as freelance writing.,Income,Freelance,freelance writing,a customer,29775,EGP,English,synthetic,income_generated_7
+ENG-0259,I received 21425 pounds as consulting assignment.,Income,Freelance,consulting assignment,a client,21425,EGP,English,synthetic,income_generated_7
+ENG-0260,my family sent 11225 EGP as birthday gift.,Income,Gifts,birthday gift,my family,11225,EGP,English,synthetic,income_generated_8
+ENG-0261,Income received: 22250 Egyptian pounds from a freelance client.,Income,Freelance,,,22250,EGP,English,synthetic,salary_5
+ENG-0262,Paid Orange 85 EGP for phone recharge.,Expense,Bills & Utilities,phone recharge,Orange,85,EGP,English,synthetic,9
+ENG-0263,The dessert from a bakery was 200 EGP.,Expense,Food & Dining,dessert,,200,EGP,English,synthetic,7
+ENG-0264,My freelance writing payment of 20225 EGP came through.,Income,Freelance,freelance writing,a customer,20225,EGP,English,synthetic,income_generated_4
+ENG-0265,"VOX Cinemas: movie ticket, 275 EGP.",Expense,Entertainment,movie ticket,VOX Cinemas,275,EGP,English,synthetic,5
+ENG-0266,Income received: 12250 Egyptian pounds from my part-time job.,Income,Salary,,,12250,EGP,English,synthetic,salary_5
+ENG-0267,my employer sent 22625 EGP as salary.,Income,Salary,salary,my employer,22625,EGP,English,synthetic,income_generated_8
+ENG-0268,The groceries from Carrefour was 1890 EGP.,Expense,Groceries,groceries,Carrefour,1890,EGP,English,synthetic,7
+ENG-0269,I bought sandwich from Subway for 250 EGP.,Expense,Food & Dining,sandwich,Subway,250,EGP,English,synthetic,0
+ENG-0270,"Today I received 44100 EGP, freelance writing.",Income,Freelance,freelance writing,a customer,44100,EGP,English,synthetic,income_generated_9
+ENG-0271,Received 13300 EGP for property rent from a tenant.,Income,Rental Income,property rent,a tenant,13300,EGP,English,synthetic,income_generated_0
+ENG-0272,My movie ticket purchase at VOX Cinemas cost 190 EGP.,Expense,Entertainment,movie ticket,VOX Cinemas,190,EGP,English,synthetic,3
+ENG-0273,I paid 1225 EGP for concert ticket at a concert venue.,Expense,Entertainment,concert ticket,,1225,EGP,English,synthetic,1
+ENG-0274,The dental appointment from a dental clinic was 875 EGP.,Expense,Healthcare,dental appointment,,875,EGP,English,synthetic,7
+ENG-0275,consulting assignment brought in 31725 EGP today.,Income,Freelance,consulting assignment,a client,31725,EGP,English,synthetic,income_generated_3
+ENG-0276,My headphones purchase at Amazon cost 2070 EGP.,Expense,Shopping,headphones,Amazon,2070,EGP,English,synthetic,3
+ENG-0277,21700 EGP arrived from a customer for freelance writing.,Income,Freelance,freelance writing,a customer,21700,EGP,English,synthetic,income_generated_5
+ENG-0278,I got 32675 Egyptian pounds from my customer for product order.,Income,Business Income,product order,my customer,32675,EGP,English,synthetic,income_generated_1
+ENG-0279,"a pharmacy: medicine, 65 EGP.",Expense,Healthcare,medicine,,65,EGP,English,synthetic,5
+ENG-0280,Today I spent 430 Egyptian pounds on burger.,Expense,Food & Dining,burger,McDonalds,430,EGP,English,synthetic,8
+ENG-0281,I bought sunglasses from a shop for 615 EGP.,Expense,Shopping,sunglasses,,615,EGP,English,synthetic,0
+ENG-0282,5750 EGP arrived from my tenant for room rent.,Income,Rental Income,room rent,my tenant,5750,EGP,English,synthetic,income_generated_5
+ENG-0283,my tenant paid me 34575 EGP for monthly rent.,Income,Rental Income,monthly rent,my tenant,34575,EGP,English,synthetic,income_generated_2
+ENG-0284,gift money brought in 1900 EGP today.,Income,Gifts,gift money,a friend,1900,EGP,English,synthetic,income_generated_3
+ENG-0285,Spent 885 EGP on electricity bill from the electricity provider.,Expense,Bills & Utilities,electricity bill,,885,EGP,English,synthetic,2
+ENG-0286,5225 EGP arrived from customers for bakery sales.,Income,Business Income,bakery sales,customers,5225,EGP,English,synthetic,income_generated_5
+ENG-0287,8350 EGP arrived from a client for website project.,Income,Freelance,website project,a client,8350,EGP,English,synthetic,income_generated_5
+ENG-0288,Received 3200 EGP for online store sale from a customer.,Income,Business Income,online store sale,a customer,3200,EGP,English,synthetic,income_generated_0
+ENG-0289,The movie ticket from VOX Cinemas was 280 EGP.,Expense,Entertainment,movie ticket,VOX Cinemas,280,EGP,English,synthetic,7
+ENG-0290,Got paid 12175 LE for apartment rent by my tenant.,Income,Rental Income,apartment rent,my tenant,12175,EGP,English,synthetic,income_generated_6
+ENG-0291,My salary payment of 5500 EGP arrived today.,Income,Salary,,,5500,EGP,English,synthetic,salary_1
+ENG-0292,"an amusement park: amusement park entry, 305 EGP.",Expense,Entertainment,amusement park entry,,305,EGP,English,synthetic,5
+ENG-0293,a tenant sent 5475 EGP as property rent.,Income,Rental Income,property rent,a tenant,5475,EGP,English,synthetic,income_generated_8
+ENG-0294,Received 28000 EGP as salary from my consulting client.,Income,Freelance,,,28000,EGP,English,synthetic,salary_0
+ENG-0295,Just paid 165 pounds for school supplies.,Expense,Education,school supplies,,165,EGP,English,synthetic,6
+ENG-0296,My shop rental payment of 33175 EGP came through.,Income,Rental Income,shop rental,a tenant,33175,EGP,English,synthetic,income_generated_4
+ENG-0297,Just paid 190 pounds for movie ticket.,Expense,Entertainment,movie ticket,VOX Cinemas,190,EGP,English,synthetic,6
+ENG-0298,My salary payment of 3750 EGP arrived today.,Income,Salary,,,3750,EGP,English,synthetic,salary_1
+ENG-0299,My website project payment of 12725 EGP came through.,Income,Freelance,website project,a client,12725,EGP,English,synthetic,income_generated_4
+ENG-0300,25950 EGP arrived from customers for bakery sales.,Income,Business Income,bakery sales,customers,25950,EGP,English,synthetic,income_generated_5
+ENG-0301,"H&M: jeans, 1025 EGP.",Expense,Shopping,jeans,H&M,1025,EGP,English,synthetic,5
+ENG-0302,"Today I received 12625 EGP, website project.",Income,Freelance,website project,a client,12625,EGP,English,synthetic,income_generated_9
+ENG-0303,My eye exam purchase at an eye clinic cost 355 EGP.,Expense,Healthcare,eye exam,,355,EGP,English,synthetic,3
+ENG-0304,Received 6000 EGP as salary from the company.,Income,Salary,,,6000,EGP,English,synthetic,salary_0
+ENG-0305,Today I spent 480 Egyptian pounds on vitamins.,Expense,Healthcare,vitamins,,480,EGP,English,synthetic,8
+ENG-0306,I was charged 175 EGP for school supplies at a stationery shop.,Expense,Education,school supplies,,175,EGP,English,synthetic,4
+ENG-0307,Got paid 5525 LE for online store sale by a customer.,Income,Business Income,online store sale,a customer,5525,EGP,English,synthetic,income_generated_6
+ENG-0308,my tenant sent 41200 EGP as apartment rent.,Income,Rental Income,apartment rent,my tenant,41200,EGP,English,synthetic,income_generated_8
+ENG-0309,I received 28200 pounds as business service.,Income,Business Income,business service,a customer,28200,EGP,English,synthetic,income_generated_7
+ENG-0310,Just paid 270 pounds for ride.,Expense,Transportation,ride,Careem,270,EGP,English,synthetic,6
+ENG-0311,Spent 330 EGP on vitamins from a pharmacy.,Expense,Healthcare,vitamins,,330,EGP,English,synthetic,2
+ENG-0312,I paid 910 EGP for maintenance fee at the building office.,Expense,Bills & Utilities,maintenance fee,,910,EGP,English,synthetic,1
+ENG-0313,23175 EGP arrived from a relative for cash gift.,Income,Gifts,cash gift,a relative,23175,EGP,English,synthetic,income_generated_5
+ENG-0314,"Today I received 24375 EGP, property rent.",Income,Rental Income,property rent,a tenant,24375,EGP,English,synthetic,income_generated_9
+ENG-0315,Today I spent 60 Egyptian pounds on notebook.,Expense,Education,notebook,,60,EGP,English,synthetic,8
+ENG-0316,My salary payment of 20500 EGP arrived today.,Income,Salary,,,20500,EGP,English,synthetic,salary_1
+ENG-0317,I got 42175 Egyptian pounds from my family for birthday gift.,Income,Gifts,birthday gift,my family,42175,EGP,English,synthetic,income_generated_1
+ENG-0318,Paid H&M 1015 EGP for jeans.,Expense,Shopping,jeans,H&M,1015,EGP,English,synthetic,9
+ENG-0319,"a testing center: exam registration, 1090 EGP.",Expense,Education,exam registration,,1090,EGP,English,synthetic,5
+ENG-0320,Got paid 17250 EGP for my job.,Income,Salary,,,17250,EGP,English,synthetic,salary_4
+ENG-0321,I earned 21500 EGP from my consulting client.,Income,Freelance,,,21500,EGP,English,synthetic,salary_3
+ENG-0322,I bought fuel from a gas station for 1040 EGP.,Expense,Transportation,fuel,,1040,EGP,English,synthetic,0
+ENG-0323,translation work brought in 9025 EGP today.,Income,Freelance,translation work,my client,9025,EGP,English,synthetic,income_generated_3
+ENG-0324,I received 24025 pounds as birthday gift.,Income,Gifts,birthday gift,my family,24025,EGP,English,synthetic,income_generated_7
+ENG-0325,Paid a training center 1255 EGP for training workshop.,Expense,Education,training workshop,,1255,EGP,English,synthetic,9
+ENG-0326,I paid 90 EGP for coffee at Costa Coffee.,Expense,Food & Dining,coffee,Costa Coffee,90,EGP,English,synthetic,1
+ENG-0327,I bought ride from Uber for 105 EGP.,Expense,Transportation,ride,Uber,105,EGP,English,synthetic,0
+ENG-0328,I bought dessert from a bakery for 165 EGP.,Expense,Food & Dining,dessert,,165,EGP,English,synthetic,0
+ENG-0329,Just paid 410 pounds for water bill.,Expense,Bills & Utilities,water bill,,410,EGP,English,synthetic,6
+ENG-0330,My cash gift payment of 24400 EGP came through.,Income,Gifts,cash gift,a relative,24400,EGP,English,synthetic,income_generated_4
+ENG-0331,Just paid 745 pounds for exam registration.,Expense,Education,exam registration,,745,EGP,English,synthetic,6
+ENG-0332,Paid the parking garage 45 EGP for parking.,Expense,Transportation,parking,,45,EGP,English,synthetic,9
+ENG-0333,customers paid me 22175 EGP for bakery sales.,Income,Business Income,bakery sales,customers,22175,EGP,English,synthetic,income_generated_2
+ENG-0334,I was charged 630 EGP for home internet at Etisalat.,Expense,Bills & Utilities,home internet,Etisalat,630,EGP,English,synthetic,4
+ENG-0335,The bus ticket from the bus station was 35 EGP.,Expense,Transportation,bus ticket,,35,EGP,English,synthetic,7
+ENG-0336,I bought eye exam from an eye clinic for 655 EGP.,Expense,Healthcare,eye exam,,655,EGP,English,synthetic,0
+ENG-0337,a client paid me 7825 EGP for design project.,Income,Freelance,design project,a client,7825,EGP,English,synthetic,income_generated_2
+ENG-0338,"the bus station: bus ticket, 60 EGP.",Expense,Transportation,bus ticket,,60,EGP,English,synthetic,5
+ENG-0339,a tenant sent 18375 EGP as shop rental.,Income,Rental Income,shop rental,a tenant,18375,EGP,English,synthetic,income_generated_8
+ENG-0340,I bought dinner from a restaurant for 685 EGP.,Expense,Food & Dining,dinner,,685,EGP,English,synthetic,0
+ENG-0341,My translation work payment of 2725 EGP came through.,Income,Freelance,translation work,my client,2725,EGP,English,synthetic,income_generated_4
+ENG-0342,Paid Uber 95 EGP for ride.,Expense,Transportation,ride,Uber,95,EGP,English,synthetic,9
+ENG-0343,Got paid 12575 LE for business service by a customer.,Income,Business Income,business service,a customer,12575,EGP,English,synthetic,income_generated_6
+ENG-0344,Got paid 7325 LE for cash gift by a relative.,Income,Gifts,cash gift,a relative,7325,EGP,English,synthetic,income_generated_6
+ENG-0345,a friend paid me 24350 EGP for gift money.,Income,Gifts,gift money,a friend,24350,EGP,English,synthetic,income_generated_2
+ENG-0346,I received 21100 pounds as monthly rent.,Income,Rental Income,monthly rent,my tenant,21100,EGP,English,synthetic,income_generated_7
+ENG-0347,My salary payment of 27500 EGP arrived today.,Income,Salary,,,27500,EGP,English,synthetic,salary_1
+ENG-0348,a friend sent 8350 EGP as gift money.,Income,Gifts,gift money,a friend,8350,EGP,English,synthetic,income_generated_8
+ENG-0349,"Today I received 22175 EGP, property rent.",Income,Rental Income,property rent,a tenant,22175,EGP,English,synthetic,income_generated_9
+ENG-0350,Received 17375 EGP for business service from a customer.,Income,Business Income,business service,a customer,17375,EGP,English,synthetic,income_generated_0
+ENG-0351,shop rental brought in 24125 EGP today.,Income,Rental Income,shop rental,a tenant,24125,EGP,English,synthetic,income_generated_3
+ENG-0352,I was charged 1450 EGP for backpack at a clothing store.,Expense,Shopping,backpack,,1450,EGP,English,synthetic,4
+ENG-0353,My maintenance fee purchase at the building office cost 485 EGP.,Expense,Bills & Utilities,maintenance fee,,485,EGP,English,synthetic,3
+ENG-0354,Paid a clinic 695 EGP for doctor consultation.,Expense,Healthcare,doctor consultation,,695,EGP,English,synthetic,9
+ENG-0355,"a dental clinic: dental appointment, 745 EGP.",Expense,Healthcare,dental appointment,,745,EGP,English,synthetic,5
+ENG-0356,I was charged 760 EGP for home internet at Etisalat.,Expense,Bills & Utilities,home internet,Etisalat,760,EGP,English,synthetic,4
+ENG-0357,"Today I received 4275 EGP, holiday gift.",Income,Gifts,holiday gift,my uncle,4275,EGP,English,synthetic,income_generated_9
+ENG-0358,The blood test from a laboratory was 650 EGP.,Expense,Healthcare,blood test,,650,EGP,English,synthetic,7
+ENG-0359,Just paid 75 pounds for gas bill.,Expense,Bills & Utilities,gas bill,,75,EGP,English,synthetic,6
+ENG-0360,my parents paid me 20300 EGP for graduation gift.,Income,Gifts,graduation gift,my parents,20300,EGP,English,synthetic,income_generated_2
+ENG-0361,Received 32300 EGP for online store sale from a customer.,Income,Business Income,online store sale,a customer,32300,EGP,English,synthetic,income_generated_0
+ENG-0362,"Today I received 38250 EGP, product order.",Income,Business Income,product order,my customer,38250,EGP,English,synthetic,income_generated_9
+ENG-0363,website project brought in 41125 EGP today.,Income,Freelance,website project,a client,41125,EGP,English,synthetic,income_generated_3
+ENG-0364,Spent 250 EGP on coffee from Costa Coffee.,Expense,Food & Dining,coffee,Costa Coffee,250,EGP,English,synthetic,2
+ENG-0365,"Today I received 43600 EGP, online store sale.",Income,Business Income,online store sale,a customer,43600,EGP,English,synthetic,income_generated_9
+ENG-0366,a client paid me 3450 EGP for website project.,Income,Freelance,website project,a client,3450,EGP,English,synthetic,income_generated_2
+ENG-0367,I bought mobile bill from Vodafone for 230 EGP.,Expense,Bills & Utilities,mobile bill,Vodafone,230,EGP,English,synthetic,0
+ENG-0368,a tenant sent 13025 EGP as shop rental.,Income,Rental Income,shop rental,a tenant,13025,EGP,English,synthetic,income_generated_8
+ENG-0369,The notebook from a stationery shop was 140 EGP.,Expense,Education,notebook,,140,EGP,English,synthetic,7
+ENG-0370,Just paid 600 pounds for water bill.,Expense,Bills & Utilities,water bill,,600,EGP,English,synthetic,6
+ENG-0371,Paid McDonalds 450 EGP for burger.,Expense,Food & Dining,burger,McDonalds,450,EGP,English,synthetic,9
+ENG-0372,Just paid 795 pounds for course fee.,Expense,Education,course fee,Coursera,795,EGP,English,synthetic,6
+ENG-0373,"a shop: sunglasses, 185 EGP.",Expense,Shopping,sunglasses,,185,EGP,English,synthetic,5
+ENG-0374,Just paid 325 pounds for bowling session.,Expense,Entertainment,bowling session,,325,EGP,English,synthetic,6
+ENG-0375,Just paid 270 pounds for movie ticket.,Expense,Entertainment,movie ticket,VOX Cinemas,270,EGP,English,synthetic,6
+ENG-0376,My prescription refill purchase at a pharmacy cost 65 EGP.,Expense,Healthcare,prescription refill,,65,EGP,English,synthetic,3
+ENG-0377,my tenant sent 10875 EGP as monthly rent.,Income,Rental Income,monthly rent,my tenant,10875,EGP,English,synthetic,income_generated_8
+ENG-0378,monthly rent brought in 39800 EGP today.,Income,Rental Income,monthly rent,my tenant,39800,EGP,English,synthetic,income_generated_3
+ENG-0379,I paid 830 EGP for maintenance fee at the building office.,Expense,Bills & Utilities,maintenance fee,,830,EGP,English,synthetic,1
+ENG-0380,My sunglasses purchase at a shop cost 820 EGP.,Expense,Shopping,sunglasses,,820,EGP,English,synthetic,3
+ENG-0381,shop rental brought in 24025 EGP today.,Income,Rental Income,shop rental,a tenant,24025,EGP,English,synthetic,income_generated_3
+ENG-0382,The ride from Uber was 100 EGP.,Expense,Transportation,ride,Uber,100,EGP,English,synthetic,7
+ENG-0383,I paid 100 EGP for train ticket at the railway station.,Expense,Transportation,train ticket,,100,EGP,English,synthetic,1
+ENG-0384,I bought ride from Uber for 375 EGP.,Expense,Transportation,ride,Uber,375,EGP,English,synthetic,0
+ENG-0385,"a bakery: bread, 75 EGP.",Expense,Groceries,bread,,75,EGP,English,synthetic,5
+ENG-0386,My shop rental payment of 43750 EGP came through.,Income,Rental Income,shop rental,a tenant,43750,EGP,English,synthetic,income_generated_4
+ENG-0387,a relative paid me 36875 EGP for cash gift.,Income,Gifts,cash gift,a relative,36875,EGP,English,synthetic,income_generated_2
+ENG-0388,Received 36875 EGP for room rent from my tenant.,Income,Rental Income,room rent,my tenant,36875,EGP,English,synthetic,income_generated_0
+ENG-0389,Received 36850 EGP for online store sale from a customer.,Income,Business Income,online store sale,a customer,36850,EGP,English,synthetic,income_generated_0
+ENG-0390,Spent 290 EGP on eye exam from an eye clinic.,Expense,Healthcare,eye exam,,290,EGP,English,synthetic,2
+ENG-0391,Received 4675 EGP for monthly rent from my tenant.,Income,Rental Income,monthly rent,my tenant,4675,EGP,English,synthetic,income_generated_0
+ENG-0392,Spent 300 EGP on textbook from a bookstore.,Expense,Education,textbook,,300,EGP,English,synthetic,2
+ENG-0393,I received 41175 pounds as business service.,Income,Business Income,business service,a customer,41175,EGP,English,synthetic,income_generated_7
+ENG-0394,I paid 100 EGP for dessert at a bakery.,Expense,Food & Dining,dessert,,100,EGP,English,synthetic,1
+ENG-0395,Just paid 1425 pounds for concert ticket.,Expense,Entertainment,concert ticket,,1425,EGP,English,synthetic,6
+ENG-0396,Got paid 13500 EGP for my job.,Income,Salary,,,13500,EGP,English,synthetic,salary_4
+ENG-0397,"Today I received 10575 EGP, monthly rent.",Income,Rental Income,monthly rent,my tenant,10575,EGP,English,synthetic,income_generated_9
+ENG-0398,My property rent payment of 12050 EGP came through.,Income,Rental Income,property rent,a tenant,12050,EGP,English,synthetic,income_generated_4
+ENG-0399,Spent 1165 EGP on concert ticket from a concert venue.,Expense,Entertainment,concert ticket,,1165,EGP,English,synthetic,2
+ENG-0400,My monthly paycheck was 19750 EGP.,Income,Salary,,,19750,EGP,English,synthetic,salary_6
+ENG-0401,"Today I received 4050 EGP, online store sale.",Income,Business Income,online store sale,a customer,4050,EGP,English,synthetic,income_generated_9
+ENG-0402,My dinner purchase at a restaurant cost 350 EGP.,Expense,Food & Dining,dinner,,350,EGP,English,synthetic,3
+ENG-0403,My household supplies purchase at Metro Market cost 470 EGP.,Expense,Groceries,household supplies,Metro Market,470,EGP,English,synthetic,3
+ENG-0404,"Today I received 14175 EGP, product order.",Income,Business Income,product order,my customer,14175,EGP,English,synthetic,income_generated_9
+ENG-0405,I received 4275 pounds as product order.,Income,Business Income,product order,my customer,4275,EGP,English,synthetic,income_generated_7
+ENG-0406,My business service payment of 1025 EGP came through.,Income,Business Income,business service,a customer,1025,EGP,English,synthetic,income_generated_4
+ENG-0407,My video game purchase at PlayStation Store cost 1295 EGP.,Expense,Entertainment,video game,PlayStation Store,1295,EGP,English,synthetic,3
+ENG-0408,I was charged 1205 EGP for jeans at H&M.,Expense,Shopping,jeans,H&M,1205,EGP,English,synthetic,4
+ENG-0409,I got 11675 Egyptian pounds from a tenant for property rent.,Income,Rental Income,property rent,a tenant,11675,EGP,English,synthetic,income_generated_1
+ENG-0410,I was charged 245 EGP for game subscription at Steam.,Expense,Entertainment,game subscription,Steam,245,EGP,English,synthetic,4
+ENG-0411,Got paid 27750 EGP for my job.,Income,Salary,,,27750,EGP,English,synthetic,salary_4
+ENG-0412,30225 EGP arrived from my parents for graduation gift.,Income,Gifts,graduation gift,my parents,30225,EGP,English,synthetic,income_generated_5
+ENG-0413,2725 EGP arrived from customers for bakery sales.,Income,Business Income,bakery sales,customers,2725,EGP,English,synthetic,income_generated_5
+ENG-0414,I paid 150 EGP for rice at a grocery store.,Expense,Groceries,rice,,150,EGP,English,synthetic,1
+ENG-0415,Paid Etisalat 545 EGP for home internet.,Expense,Bills & Utilities,home internet,Etisalat,545,EGP,English,synthetic,9
+ENG-0416,I paid 945 EGP for jeans at H&M.,Expense,Shopping,jeans,H&M,945,EGP,English,synthetic,1
+ENG-0417,I bought shoes from Nike for 4140 EGP.,Expense,Shopping,shoes,Nike,4140,EGP,English,synthetic,0
+ENG-0418,The jacket from LC Waikiki was 765 EGP.,Expense,Shopping,jacket,LC Waikiki,765,EGP,English,synthetic,7
+ENG-0419,I was charged 795 EGP for exam registration at a testing center.,Expense,Education,exam registration,,795,EGP,English,synthetic,4
+ENG-0420,holiday gift brought in 16625 EGP today.,Income,Gifts,holiday gift,my uncle,16625,EGP,English,synthetic,income_generated_3
+ENG-0421,Today I spent 55 Egyptian pounds on bus ticket.,Expense,Transportation,bus ticket,,55,EGP,English,synthetic,8
+ENG-0422,my company sent 5350 EGP as paycheck.,Income,Salary,paycheck,my company,5350,EGP,English,synthetic,income_generated_8
+ENG-0423,"Today I received 12950 EGP, consulting assignment.",Income,Freelance,consulting assignment,a client,12950,EGP,English,synthetic,income_generated_9
+ENG-0424,I received 1700 pounds as product order.,Income,Business Income,product order,my customer,1700,EGP,English,synthetic,income_generated_7
+ENG-0425,I paid 1055 EGP for electricity bill at the electricity provider.,Expense,Bills & Utilities,electricity bill,,1055,EGP,English,synthetic,1
+ENG-0426,I bought vegetables from a market for 295 EGP.,Expense,Groceries,vegetables,,295,EGP,English,synthetic,0
+ENG-0427,My salary payment of 23250 EGP arrived today.,Income,Salary,,,23250,EGP,English,synthetic,salary_1
+ENG-0428,Got paid 42750 LE for apartment rent by my tenant.,Income,Rental Income,apartment rent,my tenant,42750,EGP,English,synthetic,income_generated_6
+ENG-0429,Got paid 33950 LE for product order by my customer.,Income,Business Income,product order,my customer,33950,EGP,English,synthetic,income_generated_6
+ENG-0430,My monthly wages payment of 22375 EGP came through.,Income,Salary,monthly wages,work,22375,EGP,English,synthetic,income_generated_4
+ENG-0431,"a supermarket: eggs, 115 EGP.",Expense,Groceries,eggs,,115,EGP,English,synthetic,5
+ENG-0432,I got 39350 Egyptian pounds from a relative for cash gift.,Income,Gifts,cash gift,a relative,39350,EGP,English,synthetic,income_generated_1
+ENG-0433,I got 35100 Egyptian pounds from a customer for online store sale.,Income,Business Income,online store sale,a customer,35100,EGP,English,synthetic,income_generated_1
+ENG-0434,"Today I received 9050 EGP, online store sale.",Income,Business Income,online store sale,a customer,9050,EGP,English,synthetic,income_generated_9
+ENG-0435,my tenant paid me 14400 EGP for apartment rent.,Income,Rental Income,apartment rent,my tenant,14400,EGP,English,synthetic,income_generated_2
+ENG-0436,My bakery sales payment of 27300 EGP came through.,Income,Business Income,bakery sales,customers,27300,EGP,English,synthetic,income_generated_4
+ENG-0437,"Today I received 475 EGP, holiday gift.",Income,Gifts,holiday gift,my uncle,475,EGP,English,synthetic,income_generated_9
+ENG-0438,Today I spent 865 Egyptian pounds on maintenance fee.,Expense,Bills & Utilities,maintenance fee,,865,EGP,English,synthetic,8
+ENG-0439,Today I spent 585 Egyptian pounds on water bill.,Expense,Bills & Utilities,water bill,,585,EGP,English,synthetic,8
+ENG-0440,My bus ticket purchase at the bus station cost 20 EGP.,Expense,Transportation,bus ticket,,20,EGP,English,synthetic,3
+ENG-0441,I earned 28000 EGP from my part-time job.,Income,Salary,,,28000,EGP,English,synthetic,salary_3
+ENG-0442,I received 3825 pounds as bakery sales.,Income,Business Income,bakery sales,customers,3825,EGP,English,synthetic,income_generated_7
+ENG-0443,Just paid 640 pounds for home internet.,Expense,Bills & Utilities,home internet,Etisalat,640,EGP,English,synthetic,6
+ENG-0444,I got 7350 Egyptian pounds from my parents for graduation gift.,Income,Gifts,graduation gift,my parents,7350,EGP,English,synthetic,income_generated_1
+ENG-0445,Spent 505 EGP on household supplies from Metro Market.,Expense,Groceries,household supplies,Metro Market,505,EGP,English,synthetic,2
+ENG-0446,I bought backpack from a clothing store for 770 EGP.,Expense,Shopping,backpack,,770,EGP,English,synthetic,0
+ENG-0447,my employer paid me 39400 EGP for salary.,Income,Salary,salary,my employer,39400,EGP,English,synthetic,income_generated_2
+ENG-0448,31000 EGP arrived from a tenant for property rent.,Income,Rental Income,property rent,a tenant,31000,EGP,English,synthetic,income_generated_5
+ENG-0449,I was charged 305 EGP for game subscription at Steam.,Expense,Entertainment,game subscription,Steam,305,EGP,English,synthetic,4
+ENG-0450,Paid a supermarket 150 EGP for eggs.,Expense,Groceries,eggs,,150,EGP,English,synthetic,9
+ENG-0451,a customer sent 40425 EGP as freelance writing.,Income,Freelance,freelance writing,a customer,40425,EGP,English,synthetic,income_generated_8
+ENG-0452,Paid Jumia 250 EGP for phone case.,Expense,Shopping,phone case,Jumia,250,EGP,English,synthetic,9
+ENG-0453,Just paid 35 pounds for bread.,Expense,Groceries,bread,,35,EGP,English,synthetic,6
+ENG-0454,The jeans from H&M was 1320 EGP.,Expense,Shopping,jeans,H&M,1320,EGP,English,synthetic,7
+ENG-0455,Paid a market 100 EGP for vegetables.,Expense,Groceries,vegetables,,100,EGP,English,synthetic,9
+ENG-0456,"a grocery store: rice, 115 EGP.",Expense,Groceries,rice,,115,EGP,English,synthetic,5
+ENG-0457,Just paid 210 pounds for school supplies.,Expense,Education,school supplies,,210,EGP,English,synthetic,6
+ENG-0458,"Coursera: course fee, 895 EGP.",Expense,Education,course fee,Coursera,895,EGP,English,synthetic,5
+ENG-0459,Received 43100 EGP for online store sale from a customer.,Income,Business Income,online store sale,a customer,43100,EGP,English,synthetic,income_generated_0
+ENG-0460,My medicine purchase at a pharmacy cost 510 EGP.,Expense,Healthcare,medicine,,510,EGP,English,synthetic,3
+ENG-0461,Today I spent 410 Egyptian pounds on internet bill.,Expense,Bills & Utilities,internet bill,WE,410,EGP,English,synthetic,8
+ENG-0462,My business service payment of 21275 EGP came through.,Income,Business Income,business service,a customer,21275,EGP,English,synthetic,income_generated_4
+ENG-0463,I paid 1510 EGP for training workshop at a training center.,Expense,Education,training workshop,,1510,EGP,English,synthetic,1
+ENG-0464,"Today I received 37625 EGP, room rent.",Income,Rental Income,room rent,my tenant,37625,EGP,English,synthetic,income_generated_9
+ENG-0465,Got paid 9000 EGP for my job.,Income,Salary,,,9000,EGP,English,synthetic,salary_4
+ENG-0466,I bought amusement park entry from an amusement park for 510 EGP.,Expense,Entertainment,amusement park entry,,510,EGP,English,synthetic,0
+ENG-0467,Spent 100 EGP on phone recharge from Orange.,Expense,Bills & Utilities,phone recharge,Orange,100,EGP,English,synthetic,2
+ENG-0468,Just paid 1325 pounds for T-shirt.,Expense,Shopping,T-shirt,Zara,1325,EGP,English,synthetic,6
+ENG-0469,The game subscription from Steam was 750 EGP.,Expense,Entertainment,game subscription,Steam,750,EGP,English,synthetic,7
+ENG-0470,My course fee purchase at Coursera cost 400 EGP.,Expense,Education,course fee,Coursera,400,EGP,English,synthetic,3
+ENG-0471,a friend paid me 29825 EGP for gift money.,Income,Gifts,gift money,a friend,29825,EGP,English,synthetic,income_generated_2
+ENG-0472,Got paid 39250 LE for business service by a customer.,Income,Business Income,business service,a customer,39250,EGP,English,synthetic,income_generated_6
+ENG-0473,My salary payment of 10250 EGP arrived today.,Income,Salary,,,10250,EGP,English,synthetic,salary_1
+ENG-0474,Spent 1225 EGP on T-shirt from Zara.,Expense,Shopping,T-shirt,Zara,1225,EGP,English,synthetic,2
+ENG-0475,The course fee from Coursera was 1070 EGP.,Expense,Education,course fee,Coursera,1070,EGP,English,synthetic,7
+ENG-0476,"the water company: water bill, 560 EGP.",Expense,Bills & Utilities,water bill,,560,EGP,English,synthetic,5
+ENG-0477,"Subway: sandwich, 130 EGP.",Expense,Food & Dining,sandwich,Subway,130,EGP,English,synthetic,5
+ENG-0478,"a taxi: taxi trip, 85 EGP.",Expense,Transportation,taxi trip,,85,EGP,English,synthetic,5
+ENG-0479,Paid the railway station 260 EGP for train ticket.,Expense,Transportation,train ticket,,260,EGP,English,synthetic,9
+ENG-0480,My streaming subscription purchase at Netflix cost 400 EGP.,Expense,Entertainment,streaming subscription,Netflix,400,EGP,English,synthetic,3
+ENG-0481,I earned 16000 EGP from my part-time job.,Income,Salary,,,16000,EGP,English,synthetic,salary_3
+ENG-0482,"Zara: T-shirt, 1195 EGP.",Expense,Shopping,T-shirt,Zara,1195,EGP,English,synthetic,5
+ENG-0483,website project brought in 16475 EGP today.,Income,Freelance,website project,a client,16475,EGP,English,synthetic,income_generated_3
+ENG-0484,10375 EGP arrived from my client for translation work.,Income,Freelance,translation work,my client,10375,EGP,English,synthetic,income_generated_5
+ENG-0485,"a dental clinic: dental appointment, 550 EGP.",Expense,Healthcare,dental appointment,,550,EGP,English,synthetic,5
+ENG-0486,Today I spent 320 Egyptian pounds on sandwich.,Expense,Food & Dining,sandwich,Subway,320,EGP,English,synthetic,8
+ENG-0487,6825 EGP arrived from a customer for online store sale.,Income,Business Income,online store sale,a customer,6825,EGP,English,synthetic,income_generated_5
+ENG-0488,I paid 450 EGP for phone case at Jumia.,Expense,Shopping,phone case,Jumia,450,EGP,English,synthetic,1
+ENG-0489,My monthly paycheck was 25750 EGP.,Income,Salary,,,25750,EGP,English,synthetic,salary_6
+ENG-0490,The vitamins from a pharmacy was 385 EGP.,Expense,Healthcare,vitamins,,385,EGP,English,synthetic,7
+ENG-0491,Got paid 30200 LE for translation work by my client.,Income,Freelance,translation work,my client,30200,EGP,English,synthetic,income_generated_6
+ENG-0492,Today I spent 120 Egyptian pounds on dessert.,Expense,Food & Dining,dessert,,120,EGP,English,synthetic,8
+ENG-0493,I paid 745 EGP for T-shirt at Zara.,Expense,Shopping,T-shirt,Zara,745,EGP,English,synthetic,1
+ENG-0494,My consulting assignment payment of 23050 EGP came through.,Income,Freelance,consulting assignment,a client,23050,EGP,English,synthetic,income_generated_4
+ENG-0495,Just paid 325 pounds for prescription refill.,Expense,Healthcare,prescription refill,,325,EGP,English,synthetic,6
+ENG-0496,I received 31225 pounds as product order.,Income,Business Income,product order,my customer,31225,EGP,English,synthetic,income_generated_7
+ENG-0497,My shop rental payment of 4175 EGP came through.,Income,Rental Income,shop rental,a tenant,4175,EGP,English,synthetic,income_generated_4
+ENG-0498,I got 30375 Egyptian pounds from my tenant for monthly rent.,Income,Rental Income,monthly rent,my tenant,30375,EGP,English,synthetic,income_generated_1
+ENG-0499,I was charged 435 EGP for burger at McDonalds.,Expense,Food & Dining,burger,McDonalds,435,EGP,English,synthetic,4
+ENG-0500,Spent 225 EGP on dessert from a bakery.,Expense,Food & Dining,dessert,,225,EGP,English,synthetic,2
