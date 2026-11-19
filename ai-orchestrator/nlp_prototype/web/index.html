@@ -153,10 +153,8 @@ function renderBot(out) {
     if (d.person) chip(chips, "👤 " + d.person);
   }
   const actions = document.createElement("div"); actions.className = "actions";
-  if (out.status === "pending_confirmation") {
-    const done = () => [...actions.children].forEach(b => b.disabled = true);
-    button(actions, "تأكيد ✅", true, () => { done(); addToLedger(d); bubble("bot", "اتسجل ✅"); });
-    button(actions, "إلغاء", false, () => { done(); bubble("bot", "تمام، اتلغى."); });
+  if (out.status === "confirmed") {
+    addToLedger(d);  // complete messages are saved directly; wrong entries can be deleted from the list
   } else if (out.status === "needs_info" && out.category_options) {
     out.category_options.forEach(o => button(actions, o.label, o.value === d.category, () => {
       [...actions.children].forEach(b => b.disabled = true);
@@ -214,7 +212,7 @@ function send(text) {
 $("form").onsubmit = e => { e.preventDefault(); send($("input").value); $("input").value = ""; $("input").focus(); };
 $("reset").onclick = () => { $("messages").innerHTML = ""; pendingDraft = null; $("hint").textContent = ""; greet(); };
 EXAMPLES.forEach(x => button($("examples"), x, false, () => send(x)));
-function greet() { bubble("bot", "أهلاً 👋 ابعتلي أي مصروف أو دخل بالمصري أو الفرانكو أو الإنجليزي، وأنا أطلّع المبلغ والفئة وأسألك قبل ما أسجل."); }
+function greet() { bubble("bot", "أهلاً 👋 ابعتلي أي مصروف أو دخل بالمصري أو الفرانكو أو الإنجليزي، وأنا أطلّع المبلغ والفئة وأسجله. ولو ناقص حاجة هسألك."); }
 greet(); renderLedger(); $("input").focus();
 </script>
 </body>
