@@ -68,6 +68,30 @@ message → amount: rules → intent + category: TF-IDF → item/merchant/date: 
 
 `status` and `extracted_data` map directly to `chat_messages.extraction_status` and `chat_messages.extracted_data` in the ERD.
 
+## Router: what is the message for?
+
+Before anything is extracted, `router.py` decides what the message is for. A second TF-IDF + logistic regression model does this, trained on `data/router/` and the transaction data. `orchestrator.py` then sends the message to the right component:
+
+| Route | Example | Handled by | SRS |
+|---|---|---|---|
+| `transaction` | اشتريت لاب ب 5000 | transaction pipeline above (Classifier) | FR-010–FR-012 |
+| `spending_query` | صرفت كام على الأكل الشهر ده؟ | computed from the user's records | FR-018 |
+| `forecast` | هصرف كام الشهر ده؟ | run-rate projection; needs at least 5 records | FR-022 |
+| `market` | الدولار بكام؟ / سهم CIB؟ | live exchange rates (open.er-api.com) + optional LLM for concepts; falls back cleanly when offline | FR-023, NFR-P03 |
+| `advice` | احوش ازاي من مرتبي؟ | LLM with an aggregated summary only, or built-in rules without an LLM | FR-022, FR-029 |
+| `manage` | امسح آخر حاجة | deletes the last entry | FR-016 |
+| `greeting`, `out_of_scope` | ازيك / مين هيكسب الماتش؟ | fixed replies | – |
+
+- Below 35% router confidence, the bot asks what the user meant.
+- Market and advice replies always end with the informational-only disclaimer (FR-025).
+- No trading actions are offered (SRS constraint).
+
+Router accuracy on 403 held-out messages: **87.3%** (details in [results/router_results.md](results/router_results.md)). The weakest route is `out_of_scope` at 60%: off-topic questions are often mistaken for advice or spending queries, so it needs more examples.
+
+**LLM:** optional. Set `GEMINI_API_KEY`, and optionally `GEMINI_MODEL` (default `gemini-2.5-flash`), before starting the server. Without a key everything runs offline with rule-based replies. The LLM receives only per-category totals, never raw messages or merchants (FR-029). The Gemini call (`llm.py`) has not been tested yet, because no API key was available.
+
+**Stocks, gold, inflation and interest rates** have no data source yet. The bot says so plainly instead of guessing.
+
 ## Chat UI
 
 `python -m nlp_proto.web` opens a small Arabic (RTL) chat page for trying the pipeline:
@@ -81,7 +105,8 @@ message → amount: rules → intent + category: TF-IDF → item/merchant/date: 
 ```sh
 cd ai-orchestrator/nlp_prototype
 pip install -r requirements.txt
-python -m nlp_proto.train            # trains on all 2,000 messages (~3 min, CPU)
+python -m nlp_proto.train            # trains the classifier, spaCy NER and router (~3 min, CPU)
+python -m nlp_proto.router           # evaluates the router on a held-out 20% (seconds)
 python -m nlp_proto.web              # chat UI in the browser: http://localhost:8765
 python -m nlp_proto.chat             # same pipeline in the terminal
 python -m nlp_proto.chat "دفعت ميتين جنيه بنزين" "سلفت صاحبي ٥٠٠"
@@ -102,6 +127,12 @@ nlp_proto/spacy_model.py    approach C
 nlp_proto/evaluate.py       trains and compares A, B and C
 nlp_proto/pipeline.py       recommended pipeline + reply templates
 nlp_proto/item_types.py     item-type lexicon + item fallback rule
+data/router/*.jsonl         router training data (new messages per route + route labels for existing questions/corrections)
+nlp_proto/router.py         message router (TF-IDF + logistic regression) and its evaluation
+nlp_proto/orchestrator.py   routes each message to the right handler
+nlp_proto/handlers.py       spending queries, forecast, market data, advice, undo
+nlp_proto/llm.py            optional Gemini call (needs GEMINI_API_KEY)
+scripts/validate_router_data.py  format checks for data/router
 nlp_proto/chat.py           terminal demo
 nlp_proto/web.py            local web server for the chat UI (standard library only)
 web/index.html              chat UI: extracted fields, amount follow-up, saved transactions
