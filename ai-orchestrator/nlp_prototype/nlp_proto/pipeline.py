@@ -2,20 +2,30 @@
 
 - amount and currency: rules (amounts.py), because numbers are deterministic
 - intent and category: TF-IDF + logistic regression (best classifier in the comparison)
-- item, merchant, date, person: spaCy NER
+- item, merchant, date, person: spaCy NER, plus a rule for "من محل ..." when NER misses the merchant
 - reply: fixed Egyptian-Arabic templates, so the bot never invents text
 
 The output matches the ERD: `extracted_data` is stored in chat_messages.extracted_data and
 `status` maps to chat_messages.extraction_status. A complete message is saved directly (`confirmed`);
-the bot only asks when the amount is missing or the category is uncertain.
+the bot picks the category itself and only asks when the amount is missing.
 """
+import re
+
 from .amounts import extract_amount
 from .data import TX_INTENTS
 from .rules import ALLOWED
 from .spacy_model import SpacyApproach
 from .tfidf import TfidfApproach
 
-CATEGORY_CONFIDENCE_MIN = 0.5  # below this the bot asks instead of guessing
+# Below this confidence the guess is usually wrong, so "Other" is safer (tested on both test sets).
+OTHER_FALLBACK_BELOW = 0.25
+
+# "من محل ابو جزم", "عند الجزار", "from Zara", "at Costa": the place ends before the amount, a date word or punctuation.
+MERCHANT_RE = re.compile(
+    r"(?:\bمن عند|\bمن|\bعند|\bfrom|\bat)\s+(?:محل\s+|shop\s+)?"
+    r"(.+?)(?=\s+(?:ب\s?ـ?\s?\d|بمبلغ|ب\s|\d|مرتجع|امبارح|النهارده|النهاردة|الصبح|بالليل|يوم|for\b|yesterday|today)|\s*[\d٠-٩,.،!؟?]|\s*$)",
+    re.I)
+NOT_A_MERCHANT = {"البيت", "الشغل", "حسابي", "الحساب", "المرتب", "ماما", "بابا", "صاحبي", "home", "work"}
 
 TYPE_AR = {"log_expense": "مصروف", "log_income": "دخل", "log_savings": "ادخار", "log_transfer": "تحويل"}
 CATEGORY_AR = {
@@ -24,6 +34,16 @@ CATEGORY_AR = {
     "Other": "أخرى", "Salary": "مرتب", "Freelance": "فريلانس", "Gift": "هدية", "Refund": "مرتجع",
     "Savings": "ادخار", "Transfer": "تحويل", "Lending": "سلفة",
 }
+
+
+def _rule_merchant(text, item):
+    m = MERCHANT_RE.search(text)
+    if not m:
+        return None
+    name = m.group(1).strip()
+    if not name or name in NOT_A_MERCHANT or name == item or len(name.split()) > 4:
+        return None
+    return name
 
 
 def _money(amount, currency):
@@ -51,10 +71,19 @@ class Assistant:
         for e in self.ner.main(text).ents:
             ents.setdefault(e.label_.lower(), e.text)
         amount = extract_amount(text)
+        category, conf = cls["category"], cls["category_conf"]
+        if category is None or (conf is not None and conf < OTHER_FALLBACK_BELOW and "Other" in ALLOWED[intent]):
+            category = "Other" if "Other" in ALLOWED[intent] else sorted(ALLOWED[intent])[0]
+        merchant, item = ents.get("merchant"), ents.get("item")
+        if merchant is None and intent in ("log_expense", "log_income"):
+            merchant = _rule_merchant(text, item)
+        if merchant and item and merchant in item and merchant != item:
+            # NER sometimes swallows the place into the item: "لحمة من عند الجزار" -> "لحمة"
+            item = re.sub(r"\s*(?:من عند|من|عند|from|at)\s*$", "", item[:item.find(merchant)].strip()) or item
         data = {"intent": intent, "type": intent.removeprefix("log_"), "amount": amount["amount"],
-                "currency": amount["currency"], "category": cls["category"],
-                "category_confidence": round(cls["category_conf"], 3) if cls["category_conf"] is not None else None,
-                "item": ents.get("item"), "merchant": ents.get("merchant"), "date": ents.get("date"),
+                "currency": amount["currency"], "category": category,
+                "category_confidence": round(conf, 3) if conf is not None else None,
+                "item": item, "merchant": merchant, "date": ents.get("date"),
                 "person": ents.get("person")}
 
         return self._finish(data)
@@ -79,13 +108,6 @@ class Assistant:
         if data["amount"] is None:
             data["missing"] = ["amount"]
             return {"status": "needs_info", "extracted_data": data, "reply": f"تمام، {what} كان بكام؟"}
-        if data["category"] is None or (data["category_confidence"] or 0) < CATEGORY_CONFIDENCE_MIN:
-            data["missing"] = ["category"]
-            guess = f" (أقرب تخمين: {CATEGORY_AR[data['category']]})" if data["category"] else ""
-            options = [{"value": c, "label": CATEGORY_AR[c]} for c in sorted(ALLOWED[intent])]
-            return {"status": "needs_info", "extracted_data": data, "category_options": options,
-                    "reply": f"{_money(data['amount'], data['currency'])} على {what}… أحطها تحت أنهي فئة؟{guess}"}
-
         data["missing"] = []
         details = " ".join(x for x in (data["item"], f"من {data['merchant']}" if data["merchant"] else None, data["date"]) if x)
         reply = (f"اتسجل ✅ {TYPE_AR[intent]}: {_money(data['amount'], data['currency'])} – {CATEGORY_AR[data['category']]}"
