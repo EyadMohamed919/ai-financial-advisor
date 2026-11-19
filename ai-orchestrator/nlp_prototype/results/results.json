@@ -1,0 +1,558 @@
+{
+  "train_size": 1599,
+  "test_size": 401,
+  "handwritten_size": 80,
+  "approaches": [
+    {
+      "name": "A. Rules (keywords + regex)",
+      "train_seconds": 0.0,
+      "latency_ms": 0.04,
+      "size_mb": 0.0,
+      "synthetic_test": {
+        "n": 401,
+        "type_acc": 0.7830423940149626,
+        "intent_acc": 0.7680798004987531,
+        "amount_acc": 1.0,
+        "category_acc": 0.44680851063829785,
+        "end_to_end": 0.46384039900249374
+      },
+      "handwritten": {
+        "n": 80,
+        "type_acc": 0.925,
+        "amount_acc": 1.0,
+        "category_acc": 0.868421052631579,
+        "end_to_end": 0.8375
+      },
+      "handwritten_errors": [
+        {
+          "id": "hw_008",
+          "text": "اشتركت في نتفليكس ٢٤٠",
+          "gold": [
+            "expense",
+            240.0,
+            "Subscriptions"
+          ],
+          "pred": [
+            "expense",
+            240.0,
+            "Utilities"
+          ]
+        },
+        {
+          "id": "hw_014",
+          "text": "ماما ادتني ٥٠٠",
+          "gold": [
+            "income",
+            500.0,
+            "Gift"
+          ],
+          "pred": [
+            "expense",
+            500.0,
+            "Other"
+          ]
+        },
+        {
+          "id": "hw_019",
+          "text": "سددت قسط الموبايل ١٢٥٠",
+          "gold": [
+            "expense",
+            1250.0,
+            "Debt"
+          ],
+          "pred": [
+            "expense",
+            1250.0,
+            "Shopping"
+          ]
+        },
+        {
+          "id": "hw_024",
+          "text": "دفعت مصاريف الكورس ألف وخمسمية",
+          "gold": [
+            "expense",
+            1500.0,
+            "Education"
+          ],
+          "pred": [
+            "expense",
+            1500.0,
+            "Utilities"
+          ]
+        },
+        {
+          "id": "hw_040",
+          "text": "shareet 3 shai w 2ahwa b 75",
+          "gold": [
+            "expense",
+            75.0,
+            "Food"
+          ],
+          "pred": [
+            "expense",
+            75.0,
+            "Other"
+          ]
+        },
+        {
+          "id": "hw_048",
+          "text": "اشتريت بيبسي وشيبسي ب ٤٠",
+          "gold": [
+            "expense",
+            40.0,
+            "Food"
+          ],
+          "pred": [
+            "expense",
+            40.0,
+            "Other"
+          ]
+        },
+        {
+          "id": "hw_053",
+          "text": "رجعت ٥٠٠ لأحمد اللي كنت مستلفهم",
+          "gold": [
+            "expense",
+            500.0,
+            "Debt"
+          ],
+          "pred": [
+            "expense",
+            500.0,
+            "Utilities"
+          ]
+        },
+        {
+          "id": "hw_062",
+          "text": "صرفت كام على الأكل الشهر ده؟",
+          "gold": [
+            "none",
+            null,
+            null
+          ],
+          "pred": [
+            "expense",
+            null,
+            "Food"
+          ]
+        },
+        {
+          "id": "hw_066",
+          "text": "InstaPay: You sent EGP 500.00 to MOHAMED A. Ref 88213",
+          "gold": [
+            "transfer",
+            500.0,
+            "Transfer"
+          ],
+          "pred": [
+            "expense",
+            500.0,
+            "Other"
+          ]
+        },
+        {
+          "id": "hw_069",
+          "text": "تم إيداع ٢٠٠٠ جنيه في حسابك رقم ****7730",
+          "gold": [
+            "income",
+            2000.0,
+            "Other"
+          ],
+          "pred": [
+            "expense",
+            2000.0,
+            "Other"
+          ]
+        },
+        {
+          "id": "hw_071",
+          "text": "ATM withdrawal EGP 2,000.00 card ****4821 at NASR CITY",
+          "gold": [
+            "transfer",
+            2000.0,
+            "Transfer"
+          ],
+          "pred": [
+            "expense",
+            2000.0,
+            "Other"
+          ]
+        },
+        {
+          "id": "hw_077",
+          "text": "Card ****4821 charged EGP 3,200.00 at CARREFOUR MAADI",
+          "gold": [
+            "expense",
+            3200.0,
+            "Food"
+          ],
+          "pred": [
+            "expense",
+            3200.0,
+            "Other"
+          ]
+        },
+        {
+          "id": "hw_079",
+          "text": "Your OTP is 482193. Do not share it with anyone.",
+          "gold": [
+            "none",
+            null,
+            null
+          ],
+          "pred": [
+            "expense",
+            482193.0,
+            "Other"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B. TF-IDF + Logistic Regression",
+      "train_seconds": 4.5,
+      "latency_ms": 0.88,
+      "size_mb": 7.23,
+      "synthetic_test": {
+        "n": 401,
+        "type_acc": 0.8802992518703242,
+        "intent_acc": 0.8728179551122195,
+        "amount_acc": 1.0,
+        "category_acc": 0.7963525835866262,
+        "end_to_end": 0.7680798004987531
+      },
+      "handwritten": {
+        "n": 80,
+        "type_acc": 1.0,
+        "amount_acc": 1.0,
+        "category_acc": 0.9210526315789473,
+        "end_to_end": 0.925
+      },
+      "handwritten_errors": [
+        {
+          "id": "hw_017",
+          "text": "اشتريت دوا من الصيدلية ب ١٨٥",
+          "gold": [
+            "expense",
+            185.0,
+            "Health"
+          ],
+          "pred": [
+            "expense",
+            185.0,
+            "Shopping"
+          ]
+        },
+        {
+          "id": "hw_031",
+          "text": "el gym 900 el shahr da",
+          "gold": [
+            "expense",
+            900.0,
+            "Health"
+          ],
+          "pred": [
+            "expense",
+            900.0,
+            "Housing"
+          ]
+        },
+        {
+          "id": "hw_042",
+          "text": "اشتريت كتب الترم ب ٧٠٠",
+          "gold": [
+            "expense",
+            700.0,
+            "Education"
+          ],
+          "pred": [
+            "expense",
+            700.0,
+            "Shopping"
+          ]
+        },
+        {
+          "id": "hw_051",
+          "text": "دفعت كريم ١١٠",
+          "gold": [
+            "expense",
+            110.0,
+            "Transport"
+          ],
+          "pred": [
+            "expense",
+            110.0,
+            "Shopping"
+          ]
+        },
+        {
+          "id": "hw_054",
+          "text": "الحلاق ١٥٠",
+          "gold": [
+            "expense",
+            150.0,
+            "Other"
+          ],
+          "pred": [
+            "expense",
+            150.0,
+            "Transport"
+          ]
+        },
+        {
+          "id": "hw_059",
+          "text": "اتبرعت ب ٢٠٠",
+          "gold": [
+            "expense",
+            200.0,
+            "Other"
+          ],
+          "pred": [
+            "expense",
+            200.0,
+            "Transport"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "C. spaCy (NER + textcat)",
+      "train_seconds": 146.7,
+      "latency_ms": 3.31,
+      "size_mb": 34.72,
+      "synthetic_test": {
+        "n": 401,
+        "type_acc": 0.8877805486284289,
+        "intent_acc": 0.8802992518703242,
+        "amount_acc": 0.9968847352024922,
+        "category_acc": 0.7112462006079028,
+        "end_to_end": 0.7281795511221946
+      },
+      "handwritten": {
+        "n": 80,
+        "type_acc": 0.975,
+        "amount_acc": 1.0,
+        "category_acc": 0.8026315789473685,
+        "end_to_end": 0.8125
+      },
+      "ner": {
+        "precision": 0.8421052631578947,
+        "recall": 0.7959527824620574,
+        "f1": 0.8183788469874296
+      },
+      "misaligned_entities_skipped": 98,
+      "handwritten_errors": [
+        {
+          "id": "hw_006",
+          "text": "dafa3t 60 koshary",
+          "gold": [
+            "expense",
+            60.0,
+            "Food"
+          ],
+          "pred": [
+            "expense",
+            60.0,
+            "Transport"
+          ]
+        },
+        {
+          "id": "hw_007",
+          "text": "Paid 850 electricity bill",
+          "gold": [
+            "expense",
+            850.0,
+            "Utilities"
+          ],
+          "pred": [
+            "expense",
+            850.0,
+            "Debt"
+          ]
+        },
+        {
+          "id": "hw_017",
+          "text": "اشتريت دوا من الصيدلية ب ١٨٥",
+          "gold": [
+            "expense",
+            185.0,
+            "Health"
+          ],
+          "pred": [
+            "expense",
+            185.0,
+            "Shopping"
+          ]
+        },
+        {
+          "id": "hw_029",
+          "text": "اشتريت هدية عيد ميلاد لأختي ب ٦٠٠",
+          "gold": [
+            "expense",
+            600.0,
+            "Shopping"
+          ],
+          "pred": [
+            "expense",
+            600.0,
+            "Entertainment"
+          ]
+        },
+        {
+          "id": "hw_031",
+          "text": "el gym 900 el shahr da",
+          "gold": [
+            "expense",
+            900.0,
+            "Health"
+          ],
+          "pred": [
+            "savings",
+            900.0,
+            "Savings"
+          ]
+        },
+        {
+          "id": "hw_036",
+          "text": "دفعت 1200 على Amazon",
+          "gold": [
+            "expense",
+            1200.0,
+            "Shopping"
+          ],
+          "pred": [
+            "expense",
+            1200.0,
+            "Health"
+          ]
+        },
+        {
+          "id": "hw_041",
+          "text": "دفعت للسباك ٣٠٠",
+          "gold": [
+            "expense",
+            300.0,
+            "Housing"
+          ],
+          "pred": [
+            "expense",
+            300.0,
+            "Debt"
+          ]
+        },
+        {
+          "id": "hw_049",
+          "text": "dafa3t el internet 450",
+          "gold": [
+            "expense",
+            450.0,
+            "Utilities"
+          ],
+          "pred": [
+            "expense",
+            450.0,
+            "Housing"
+          ]
+        },
+        {
+          "id": "hw_051",
+          "text": "دفعت كريم ١١٠",
+          "gold": [
+            "expense",
+            110.0,
+            "Transport"
+          ],
+          "pred": [
+            "expense",
+            110.0,
+            "Shopping"
+          ]
+        },
+        {
+          "id": "hw_054",
+          "text": "الحلاق ١٥٠",
+          "gold": [
+            "expense",
+            150.0,
+            "Other"
+          ],
+          "pred": [
+            "expense",
+            150.0,
+            "Utilities"
+          ]
+        },
+        {
+          "id": "hw_055",
+          "text": "Spent 3200 on groceries for the month",
+          "gold": [
+            "expense",
+            3200.0,
+            "Food"
+          ],
+          "pred": [
+            "expense",
+            3200.0,
+            "Health"
+          ]
+        },
+        {
+          "id": "hw_059",
+          "text": "اتبرعت ب ٢٠٠",
+          "gold": [
+            "expense",
+            200.0,
+            "Other"
+          ],
+          "pred": [
+            "expense",
+            200.0,
+            "Shopping"
+          ]
+        },
+        {
+          "id": "hw_064",
+          "text": "Card ****4821 charged EGP 285.00 at TALABAT on 03/10/2026. Avl bal EGP 9,420.50",
+          "gold": [
+            "expense",
+            285.0,
+            "Food"
+          ],
+          "pred": [
+            "expense",
+            285.0,
+            "Health"
+          ]
+        },
+        {
+          "id": "hw_070",
+          "text": "Wallet: You paid EGP 100.00 for mobile recharge. Balance EGP 340.00",
+          "gold": [
+            "expense",
+            100.0,
+            "Utilities"
+          ],
+          "pred": [
+            "expense",
+            100.0,
+            "Entertainment"
+          ]
+        },
+        {
+          "id": "hw_071",
+          "text": "ATM withdrawal EGP 2,000.00 card ****4821 at NASR CITY",
+          "gold": [
+            "transfer",
+            2000.0,
+            "Transfer"
+          ],
+          "pred": [
+            "expense",
+            2000.0,
+            "Shopping"
+          ]
+        }
+      ]
+    }
+  ]
+}
