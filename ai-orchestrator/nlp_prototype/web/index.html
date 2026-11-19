@@ -148,6 +148,7 @@ function renderBot(out) {
     if (d.amount != null) chip(chips, fmt(d.amount, d.currency));
     if (d.category) chip(chips, (CAT_AR[d.category] || d.category) + (d.category_confidence != null ? ` ${Math.round(d.category_confidence * 100)}%` : ""), d.category_confidence < 0.5);
     if (d.item) chip(chips, "🛍 " + d.item);
+    if (d.item_type_ar) chip(chips, "🏷 " + d.item_type_ar);
     if (d.merchant) chip(chips, "📍 " + d.merchant);
     if (d.date) chip(chips, "📅 " + d.date);
     if (d.person) chip(chips, "👤 " + d.person);

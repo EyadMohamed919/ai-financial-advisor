@@ -13,6 +13,7 @@ import re
 
 from .amounts import extract_amount
 from .data import TX_INTENTS
+from .item_types import item_type, rule_item
 from .rules import ALLOWED
 from .spacy_model import SpacyApproach
 from .tfidf import TfidfApproach
@@ -75,6 +76,8 @@ class Assistant:
         if category is None or (conf is not None and conf < OTHER_FALLBACK_BELOW and "Other" in ALLOWED[intent]):
             category = "Other" if "Other" in ALLOWED[intent] else sorted(ALLOWED[intent])[0]
         merchant, item = ents.get("merchant"), ents.get("item")
+        if item is None and intent == "log_expense":
+            item = rule_item(text)  # "اشتريت لاب من مول البستان" -> "لاب"
         if merchant is None and intent in ("log_expense", "log_income"):
             merchant = _rule_merchant(text, item)
         if merchant and item and merchant in item and merchant != item:
@@ -83,8 +86,10 @@ class Assistant:
         data = {"intent": intent, "type": intent.removeprefix("log_"), "amount": amount["amount"],
                 "currency": amount["currency"], "category": category,
                 "category_confidence": round(conf, 3) if conf is not None else None,
-                "item": item, "merchant": merchant, "date": ents.get("date"),
-                "person": ents.get("person")}
+                "item": item, "item_type": None, "item_type_ar": None, "merchant": merchant,
+                "date": ents.get("date"), "person": ents.get("person")}
+        if intent == "log_expense":
+            data["item_type"], data["item_type_ar"] = item_type(item, text)
 
         return self._finish(data)
 

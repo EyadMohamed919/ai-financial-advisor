@@ -62,6 +62,7 @@ message → amount: rules → intent + category: TF-IDF → item/merchant/date: 
 
 - If the amount is missing → `needs_info`: "تمام، جاكيت جديد كان بكام؟"
 - The bot always picks the category itself. Below 25% confidence it uses "Other" (on the hand-written set this raised category accuracy from 92.1% to 94.7%; on the synthetic test it cost 0.9 points).
+- Item type comes from a keyword lexicon in `item_types.py` ("لاب" → إلكترونيات, "كوتشي" → أحذية, "لحمة" → بقالة). The training data has no item-type labels yet. If NER misses the item, a rule takes the words after اشتريت / جبت / طلبت.
 - If spaCy misses the merchant, a rule takes the place after من / من عند / عند / from / at ("من محل ابو جزم" → "ابو جزم")
 - Otherwise → `confirmed`: the transaction is saved directly and the bot replies with a summary
 
@@ -100,10 +101,13 @@ nlp_proto/tfidf.py          approach B
 nlp_proto/spacy_model.py    approach C
 nlp_proto/evaluate.py       trains and compares A, B and C
 nlp_proto/pipeline.py       recommended pipeline + reply templates
+nlp_proto/item_types.py     item-type lexicon + item fallback rule
 nlp_proto/chat.py           terminal demo
 nlp_proto/web.py            local web server for the chat UI (standard library only)
 web/index.html              chat UI: extracted fields, amount follow-up, saved transactions
 results/                    latest comparison output
+walkthrough.ipynb           step-by-step explanation that imports nlp_proto (executed outputs included)
+nlp_prototype_full.ipynb    the whole prototype in one notebook: every module's code inside the cells, no nlp_proto imports
 ```
 
 ## Limitations (read before quoting the numbers)
