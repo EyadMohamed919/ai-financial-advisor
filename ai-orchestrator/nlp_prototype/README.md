@@ -57,11 +57,12 @@ On the synthetic test, spaCy NER scores 81.8% F1 for item, merchant, date, perso
 ## Recommended pipeline (implemented in `pipeline.py`)
 
 ```
-message → amount: rules → intent + category: TF-IDF → item/merchant/date: spaCy NER → reply template
+message → amount: rules → intent + category: TF-IDF → item/merchant/date: spaCy NER (+ merchant rule) → reply template
 ```
 
 - If the amount is missing → `needs_info`: "تمام، جاكيت جديد كان بكام؟"
-- If category confidence < 0.5 → `needs_info`: the bot asks for the category instead of guessing
+- The bot always picks the category itself. Below 25% confidence it uses "Other" (on the hand-written set this raised category accuracy from 92.1% to 94.7%; on the synthetic test it cost 0.9 points).
+- If spaCy misses the merchant, a rule takes the place after من / من عند / عند / from / at ("من محل ابو جزم" → "ابو جزم")
 - Otherwise → `confirmed`: the transaction is saved directly and the bot replies with a summary
 
 `status` and `extracted_data` map directly to `chat_messages.extraction_status` and `chat_messages.extracted_data` in the ERD.
@@ -73,7 +74,6 @@ message → amount: rules → intent + category: TF-IDF → item/merchant/date: 
 - Every reply shows the extracted type, amount, category with its confidence, item and merchant, plus the raw JSON.
 - Complete messages are saved directly, with no confirmation step. They appear in the side panel with income, expense and balance totals, and each one can be deleted. They are stored in the browser's localStorage only.
 - When the amount is missing, the next message is treated as the answer ("اشتريت جاكيت جديد" → "ب ١٨٥٠").
-- When category confidence is low, the bot shows category buttons instead of guessing.
 
 ## Run it
 
@@ -102,7 +102,7 @@ nlp_proto/evaluate.py       trains and compares A, B and C
 nlp_proto/pipeline.py       recommended pipeline + reply templates
 nlp_proto/chat.py           terminal demo
 nlp_proto/web.py            local web server for the chat UI (standard library only)
-web/index.html              chat UI: category buttons, amount follow-up, saved transactions
+web/index.html              chat UI: extracted fields, amount follow-up, saved transactions
 results/                    latest comparison output
 ```
 
