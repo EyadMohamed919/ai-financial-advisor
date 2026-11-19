@@ -1,0 +1,200 @@
+{"id": "spending_query_0001", "text": "صرفت كام على الأكل الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0002", "text": "اكبر مصروف عندي ايه", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0003", "text": "فاضل كام في ميزانية الخروج", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0004", "text": "صرفت كام دولار في السفرية اللي فاتت؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0005", "text": "صرفت كام الشهر اللي فات", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0006", "text": "اشتريت دهب بكام من اول السنة لحد النهارده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0007", "text": "نزللي عائد كام من شهادة البنك الأهلي الشهر اللي فات؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0008", "text": "هو انا دفعت ال ٢٥٠ جنيه بتاعة البواب ولا مسجلتهاش؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0009", "text": "ال ٥٠٠ جنيه اللي اتخصمت امبارح كانت متسجلة في بند ايه؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0010", "text": "اجمالي اللي دفعته في البنزين وتغيير الزيت الشهر ده كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0011", "text": "بند السوبرماركت سحب مني كام الاسبوع ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0012", "text": "فواتير الكهربا والميه والغاز الشهر اللي فات كلفتني كام على بعض؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0013", "text": "محفظتي في ثاندر دخلتلي توزيعات ارباح كام لحد دلوقتي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0014", "text": "دفعت كام في كشوفات الدكاترة والأدوية الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0015", "text": "الفلوس اللي سلفتها لأخويا الشهر ده مجموعها كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0016", "text": "فاضل معايا سيولة كاش كام في المحفظة؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0017", "text": "مجموع اللي حولته على انستاباي الاسبوع ده وصل كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0018", "text": "اتبقى معايا كام من مرتب الشهر اللي فات قبل القبض الجديد؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0019", "text": "اقل شهر صرفت فيه فلوس السنة دي كان شهر ايه؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0020", "text": "طلبت من بريدفاست بكام الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0021", "text": "ايه المصاريف اللي سجلتها يوم الجمعة اللي فاتت كلها؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0022", "text": "دفعت كام اقساط لفاليو وسهولة من اول السنة؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0023", "text": "نسبة التحويش بتاعتي الشهر اللي فات طلعت كام في المية من دخلي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0024", "text": "ال 1200 جنيه اللي دفعتهم في مول مصر كانوا يوم ايه؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0025", "text": "كام عملية شرا عملتها بكارت الفيزا الاسبوع ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0026", "text": "مصاريف القهوة والعصاير بره البيت خدت كام من اول الشهر؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0027", "text": "وريني كده قائمة باخر ١٠ مصاريف دفعتها", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0028", "text": "جالي فلوس استرداد وكاش باك كام جنيه الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0029", "text": "دفعت كام في دروس الولاد والكتب الترم ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0030", "text": "هو انا عديت ميزانية المواصلات ولا لسه فاضل فيها؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0031", "text": "اجمالي الفلوس اللي حطيتها في الجمعيات السنة دي كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0032", "text": "صرفت كام في اجازة الساحل الصيف اللي فات؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0033", "text": "ايه اكتر محل اشتريت منه حاجات الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0034", "text": "فاتورة النت الارضي بتاعة الشهر اللي فات دفعتها بكام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0035", "text": "سحبت كاش من مكنة ال ATM كام مرة الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0036", "text": "الفرق بين دخلي ومصاريفي الشهر اللي فات كان كام جنيه؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0037", "text": "مصاريف صيانة الشقة والسباكة كلفتني كام اخر شهرين؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0038", "text": "دفعت كام على كورسات يوديمي وكورسيرا السنة دي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0039", "text": "رصيد حساب التوفير بتاعي عندك واصل كام دلوقتي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0040", "text": "انا صرفت كام النهارده من الصبح؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0041", "text": "مشاوير اندرايف وديدي كلفتني كام الاسبوع اللي فات؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0042", "text": "هو انا دفعت قسط العربية بتاع الشهر ده ولا لسه متسجلش؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0043", "text": "البونص اللي قبضته في شهر ٣ كان كام جنيه؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0044", "text": "صرفت كام في خروجة السينما والعشا يوم الخميس؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0045", "text": "اجمالي مصاريف السكن والايجار من اول السنة وصل كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0046", "text": "شحنت كارت الكهربا بكام في اخر ٣٠ يوم؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0047", "text": "ايه البنود اللي لسه مصرفناش منها حاجة الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0048", "text": "بعتت كام جنيه لأهلي على فودافون كاش الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0049", "text": "أغلى حاجة اشتريتها من أمازون ونون الشهر اللي فات كانت ايه وبكام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0050", "text": "مصاريف حجز ملاعب الكورة والبادل الشهر ده كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0051", "text": "دخللي كام من بيع الحاجات المستعملة على اوليكس؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0052", "text": "متوسط اللي بصرفه في الويك اند الواحد كام جنيه؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0053", "text": "هو انا عليا أقساط متأخرة متسجلة من الشهر اللي فات؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0054", "text": "دفعت كام في اشتراك الجيم والمدرب الشخصي اخر ٦ شهور؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0055", "text": "العيديات والهدايا اللي دفعتها في العيد كلفتني كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0056", "text": "قولي كده ملخص اللي دخل واللي خرج الاسبوع ده", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0057", "text": "المرتب اتصرف منه كام في المية لحد النهاردة؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0058", "text": "صرفت كام في ديفاكتو زارا وتاون تيم الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0059", "text": "حساب تحاليل المعمل والاشعة بتاعة الاسبوع اللي فات كان كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0060", "text": "ايه الفواتير اللي دفعتها عن طريق فوري الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0061", "text": "فاضل كام جنيه في ميزانية الطوارئ بتاعتي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0062", "text": "امتى اخر مرة فولت فيها العربية بنزين وكانت بكام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0063", "text": "مجموع اللي دفعته للسايس والجراجات الشهر ده وصل كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0064", "text": "هو انا حوشت اكتر الشهر ده ولا الشهر اللي قبله؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0065", "text": "المشتريات اللي دفعتها بالدولار الشهر ده مجموعها كام دولار؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0066", "text": "دفعت كام في الحلويات والمخبوزات الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0067", "text": "ايه اكبر ٣ مصاريف طارت فيهم الفلوس الاسبوع ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0068", "text": "سددت كام من مديونية الكريدت كارد الشهر اللي فات؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0069", "text": "قبضت كام اجمالي مرتبات وبونص في النص الاول من السنة؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0070", "text": "فاتورة التليفون وشحن الرصيد خدوا كام الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0071", "text": "كام جنيه اتصرفوا كاش من غير فيزا الاسبوع ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0072", "text": "هو انا سجلت مصروف الحلاق امبارح بكام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0073", "text": "مصاريف الترفيه والخروجات واخدة نسبة كام من مصاريفي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0074", "text": "دفعت كام في صيانة العربية وتغيير الكاوتش السنة دي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0075", "text": "جالي عيديات وهدايا كاش بكام في العيد اللي فات؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0076", "text": "اجمالي اللي دفعته في سعودي وسبينيس الشهر ده كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0077", "text": "فاضل عليا كام جنيه في السلفة اللي خدتها من اخويا؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0078", "text": "صرفت كام في اول ١٠ ايام من الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0079", "text": "الفلوس اللي حطيتها في صندوق فوري يومي مجموعها كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0080", "text": "تذاكر القطر وسوبر جيت كلفتني كام في السفريات الاخيرة؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0081", "text": "ايه العمليات اللي اتسجلت النهارده في بند الأكل؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0082", "text": "دفعت كام في ايكيا والنساجون الشرقيون لما فرشت الاوضة؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0083", "text": "هو انا صرفت حاجة من كارت تيلدا الاسبوع ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0084", "text": "مجموع المصاريف الثابتة اللي دفعتها الشهر ده وصل كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0085", "text": "كام مرة شحنت كارت المترو الشهر اللي فات وبكام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0086", "text": "الفرق بين مصاريف الأكل في البيت والدليفري الشهر ده كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0087", "text": "المرتجع بتاع زارا اللي نزل في الحساب كان كام جنيه؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0088", "text": "دفعت كام مخالفات وتجديد رخصة في المرور؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0089", "text": "وريني تفاصيل مصاريف شهر سبتمبر اللي فات", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0090", "text": "مجموع الفلوس اللي معايا في كل الحسابات والمحافظ كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0091", "text": "دفعت كام في بوابات وكارتة الطريق الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0092", "text": "هو انا اشتريت سبايك دهب كام جرام وبكام مجموعهم؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0093", "text": "مصاريف الفطار في الشغل كل يوم عملت كام اخر اسبوعين؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0094", "text": "ايه اخر دخل اتسجل عندي وكان يوم ايه؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0095", "text": "دفعت كام في بي تك وتريدلاين السنة دي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0096", "text": "ميزانية الشوبينج اتبقى فيها كام جنيه لحد دلوقتي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0097", "text": "صرفت كام امبارح بالليل وانا في وسط البلد؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0098", "text": "اجمالي الاشتراكات اللي اتخصمت بالدولار الشهر ده كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0099", "text": "دفعت كام تأمين شقة وعمولة سمسار لما نقلت؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0100", "text": "الفلوس اللي رجعتلي من التأمين الطبي مجموعها كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0101", "text": "اكتر اسبوع صرفت فيه في الشهر ده كان الاسبوع الكام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0102", "text": "دفعت كام على مستلزمات البيبي والحفاضات الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0103", "text": "هو انا سجلت تحويل الايجار بتاع الشهر ده ولا نسيت؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0104", "text": "اجمالي اللي صرفته في الكافيهات مع صحابي الشهر اللي فات كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0105", "text": "قبضت كام من الحصص والدروس الخصوصية الشهر ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0106", "text": "دفعت كام في العطار والخضري والفرارجي الاسبوع ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0107", "text": "ايه العمليات اللي عدت ال ١٠٠٠ جنيه في اخر شهر؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0108", "text": "مجموع اللي شلته في الحصالة وحساب التوفير الشهر ده كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0109", "text": "صرفت كام على الهدايا والمناسبات من اول السنة؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0110", "text": "حساب المكوجي والدراي كلين الشهر ده وصل كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0111", "text": "هو انا دفعت كام في تذكرتي والحفلات الصيف ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0112", "text": "فاضل كام في ميزانية الفواتير بعد ما دفعت النت؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0113", "text": "كمية الفلوس اللي طارت في الدليفري اخر ٣ شهور كام؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0114", "text": "دخللي كام ايجار من الشقة اللي مأجرها السنة دي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0115", "text": "دفعت كام في مكتبة سمير وعلي والشروق الترم ده؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0116", "text": "ال ٣٠٠ جنيه اللي صرفتهم الصبح اتسجلوا في انهي تصنيف؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0117", "text": "مصاريف اتحاد الملاك والاسانسير كلفتني كام السنة دي؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0118", "text": "شحنت محفظة فودافون كاش بكام الاسبوع اللي فات؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0119", "text": "قولي توتال المصاريف من يوم ١ ليوم ١٥ في الشهر", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0120", "text": "ايه اقل بند صرفت عليه فلوس الشهر اللي فات؟", "route": "spending_query", "dialect": "ar-eg"}
+{"id": "spending_query_0121", "text": "saraft kam el shahr elly fat kolo?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0122", "text": "akbar masroof 3andy el esboo3 da kan eh?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0123", "text": "dafa3t kam 3ala talabat w elmenus el shahr da?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0124", "text": "fadel kam fe mizaniyet el mosalat?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0125", "text": "eshtaret dahab b kam men awel el sana?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0126", "text": "saraft kam dollar fe el safareya elly fatet?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0127", "text": "egmaly el fawateer bta3et el kahraba w el ghaz kam?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0128", "text": "huwa ana sagelt qest valu beta3 el shahr da wala lesa?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0129", "text": "qabadt kam men el freelance a5er 3 shohoor?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0130", "text": "masareef el 3arabeya w el seyanah weslet kam el shahr da?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0131", "text": "eh a5er 3amaleyat sageltaha embare7?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0132", "text": "7awalt kam 3ala instapay el esboo3 elly fat?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0133", "text": "dafa3t kam fe Carrefour w Seoudi el shahr da?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0134", "text": "el 400 geneh elly etkhasamet elsob7 kanet bta3et eh?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0135", "text": "kam marra sha7ant kart el kahraba el shahr elly fat?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0136", "text": "nezely fawayed kam men shahadet el bank?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0137", "text": "masareef el gym w el dawa khadet kam el shahr da?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0138", "text": "etba2a ma3aya kam men moratab shahr 10?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0139", "text": "sa7abt kam cash men el ATM el esboo3 da?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0140", "text": "dafa3t kam fe lebs el sheta men Zara w Defacto?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0141", "text": "motawaset sarfy el youmy el esboo3 da kam?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0142", "text": "7atet kam fe el gam3eya لحد دلوقتي؟", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0143", "text": "salaft sa7by kam geneh el shahr elly fat?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0144", "text": "saraft kam fe el weekend elly fat 3ala el khorogat?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0145", "text": "galy cashback w refunds kam el shahr da?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0146", "text": "kol el eshterakat bta3et netflix w spotify sa7abet kam?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0147", "text": "ana 3adeet el budget bta3et el shopping wala lesa?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0148", "text": "dafa3t kam a2sat lel bank men awel el sana?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0149", "text": "saraft kam elnaharda l7ad delwa2ty?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0150", "text": "eh aktar youm saraft feeh floos el esboo3 elly fat?", "route": "spending_query", "dialect": "franco"}
+{"id": "spending_query_0151", "text": "صرفت كام على ال food delivery الأسبوع ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0152", "text": "ايه أكبر transaction سجلتها الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0153", "text": "فاضل كام في ال entertainment budget بتاعتي؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0154", "text": "ال total income اللي دخللي في Q3 كان كام EGP؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0155", "text": "دفعت كام على Uber و InDrive الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0156", "text": "وريني ال breakdown بتاع مصاريفي حسب ال category الشهر اللي فات", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0157", "text": "هو انا دفعت ال installment بتاع B.Tech ولا لسه؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0158", "text": "نزللي كام EGP أرباح من صناديق Thndr الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0159", "text": "صرفت كام في Starbucks و Cilantro آخر أسبوعين؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0160", "text": "ال average daily spending بتاعي الأسبوع ده وصل كام؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0161", "text": "كام جنيه رجعولي refunds من Amazon و Noon الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0162", "text": "مجموع ال transfers اللي عملتها على InstaPay الشهر اللي فات كام؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0163", "text": "ال savings rate بتاعي الشهر ده كام في المية من ال salary؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0164", "text": "دفعت كام USD في اشتراكات ال AI وال cloud الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0165", "text": "رصيد ال emergency fund عندي واصل كام جنيه دلوقتي؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0166", "text": "صرفت كام في Gourmet و Seoudi على ال groceries الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0167", "text": "ايه آخر 3 expenses اتخصموا من كارت Telda؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0168", "text": "سددت كام من ال credit card debt في آخر شهرين؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0169", "text": "مصاريف ال healthcare والصيدليات سحبت كام الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0170", "text": "هو انا عديت ال limit بتاع ميزانية الكافيهات ولا لسه؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0171", "text": "دخللي كام من ال bonus وال overtime الشهر اللي فات؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0172", "text": "دفعت كام على ال padel courts والجيم الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0173", "text": "ال utilities bills بتاعة الكهربا والنت خدت كام الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0174", "text": "اشتريت gold bars بكام جنيه من أول السنة؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0175", "text": "ال net savings بتاعتي في شهر أكتوبر كانت كام؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0176", "text": "كام transaction اتسجلت عندي الأسبوع ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0177", "text": "صرفت كام في ال weekend اللي فات في Mall of Egypt؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0178", "text": "مجموع أقساط Sympl و ValU اللي دفعتها الشهر ده كام؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0179", "text": "ايه ال category اللي صرفت فيها أقل فلوس الشهر ده؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0180", "text": "جالي كام EGP من Upwork بعد التحويل الشهر اللي فات؟", "route": "spending_query", "dialect": "mixed"}
+{"id": "spending_query_0181", "text": "how much did I spend on Uber this week", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0182", "text": "What was my biggest single expense this month?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0183", "text": "How much have I spent on coffee and cafes over the past two weeks?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0184", "text": "Show me my last 5 recorded transactions", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0185", "text": "How much freelance income did I earn in the last quarter?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0186", "text": "Did I pay my ValU installment this month or not yet?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0187", "text": "What is my total spending on utilities and bills so far this month?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0188", "text": "How much USD have I spent on online subscriptions this year?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0189", "text": "Compare my food delivery expenses from last month vs this month", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0190", "text": "How much money is remaining in my shopping budget?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0191", "text": "How much did I put into gold and certificates over the last 6 months?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0192", "text": "What is my average daily spending for this month?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0193", "text": "How much did I spend on fuel and car maintenance in September?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0194", "text": "How many times did I order from Talabat this month and what was the total?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0195", "text": "What percentage of my salary went to rent and housing this month?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0196", "text": "How much did I receive in refunds and cashback this month?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0197", "text": "List all expenses above 1000 EGP from the past 30 days", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0198", "text": "How much cash did I withdraw from ATMs this month?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0199", "text": "What was my net savings amount last month after all expenses?", "route": "spending_query", "dialect": "en"}
+{"id": "spending_query_0200", "text": "How much did I spend at pharmacies and doctors in the last three months?", "route": "spending_query", "dialect": "en"}

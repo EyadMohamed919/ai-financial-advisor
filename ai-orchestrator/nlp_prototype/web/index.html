@@ -22,14 +22,14 @@
   .app { max-width: 1100px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: 1fr 320px; gap: 16px; height: 100vh; }
   @media (max-width: 820px) { .app { grid-template-columns: 1fr; height: auto; } .chat { height: 75vh; } }
   .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; }
-  .chat { display: flex; flex-direction: column; min-height: 0; }
+  .chat { display: flex; flex-direction: column; min-height: 0; min-width: 0; }
   header { padding: 14px 18px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 8px; }
   header h1 { font-size: 17px; margin: 0; }
   header small { color: var(--muted); }
   .messages { flex: 1; overflow-y: auto; padding: 18px; display: flex; flex-direction: column; gap: 12px; }
-  .msg { max-width: 82%; padding: 10px 14px; border-radius: 14px; white-space: pre-wrap; word-wrap: break-word; }
+  .msg { max-width: 82%; padding: 10px 14px; border-radius: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
   .msg.user { align-self: flex-start; background: var(--user); color: var(--user-text); border-bottom-right-radius: 4px; }
-  .msg.bot { align-self: flex-end; background: var(--bot); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
+  .msg.bot { white-space: pre-line; align-self: flex-end; background: var(--bot); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
   .msg.error { border-color: var(--danger); color: var(--danger); }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
   .chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--text); }
@@ -40,8 +40,8 @@
   button:disabled { opacity: .45; cursor: default; }
   details { margin-top: 8px; font-size: 12px; color: var(--muted); }
   details pre { direction: ltr; text-align: left; white-space: pre-wrap; margin: 6px 0 0; }
-  .examples { padding: 10px 18px 0; display: flex; gap: 6px; flex-wrap: wrap; }
-  .examples button { font-size: 13px; padding: 4px 10px; border-radius: 999px; color: var(--muted); }
+  .examples { padding: 10px 18px 4px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: thin; }
+  .examples button { font-size: 13px; padding: 4px 10px; border-radius: 999px; color: var(--muted); white-space: nowrap; flex: none; }
   form { display: flex; gap: 8px; padding: 14px 18px; border-top: 1px solid var(--line); margin-top: 10px; }
   input { flex: 1; font: inherit; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); min-width: 0; }
   input:focus { outline: 2px solid var(--accent); border-color: transparent; }
@@ -89,7 +89,7 @@
 </div>
 <script>
 const EXAMPLES = ["انا اشتريت كوتشي نايك من مول مصر ب 1200 جنيه", "قبضت المرتب ١٥٠٠٠", "طلبت بيتزا من طلبات ب 320",
-  "دفعت ميتين جنيه بنزين", "اشتريت جاكيت جديد", "سلفت صاحبي ٥٠٠", "dafa3t 60 koshary", "الحلاق ١٥٠", "ازيك"];
+  "دفعت ميتين جنيه بنزين", "اشتريت جاكيت جديد", "سلفت صاحبي ٥٠٠", "dafa3t 60 koshary", "صرفت كام على الأكل الشهر ده؟", "اكبر مصروف عندي ايه", "هصرف كام الشهر ده؟", "الدولار بكام النهارده؟", "سهم CIB عامل ايه؟", "احوش ازاي من مرتبي؟", "امسح آخر حاجة", "مين هيكسب الماتش النهارده؟", "ازيك"];
 const TYPE_AR = {expense: "مصروف", income: "دخل", savings: "ادخار", transfer: "تحويل"};
 const CAT_AR = {Food: "أكل", Transport: "مواصلات", Housing: "سكن", Utilities: "فواتير", Subscriptions: "اشتراكات",
   Entertainment: "خروج وترفيه", Shopping: "مشتريات", Health: "صحة", Education: "تعليم", Debt: "أقساط وديون", Other: "أخرى",
@@ -129,7 +129,7 @@ function button(parent, label, primary, onClick) {
 
 async function ask(payload) {
   try {
-    const res = await fetch("/api/message", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(payload)});
+    const res = await fetch("/api/message", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({...payload, ledger})});
     const out = await res.json();
     if (out.error) throw new Error(out.error);
     renderBot(out);
@@ -142,6 +142,11 @@ function renderBot(out) {
   const el = bubble("bot", out.reply);
   const d = out.extracted_data || {};
   pendingDraft = null; $("hint").textContent = "";
+  if (out.route) {
+    const r = document.createElement("div"); r.className = "chips"; el.prepend(r);
+    chip(r, "🧭 " + out.route_ar + (out.route_confidence != null ? ` ${Math.round(out.route_confidence * 100)}%` : ""), out.route_confidence != null && out.route_confidence < 0.5);
+  }
+  if (out.action && out.action.type === "delete") { ledger = ledger.filter(x => x.id !== out.action.id); save(); renderLedger(); }
   if (d.type) {
     const chips = document.createElement("div"); chips.className = "chips"; el.appendChild(chips);
     chip(chips, TYPE_AR[d.type] || d.type);
@@ -175,7 +180,7 @@ function renderBot(out) {
 }
 
 function addToLedger(d) {
-  ledger.unshift({id: Date.now(), type: d.type, amount: d.amount, currency: d.currency, category: d.category,
+  ledger.unshift({id: Date.now(), date: new Date().toISOString().slice(0, 10), type: d.type, amount: d.amount, currency: d.currency, category: d.category,
                   label: d.item || d.merchant || CAT_AR[d.category] || ""});
   save(); renderLedger();
 }
@@ -213,7 +218,7 @@ function send(text) {
 $("form").onsubmit = e => { e.preventDefault(); send($("input").value); $("input").value = ""; $("input").focus(); };
 $("reset").onclick = () => { $("messages").innerHTML = ""; pendingDraft = null; $("hint").textContent = ""; greet(); };
 EXAMPLES.forEach(x => button($("examples"), x, false, () => send(x)));
-function greet() { bubble("bot", "أهلاً 👋 ابعتلي أي مصروف أو دخل بالمصري أو الفرانكو أو الإنجليزي، وأنا أطلّع المبلغ والفئة وأسجله. ولو ناقص حاجة هسألك."); }
+function greet() { bubble("bot", "أهلاً 👋 ابعتلي أي مصروف أو دخل بالمصري أو الفرانكو أو الإنجليزي، وأنا أسجله. وتقدر تسألني صرفت كام، أو تطلب توقع للشهر، أو أسعار العملات، أو نصيحة."); }
 greet(); renderLedger(); $("input").focus();
 </script>
 </body>
