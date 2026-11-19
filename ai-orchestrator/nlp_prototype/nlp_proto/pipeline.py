@@ -6,7 +6,8 @@
 - reply: fixed Egyptian-Arabic templates, so the bot never invents text
 
 The output matches the ERD: `extracted_data` is stored in chat_messages.extracted_data and
-`status` maps to chat_messages.extraction_status. Nothing is saved until the user confirms.
+`status` maps to chat_messages.extraction_status. A complete message is saved directly (`confirmed`);
+the bot only asks when the amount is missing or the category is uncertain.
 """
 from .amounts import extract_amount
 from .data import TX_INTENTS
@@ -87,6 +88,6 @@ class Assistant:
 
         data["missing"] = []
         details = " ".join(x for x in (data["item"], f"من {data['merchant']}" if data["merchant"] else None, data["date"]) if x)
-        reply = (f"تمام ✅ {TYPE_AR[intent]}: {_money(data['amount'], data['currency'])} – {CATEGORY_AR[data['category']]}"
-                 f"{f' ({details})' if details else ''}. أسجله؟")
-        return {"status": "pending_confirmation", "extracted_data": data, "reply": reply}
+        reply = (f"اتسجل ✅ {TYPE_AR[intent]}: {_money(data['amount'], data['currency'])} – {CATEGORY_AR[data['category']]}"
+                 f"{f' ({details})' if details else ''}")
+        return {"status": "confirmed", "extracted_data": data, "reply": reply}

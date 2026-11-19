@@ -4,13 +4,13 @@ This prototype turns a chat message like
 
 > انا اشتريت كوتشي نايك من مول مصر ب 1200 جنيه
 
-into a structured transaction and a confirmation reply:
+into a structured transaction and a reply:
 
 ```json
 {"intent": "log_expense", "amount": 1200, "currency": "EGP", "category": "Shopping",
  "category_confidence": 0.949, "item": "كوتشي نايك", "merchant": "مول مصر", "missing": []}
 ```
-> تمام ✅ مصروف: 1,200 جنيه – مشتريات (كوتشي نايك من مول مصر). أسجله؟
+> اتسجل ✅ مصروف: 1,200 جنيه – مشتريات (كوتشي نايك من مول مصر)
 
 The goal is to find the best **lightweight, free, CPU-only** approach before building the real service. No LLM API is used.
 
@@ -62,7 +62,7 @@ message → amount: rules → intent + category: TF-IDF → item/merchant/date: 
 
 - If the amount is missing → `needs_info`: "تمام، جاكيت جديد كان بكام؟"
 - If category confidence < 0.5 → `needs_info`: the bot asks for the category instead of guessing
-- Otherwise → `pending_confirmation`: the bot shows a summary and saves only after the user confirms
+- Otherwise → `confirmed`: the transaction is saved directly and the bot replies with a summary
 
 `status` and `extracted_data` map directly to `chat_messages.extraction_status` and `chat_messages.extracted_data` in the ERD.
 
@@ -71,7 +71,7 @@ message → amount: rules → intent + category: TF-IDF → item/merchant/date: 
 `python -m nlp_proto.web` opens a small Arabic (RTL) chat page for trying the pipeline:
 
 - Every reply shows the extracted type, amount, category with its confidence, item and merchant, plus the raw JSON.
-- **تأكيد / إلغاء** buttons. Confirmed transactions appear in the side panel with income, expense and balance totals. They are stored in the browser's localStorage only.
+- Complete messages are saved directly, with no confirmation step. They appear in the side panel with income, expense and balance totals, and each one can be deleted. They are stored in the browser's localStorage only.
 - When the amount is missing, the next message is treated as the answer ("اشتريت جاكيت جديد" → "ب ١٨٥٠").
 - When category confidence is low, the bot shows category buttons instead of guessing.
 
@@ -102,7 +102,7 @@ nlp_proto/evaluate.py       trains and compares A, B and C
 nlp_proto/pipeline.py       recommended pipeline + reply templates
 nlp_proto/chat.py           terminal demo
 nlp_proto/web.py            local web server for the chat UI (standard library only)
-web/index.html              chat UI: confirm/cancel, category buttons, amount follow-up, saved transactions
+web/index.html              chat UI: category buttons, amount follow-up, saved transactions
 results/                    latest comparison output
 ```
 
