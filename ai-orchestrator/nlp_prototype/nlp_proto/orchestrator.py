@@ -8,7 +8,10 @@
                      ├─► manage         → undo / delete
                      └─► greeting, out_of_scope, unsure → fixed replies
 """
+import re
+
 from . import handlers
+from .normalize import normalize
 from .pipeline import Assistant
 from .router import ROUTE_AR, Router
 
@@ -24,6 +27,9 @@ class Orchestrator:
             out = self.assistant.follow_up(draft, text=text, category=category)
             return {**out, "route": "transaction", "route_ar": ROUTE_AR["transaction"], "route_confidence": None}
 
+        if re.search(handlers.IDENTITY_RE, normalize(text)):  # "انت جيميناي؟" whatever route the model picks
+            return {"route": "greeting", "route_ar": ROUTE_AR["greeting"], "route_confidence": None,
+                    "status": "not_applicable", "reply": handlers.IDENTITY_REPLY, "extracted_data": {"identity_question": True}}
         r = self.router.predict(text)
         route = r["route"]
         meta = {"route": route, "route_ar": ROUTE_AR[route], "route_confidence": round(r["confidence"], 3)}
@@ -35,7 +41,8 @@ class Orchestrator:
                 return {**meta, **out}
             return {**meta, **out}
         if route == "greeting":
-            return {**meta, "status": "not_applicable", "reply": handlers.GREETING_REPLY, "extracted_data": {}}
+            result = handlers.greeting(text)
+            return {**meta, "status": "not_applicable", "reply": result["reply"], "extracted_data": result["data"]}
         if route == "out_of_scope":
             return {**meta, "status": "not_applicable", "reply": handlers.OUT_OF_SCOPE_REPLY, "extracted_data": {}}
         result = getattr(handlers, route)(text, ledger)

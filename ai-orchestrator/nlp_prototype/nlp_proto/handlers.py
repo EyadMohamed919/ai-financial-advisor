@@ -129,6 +129,7 @@ CURRENCIES = [("USD", r"دولار|usd|\$|dollar|dolar"), ("EUR", r"يورو|eur
               ("GBP", r"استرليني|باوند|gbp|sterling"), ("AED", r"درهم|aed|dirham"), ("KWD", r"دينار|kwd|dinar")]
 OTHER_ASSETS = [("stocks", r"سهم|اسهم|البورصه|egx|stock|share|اسهمي"), ("gold", r"دهب|ذهب|gold|عيار"),
                 ("inflation", r"تضخم|inflation"), ("interest", r"فايده|فائده|فوايد|شهاده|شهادات|interest|cbe|المركزي")]
+FX_WORDS = r"سعر الصرف|العمله|العملات|عمله|exchange|fx|forex"
 ASSET_AR = {"stocks": "أسعار الأسهم والبورصة", "gold": "أسعار الدهب", "inflation": "أرقام التضخم", "interest": "أسعار الفايدة والشهادات"}
 _rates_cache = {"at": 0, "data": None}
 
@@ -153,7 +154,14 @@ def market(text, ledger=None, today=None):
     parts, data = [], {"source": None}
     currencies = [code for code, pat in CURRENCIES if re.search(pat, t)]
     assets = [a for a, pat in OTHER_ASSETS if re.search(pat, t)]
-    if currencies or not assets:
+    fx_question = bool(currencies) or bool(re.search(FX_WORDS, t))
+    if not currencies and not assets and not fx_question:
+        # A price question about something we have no data for (a car, a phone...): say so instead of
+        # answering with an unrelated exchange rate.
+        parts.append("مقدرش أجيب سعر الحاجة دي دلوقتي 🙏 البيانات المتاحة في النسخة التجريبية هي أسعار العملات بس "
+                     "(جرّب: «الدولار بكام؟»).")
+        data["unknown_asset"] = True
+    if fx_question:
         rates = _usd_rates()
         if rates:
             egp = rates["rates"]["EGP"]
@@ -169,7 +177,7 @@ def market(text, ledger=None, today=None):
     for a in assets:
         parts.append(f"{ASSET_AR[a]} لسه مش متوصلة في النسخة التجريبية.")
     data["assets_requested"] = assets
-    if assets and llm.enabled():
+    if (assets or data.get("unknown_asset")) and llm.enabled():
         answer = llm.generate(
             f"سؤال المستخدم: {text}",
             "انت مساعد مالي مصري. اشرح بالعامية المصرية في 3 جمل بالكتير المفاهيم العامة اللي تساعد المستخدم يفهم السؤال. "
@@ -219,6 +227,17 @@ def manage(text, ledger, today=None):
     last = ledger[0]
     return {"reply": f"مسحت آخر معاملة: {last.get('label') or CATEGORY_AR.get(last['category'], '')} – {_money(last['amount'], last.get('currency', 'EGP'))} ↩️",
             "data": {"deleted": last}, "action": {"type": "delete", "id": last.get("id")}}
+
+
+IDENTITY_RE = r"انت مين|انت ايه|مين انت|انت بوت|بوت ولا|جيميناي|جيمناي|gemini|chatgpt|شات جي بي تي|who are you|what are you|are you (?:a )?(?:bot|ai|gemini|human)|enta meen|inta meen"
+IDENTITY_REPLY = ("أنا المساعد المالي بتاع المشروع 🤖، نسخة تجريبية. بفهم رسايلك بموديلات صغيرة متدربة على مصاريف بالمصري، "
+                  "مش Gemini ولا ChatGPT. الـ LLM (Gemini) بيتستخدم بس في النصايح وشرح أسئلة الأسواق لو متوصل.")
+
+
+def greeting(text, ledger=None, today=None):
+    if re.search(IDENTITY_RE, normalize(text)):
+        return {"reply": IDENTITY_REPLY, "data": {"identity_question": True}}
+    return {"reply": GREETING_REPLY, "data": {}}
 
 
 GREETING_REPLY = "أهلاً بيك 👋 أقدر أسجلك مصاريفك ودخلك، وأقولك صرفت كام، وأتوقع مصاريف الشهر، وأديك أسعار العملات ونصايح بسيطة."
