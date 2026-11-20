@@ -1,7 +1,8 @@
 """Optional LLM call (Google Gemini REST API, standard library only).
 
-Set GEMINI_API_KEY (and optionally GEMINI_MODEL) to enable it. Without a key, callers get None and
-fall back to a fixed reply, so the prototype runs fully offline.
+Set GEMINI_API_KEY (and optionally GEMINI_MODEL) to enable it, either as environment variables or in a
+`.env` file in the nlp_prototype folder (git-ignored). Without a key, callers get None and fall back to a
+fixed reply, so the prototype runs fully offline.
 """
 import json
 import os
@@ -9,6 +10,22 @@ import urllib.error
 import urllib.request
 
 DEFAULT_MODEL = "gemini-2.5-flash"
+ENV_FILE = os.path.join(os.path.dirname(__file__), "..", ".env")
+
+
+def _load_env_file():
+    """Read KEY=VALUE lines from nlp_prototype/.env. Real environment variables take priority."""
+    if not os.path.exists(ENV_FILE):
+        return
+    with open(ENV_FILE, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, value = line.split("=", 1)
+                os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+_load_env_file()
 
 
 def enabled():

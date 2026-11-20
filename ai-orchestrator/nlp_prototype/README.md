@@ -88,7 +88,7 @@ Before anything is extracted, `router.py` decides what the message is for. A sec
 
 Router accuracy on 403 held-out messages: **87.3%** (details in [results/router_results.md](results/router_results.md)). The weakest route is `out_of_scope` at 60%: off-topic questions are often mistaken for advice or spending queries, so it needs more examples.
 
-**LLM:** optional. Set `GEMINI_API_KEY`, and optionally `GEMINI_MODEL` (default `gemini-2.5-flash`), before starting the server. Without a key everything runs offline with rule-based replies. The LLM receives only per-category totals, never raw messages or merchants (FR-029). The Gemini call (`llm.py`) has not been tested yet, because no API key was available.
+**LLM:** optional. Copy `.env.example` to `.env` and put your key in `GEMINI_API_KEY=` (get one at https://aistudio.google.com/apikey); `.env` is git-ignored. Environment variables also work. Optionally set `GEMINI_MODEL` (default `gemini-2.5-flash`). Restart the server after changing the key. Without a key everything runs offline with rule-based replies. The LLM receives only per-category totals, never raw messages or merchants (FR-029). The Gemini call (`llm.py`) has not been tested yet, because no API key was available.
 
 **Stocks, gold, inflation and interest rates** have no data source yet. The bot says so plainly instead of guessing.
 
