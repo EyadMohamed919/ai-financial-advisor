@@ -32,23 +32,36 @@ def enabled():
     return bool(os.environ.get("GEMINI_API_KEY"))
 
 
-def generate(prompt, system, timeout=20):
-    """Return the model's text, or None if the LLM is not configured or the call fails."""
+def generate(prompt, system, timeout=40, search=False):
+    """Return the model's text, or None if the LLM is not configured or the call fails.
+
+    search=True lets Gemini ground the answer with Google Search (for current prices); the source
+    sites are appended to the text.
+    """
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         return None
     model = os.environ.get("GEMINI_MODEL", DEFAULT_MODEL)
-    body = json.dumps({
+    body = {
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.4, "maxOutputTokens": 600},
-    }).encode("utf-8")
+        "generationConfig": {"temperature": 0.4, "maxOutputTokens": 1024, "thinkingConfig": {"thinkingBudget": 0}},
+    }
+    if search:
+        body["tools"] = [{"google_search": {}}]
     req = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-        data=body, headers={"Content-Type": "application/json", "x-goog-api-key": key}, method="POST")
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json", "x-goog-api-key": key}, method="POST")
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-        return "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"]).strip() or None
+        candidate = data["candidates"][0]
+        text = "".join(p.get("text", "") for p in candidate["content"]["parts"]).strip()
+        sites = [c.get("web", {}).get("title") for c in candidate.get("groundingMetadata", {}).get("groundingChunks", [])]
+        sites = list(dict.fromkeys(s for s in sites if s))[:4]
+        if text and sites:
+            text += "\nالمصادر: " + "، ".join(sites)
+        return text or None
     except (urllib.error.URLError, KeyError, IndexError, ValueError, TimeoutError):
         return None

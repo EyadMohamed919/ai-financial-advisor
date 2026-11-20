@@ -78,7 +78,7 @@
     </form>
   </section>
   <aside class="panel">
-    <h2>المعاملات المسجلة</h2>
+    <h2>المعاملات المسجلة <small style="font-weight:normal;color:var(--muted)">(قاعدة البيانات)</small></h2>
     <div class="totals">
       <div class="total"><b id="tIncome">0</b><span>دخل</span></div>
       <div class="total"><b id="tExpense">0</b><span>مصروفات</span></div>
@@ -89,17 +89,32 @@
 </div>
 <script>
 const EXAMPLES = ["انا اشتريت كوتشي نايك من مول مصر ب 1200 جنيه", "قبضت المرتب ١٥٠٠٠", "طلبت بيتزا من طلبات ب 320",
-  "دفعت ميتين جنيه بنزين", "اشتريت جاكيت جديد", "سلفت صاحبي ٥٠٠", "dafa3t 60 koshary", "صرفت كام على الأكل الشهر ده؟", "اكبر مصروف عندي ايه", "هصرف كام الشهر ده؟", "الدولار بكام النهارده؟", "سهم CIB عامل ايه؟", "احوش ازاي من مرتبي؟", "امسح آخر حاجة", "مين هيكسب الماتش النهارده؟", "ازيك"];
+  "دفعت ميتين جنيه بنزين", "اشتريت جاكيت جديد", "سلفت صاحبي ٥٠٠", "dafa3t 60 koshary", "صرفت كام على الأكل الشهر ده؟", "اكبر مصروف عندي ايه", "هصرف كام الشهر ده؟", "الدولار بكام النهارده؟", "ايه هو سعر ال nissan magnite ؟", "سهم CIB عامل ايه؟", "اقدر اشتري عربية ماجنايت بمصاريفي دي؟", "احوش ازاي من مرتبي؟", "امسح آخر حاجة", "مين هيكسب الماتش النهارده؟", "ازيك"];
 const TYPE_AR = {expense: "مصروف", income: "دخل", savings: "ادخار", transfer: "تحويل"};
 const CAT_AR = {Food: "أكل", Transport: "مواصلات", Housing: "سكن", Utilities: "فواتير", Subscriptions: "اشتراكات",
   Entertainment: "خروج وترفيه", Shopping: "مشتريات", Health: "صحة", Education: "تعليم", Debt: "أقساط وديون", Other: "أخرى",
   Salary: "مرتب", Freelance: "فريلانس", Gift: "هدية", Refund: "مرتجع", Savings: "ادخار", Transfer: "تحويل", Lending: "سلفة"};
 const $ = id => document.getElementById(id);
 let pendingDraft = null;  // a needs_info draft waiting for the user's amount
-let ledger = load();
+let ledger = [];  // the user's transactions, always loaded from the server's database
 
-function load() { try { return JSON.parse(localStorage.getItem("ledger") || "[]"); } catch { return []; } }
-function save() { try { localStorage.setItem("ledger", JSON.stringify(ledger)); } catch {} }
+async function api(path, body) {
+  const res = await fetch(path, body === undefined ? {} : {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)});
+  const out = await res.json();
+  if (out.error) throw new Error(out.error);
+  return out;
+}
+
+async function loadLedger() {
+  let out = await api("/api/ledger");
+  let old = [];
+  try { old = JSON.parse(localStorage.getItem("ledger") || "[]"); } catch {}
+  if (!out.ledger.length && old.length) {  // move entries saved by the older browser-only version into the DB
+    out = await api("/api/import", {ledger: old});
+  }
+  try { localStorage.removeItem("ledger"); } catch {}
+  ledger = out.ledger; renderLedger();
+}
 const fmt = (n, cur) => n.toLocaleString("en-US", {maximumFractionDigits: 2}) + (cur === "USD" ? " $" : " ج");
 
 function bubble(cls, text) {
@@ -129,10 +144,9 @@ function button(parent, label, primary, onClick) {
 
 async function ask(payload) {
   try {
-    const res = await fetch("/api/message", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({...payload, ledger})});
-    const out = await res.json();
-    if (out.error) throw new Error(out.error);
+    const out = await api("/api/message", payload);
     renderBot(out);
+    if (out.ledger) { ledger = out.ledger; renderLedger(); }
   } catch (e) {
     bubble("bot error", "حصلت مشكلة في السيرفر: " + e.message);
   }
@@ -146,7 +160,6 @@ function renderBot(out) {
     const r = document.createElement("div"); r.className = "chips"; el.prepend(r);
     chip(r, "🧭 " + out.route_ar + (out.route_confidence != null ? ` ${Math.round(out.route_confidence * 100)}%` : ""), out.route_confidence != null && out.route_confidence < 0.5);
   }
-  if (out.action && out.action.type === "delete") { ledger = ledger.filter(x => x.id !== out.action.id); save(); renderLedger(); }
   if (d.type) {
     const chips = document.createElement("div"); chips.className = "chips"; el.appendChild(chips);
     chip(chips, TYPE_AR[d.type] || d.type);
@@ -159,9 +172,8 @@ function renderBot(out) {
     if (d.person) chip(chips, "👤 " + d.person);
   }
   const actions = document.createElement("div"); actions.className = "actions";
-  if (out.status === "confirmed") {
-    addToLedger(d);  // complete messages are saved directly; wrong entries can be deleted from the list
-  } else if (out.status === "needs_info" && out.category_options) {
+  if (d.llm) chip(el.querySelector(".chips") || el, "✨ Gemini");
+  if (out.status === "needs_info" && out.category_options) {
     out.category_options.forEach(o => button(actions, o.label, o.value === d.category, () => {
       [...actions.children].forEach(b => b.disabled = true);
       bubble("user", o.label);
@@ -179,12 +191,6 @@ function renderBot(out) {
   $("messages").scrollTop = $("messages").scrollHeight;
 }
 
-function addToLedger(d) {
-  ledger.unshift({id: Date.now(), date: new Date().toISOString().slice(0, 10), type: d.type, amount: d.amount, currency: d.currency, category: d.category,
-                  label: d.item || d.merchant || CAT_AR[d.category] || ""});
-  save(); renderLedger();
-}
-
 function renderLedger() {
   const ul = $("ledger"); ul.innerHTML = "";
   let income = 0, expense = 0;
@@ -194,12 +200,12 @@ function renderLedger() {
     const li = document.createElement("li");
     const info = document.createElement("div");
     info.textContent = t.label || TYPE_AR[t.type];
-    const sub = document.createElement("small"); sub.textContent = `${TYPE_AR[t.type]} · ${CAT_AR[t.category] || t.category}`;
+    const sub = document.createElement("small"); sub.textContent = `${TYPE_AR[t.type]} · ${CAT_AR[t.category] || t.category}${t.merchant ? " · " + t.merchant : ""} · ⁦${t.date}⁩`;
     info.appendChild(sub);
     const amt = document.createElement("span");
     amt.className = "amt " + t.type; amt.textContent = (t.type === "income" ? "+" : "−") + fmt(t.amount, t.currency);
     li.append(info, amt);
-    button(li, "حذف", false, () => { ledger = ledger.filter(x => x.id !== t.id); save(); renderLedger(); });
+    button(li, "حذف", false, async () => { ledger = (await api("/api/delete", {id: t.id})).ledger; renderLedger(); });
     ul.appendChild(li);
   });
   if (!ledger.length) ul.innerHTML = '<li class="empty" style="border:0">لسه مفيش معاملات. جرّب مثال من تحت الشات.</li>';
@@ -219,7 +225,7 @@ $("form").onsubmit = e => { e.preventDefault(); send($("input").value); $("input
 $("reset").onclick = () => { $("messages").innerHTML = ""; pendingDraft = null; $("hint").textContent = ""; greet(); };
 EXAMPLES.forEach(x => button($("examples"), x, false, () => send(x)));
 function greet() { bubble("bot", "أهلاً 👋 ابعتلي أي مصروف أو دخل بالمصري أو الفرانكو أو الإنجليزي، وأنا أسجله. وتقدر تسألني صرفت كام، أو تطلب توقع للشهر، أو أسعار العملات، أو نصيحة."); }
-greet(); renderLedger(); $("input").focus();
+greet(); loadLedger(); $("input").focus();
 </script>
 </body>
 </html>

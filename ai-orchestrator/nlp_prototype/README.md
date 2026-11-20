@@ -77,8 +77,8 @@ Before anything is extracted, `router.py` decides what the message is for. A sec
 | `transaction` | اشتريت لاب ب 5000 | transaction pipeline above (Classifier) | FR-010–FR-012 |
 | `spending_query` | صرفت كام على الأكل الشهر ده؟ | computed from the user's records | FR-018 |
 | `forecast` | هصرف كام الشهر ده؟ | run-rate projection; needs at least 5 records | FR-022 |
-| `market` | الدولار بكام؟ / سهم CIB؟ | live exchange rates (open.er-api.com) + optional LLM for concepts; falls back cleanly when offline | FR-023, NFR-P03 |
-| `advice` | احوش ازاي من مرتبي؟ | LLM with an aggregated summary only, or built-in rules without an LLM | FR-022, FR-029 |
+| `market` | الدولار بكام؟ / سهم CIB؟ | live exchange rates (open.er-api.com); any other price (stocks, gold, cars, phones) goes to Gemini with Google Search, which cites its sources; falls back cleanly when offline | FR-023, NFR-P03 |
+| `advice` | احوش ازاي من مرتبي؟ | Gemini with the user's transactions from the database (latest 60) plus Google Search for prices; built-in rules without an LLM | FR-022, FR-029 |
 | `manage` | امسح آخر حاجة | deletes the last entry | FR-016 |
 | `greeting`, `out_of_scope` | ازيك / مين هيكسب الماتش؟ | fixed replies | – |
 
@@ -88,16 +88,16 @@ Before anything is extracted, `router.py` decides what the message is for. A sec
 
 Router accuracy on 403 held-out messages: **87.3%** (details in [results/router_results.md](results/router_results.md)). The weakest route is `out_of_scope` at 60%: off-topic questions are often mistaken for advice or spending queries, so it needs more examples.
 
-**LLM:** optional. Copy `.env.example` to `.env` and put your key in `GEMINI_API_KEY=` (get one at https://aistudio.google.com/apikey); `.env` is git-ignored. Environment variables also work. Optionally set `GEMINI_MODEL` (default `gemini-2.5-flash`). Restart the server after changing the key. Without a key everything runs offline with rule-based replies. The LLM receives only per-category totals, never raw messages or merchants (FR-029). The Gemini call (`llm.py`) has not been tested yet, because no API key was available.
+**LLM:** optional. Copy `.env.example` to `.env` and put your key in `GEMINI_API_KEY=` (get one at https://aistudio.google.com/apikey); `.env` is git-ignored. Environment variables also work. Optionally set `GEMINI_MODEL` (default `gemini-2.5-flash`). Restart the server after changing the key. Without a key, everything runs offline with rule-based replies. With a key, Gemini (`gemini-2.5-flash`, tested) answers advice, price questions, and off-topic or uncertain messages, using Google Search grounding. Under FR-029 it receives only the current user's own transaction fields (date, type, amount, category, item, merchant), never credentials.
 
-**Stocks, gold, inflation and interest rates** have no data source yet. The bot says so plainly instead of guessing.
+**Prices** come from Gemini with Google Search, which shows its source sites, because there is no dedicated market-data API yet. Without an LLM key, the bot says the data is unavailable instead of guessing. Exchange rates always come from open.er-api.com.
 
 ## Chat UI
 
 `python -m nlp_proto.web` opens a small Arabic (RTL) chat page for trying the pipeline:
 
 - Every reply shows the extracted type, amount, category with its confidence, item and merchant, plus the raw JSON.
-- Complete messages are saved directly, with no confirmation step. They appear in the side panel with income, expense and balance totals, and each one can be deleted. They are stored in the browser's localStorage only.
+- Complete messages are saved directly, with no confirmation step. They appear in the side panel with income, expense and balance totals, and each one can be deleted. They are stored in a local SQLite database (`data/app.db`, git-ignored; table shaped like the ERD's `transactions`). Entries saved by the older, browser-only version are imported once on load.
 - When the amount is missing, the next message is treated as the answer ("اشتريت جاكيت جديد" → "ب ١٨٥٠").
 
 ## Run it
@@ -131,7 +131,8 @@ data/router/*.jsonl         router training data (new messages per route + route
 nlp_proto/router.py         message router (TF-IDF + logistic regression) and its evaluation
 nlp_proto/orchestrator.py   routes each message to the right handler
 nlp_proto/handlers.py       spending queries, forecast, market data, advice, undo
-nlp_proto/llm.py            optional Gemini call (needs GEMINI_API_KEY)
+nlp_proto/llm.py            optional Gemini call with Google Search grounding (key in .env)
+nlp_proto/db.py             SQLite storage for transactions (single demo user)
 scripts/validate_router_data.py  format checks for data/router
 nlp_proto/chat.py           terminal demo
 nlp_proto/web.py            local web server for the chat UI (standard library only)

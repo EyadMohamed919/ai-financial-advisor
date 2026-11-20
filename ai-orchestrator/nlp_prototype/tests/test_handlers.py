@@ -1,7 +1,10 @@
 import datetime as dt
+import os
 import unittest
 
-from nlp_proto import handlers
+os.environ["GEMINI_API_KEY"] = ""  # tests run offline; an empty value also blocks the key in .env
+
+from nlp_proto import handlers  # noqa: E402
 
 TODAY = dt.date(2026, 11, 19)
 LEDGER = [
