@@ -7,6 +7,7 @@ import os
 import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
+from . import db
 from .orchestrator import Orchestrator
 
 STATIC = os.path.join(os.path.dirname(__file__), "..", "web", "index.html")
@@ -15,6 +16,10 @@ bot = None
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        self.path = self.path.split("?", 1)[0]  # "/?" (a form submitted before the page's script loaded) is "/"
+        if self.path == "/api/ledger":
+            self._json({"ledger": db.ledger()})
+            return
         if self.path not in ("/", "/index.html"):
             self.send_error(404)
             return
@@ -23,16 +28,29 @@ class Handler(BaseHTTPRequestHandler):
         self._send(200, body, "text/html; charset=utf-8")
 
     def do_POST(self):
-        if self.path != "/api/message":
-            self.send_error(404)
-            return
         try:
             req = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
-            out = bot.handle(req.get("text", ""), ledger=req.get("ledger"), draft=req.get("draft"),
-                             category=req.get("category"))
-            self._send(200, json.dumps(out, ensure_ascii=False, default=str).encode("utf-8"), "application/json")
+            self.path = self.path.split("?", 1)[0]
+            if self.path == "/api/message":  # the ledger always comes from the database, never from the browser
+                out = bot.handle(req.get("text", ""), draft=req.get("draft"), category=req.get("category"))
+                self._json({**out, "ledger": db.ledger()})
+            elif self.path == "/api/delete":
+                db.delete(int(req["id"]))
+                self._json({"ledger": db.ledger()})
+            elif self.path == "/api/import":  # one-time move of entries saved by the older, browser-only UI
+                if not db.ledger():
+                    for e in req.get("ledger", []):
+                        db.add({"type": e["type"], "amount": e["amount"], "currency": e.get("currency"),
+                                "category": e["category"], "item": e.get("label")}, e.get("label") or "", date=e.get("date"),
+                               source="import")
+                self._json({"ledger": db.ledger()})
+            else:
+                self.send_error(404)
         except Exception as ex:  # keep the demo alive and show the error in the page
             self._send(500, json.dumps({"error": str(ex)}).encode("utf-8"), "application/json")
+
+    def _json(self, obj):
+        self._send(200, json.dumps(obj, ensure_ascii=False, default=str).encode("utf-8"), "application/json")
 
     def _send(self, code, body, content_type):
         self.send_response(code)

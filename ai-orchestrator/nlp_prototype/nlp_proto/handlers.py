@@ -179,11 +179,13 @@ def market(text, ledger=None, today=None):
     data["assets_requested"] = assets
     if (assets or data.get("unknown_asset")) and llm.enabled():
         answer = llm.generate(
-            f"سؤال المستخدم: {text}",
-            "انت مساعد مالي مصري. اشرح بالعامية المصرية في 3 جمل بالكتير المفاهيم العامة اللي تساعد المستخدم يفهم السؤال. "
-            "ممنوع تذكر أي أسعار أو أرقام حالية لأنك مش متأكد منها، وممنوع توصي بشراء أو بيع أصل معين.")
+            f"النهارده {dt.date.today().isoformat()}. سؤال المستخدم: {text}",
+            "انت مساعد مالي مصري. دوّر على المعلومة أو السعر الحالي في مصر ورد بالعامية المصرية في 3 جمل بالكتير، "
+            "واذكر إن الأسعار بتتغير. ماتوصيش بشراء أو بيع أصل معين.",
+            search=True)
         if answer:
-            parts.append(answer)
+            # The LLM answered, so drop the "no data" notices it replaces.
+            parts = [p for p in parts if "مش متوصلة" not in p and "مقدرش أجيب" not in p] + [answer]
             data["llm"] = True
     return {"reply": "\n".join(parts) + "\n" + DISCLAIMER, "data": data}
 
@@ -192,16 +194,23 @@ def market(text, ledger=None, today=None):
 def advice(text, ledger, today=None):
     today = today or dt.date.today()
     month, income, by_cat = _month_summary(ledger or [], today)
-    # Only aggregated numbers go to the LLM: no raw messages, merchants or personal details (FR-029).
     summary = {"income_this_month": income, "expenses_by_category_this_month": {CATEGORY_AR.get(k, k): v for k, v in by_cat.items()},
                "transactions_recorded": len(ledger or [])}
-    data = {"summary_sent_to_llm": summary, "llm": False}
+    # The user's own records from the database (FR-029: only this user's data, only the fields needed;
+    # no account details or credentials). Capped at the latest 60 to keep the prompt small.
+    records = [{k: e.get(k) for k in ("date", "type", "amount", "currency", "category", "item", "merchant")}
+               for e in (ledger or [])[:60]]
+    data = {"summary_sent_to_llm": summary, "records_sent_to_llm": len(records), "llm": False}
     answer = None
     if llm.enabled():
         answer = llm.generate(
-            f"سؤال المستخدم: {text}\nملخص بياناته (بالجنيه): {json.dumps(summary, ensure_ascii=False)}",
-            "انت مساعد مالي مصري لمستخدمين معلوماتهم المالية بسيطة. رد بالعامية المصرية في 4 جمل بالكتير، "
-            "بنصايح عملية ومحددة مبنية على الملخص لو مفيد. ماتوصيش بمنتجات استثمار معينة ولا تقول أرقام سوق.")
+            f"النهارده {today.isoformat()}.\nسؤال المستخدم: {text}\n"
+            f"ملخص الشهر ده (بالجنيه): {json.dumps(summary, ensure_ascii=False)}\n"
+            f"معاملاته المسجلة (الأحدث الأول): {json.dumps(records, ensure_ascii=False)}",
+            "انت مساعد مالي مصري لمستخدمين معلوماتهم المالية بسيطة. استخدم معاملات المستخدم عشان تقرر وتنصح بشكل محدد "
+            "(اذكر أرقام من مصاريفه). لو السؤال محتاج سعر حاجة، دوّر على السعر الحالي في مصر. "
+            "رد بالعامية المصرية في 6 جمل بالكتير، ومن غير ما توصي بشراء سهم أو منتج استثماري بعينه.",
+            search=True)
         data["llm"] = bool(answer)
     if not answer:
         if len(ledger or []) >= MIN_TRANSACTIONS and by_cat:
@@ -215,6 +224,17 @@ def advice(text, ledger, today=None):
         if not llm.enabled():
             data["note"] = "LLM not configured (set GEMINI_API_KEY); this is the built-in rule-based advice."
     return {"reply": answer + "\n" + DISCLAIMER, "data": data}
+
+
+# ---------- general questions (out_of_scope / unsure), only when an LLM is configured ----------
+def general(text, ledger=None, today=None):
+    answer = llm.generate(
+        f"النهارده {dt.date.today().isoformat()}. رسالة المستخدم: {text}",
+        "انت مساعد مالي مصري جوه تطبيق لإدارة المصاريف. رد على الرسالة باختصار بالعامية المصرية (3 جمل بالكتير)، "
+        "ولو ليها علاقة بالفلوس وضّح إزاي التطبيق يساعده.", search=True)
+    if not answer:
+        return {"reply": OUT_OF_SCOPE_REPLY, "data": {"llm": False}}
+    return {"reply": answer, "data": {"llm": True}}
 
 
 # ---------- manage (FR-016) ----------
