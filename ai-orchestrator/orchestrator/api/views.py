@@ -9,6 +9,28 @@ from api.services.transaction_item_extraction import extract_expense
 
 @csrf_exempt
 @require_POST
+def chat_message(request):
+    try:
+        data = json.loads(request.body.decode("utf-8"))
+    except (json.JSONDecodeError, UnicodeDecodeError):
+        return JsonResponse({"error": "Invalid JSON body."}, status=400)
+
+    message = (data.get("text") or data.get("message") or "").strip()
+    if not message:
+        return JsonResponse({"error": "Field 'text' is required."}, status=400)
+
+    intent = predict_intent(message)
+    if intent["intent"] == "transaction":
+        transaction = predict_transaction(message)
+        item = extract_expense(message)
+        combinedResult = intent | transaction | item
+    else:
+        return JsonResponse({"error": "Couldn't classify the message any of the following: transaction"}, status=400)
+    return JsonResponse(combinedResult, status=200)
+
+
+@csrf_exempt
+@require_POST
 def classify_intent_view(request):
     try:
         data = json.loads(request.body.decode("utf-8"))
@@ -58,3 +80,4 @@ def extract_transaction_item_view(request):
 
     result = extract_expense(text)
     return JsonResponse(result, status=200)
+
