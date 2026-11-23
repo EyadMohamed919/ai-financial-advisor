@@ -36,8 +36,7 @@ def extract_expense(text: str) -> dict:
             fields[ent.label_] = ent.text
 
     return {
-        "text": text,
-        "item": fields["ITEM"],
+        "item": fields["ITEM"] or "",
         "merchant": fields["MERCHANT"],
         "date_ref": fields["DATE"],
         "entities": entities,

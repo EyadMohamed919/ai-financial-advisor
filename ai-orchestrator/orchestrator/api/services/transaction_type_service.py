@@ -3,7 +3,7 @@ from pathlib import Path
 import joblib
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "ml_models" / "transaction_model.joblib"
+MODEL_PATH = BASE_DIR / "ml_models" / "transaction_type_model.joblib"
 
 model = joblib.load(MODEL_PATH)
 
@@ -32,12 +32,10 @@ def predict_transaction(description: str) -> dict:
         note = f"model's best guess was {ranked[0][0]}"
 
     return {
-        "description": description,
-        "category": str(category),
-        "confidence": round(float(confidence), 4),
-        "note": note,
-        "top_3": [
-            {"category": str(name), "confidence": round(float(prob), 4)}
+        "transaction_type": str(category),
+        "transcation_type_confidence": round(float(confidence), 4),
+        "transaction_type_top_3": [
+            {"type": str(name), "confidence": round(float(prob), 4)}
             for name, prob in ranked[:3]
         ],
     }

@@ -3,8 +3,10 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 from api.services.intent_service import predict_intent
-from api.services.transaction_service import predict_transaction
+from api.services.transaction_type_service import predict_transaction
 from api.services.transaction_item_extraction import extract_expense
+from api.services.income_service import predict_income
+from api.services.expense_service import predict_expense
 
 
 @csrf_exempt
@@ -21,9 +23,21 @@ def chat_message(request):
 
     intent = predict_intent(message)
     if intent["intent"] == "transaction":
+
         transaction = predict_transaction(message)
+        tx_type = transaction.get("transaction_type")
+        
+        if tx_type == "Income":
+            category = predict_income(message)
+        elif tx_type == "Expense":
+            category = predict_expense(message)
+        else:
+            category = {"category": "failed to classify", "tx_type": tx_type}
+        
         item = extract_expense(message)
-        combinedResult = intent | transaction | item
+        ai_message = "I saved your " + item["item"] + " and classified it as " + category["category"] + ". This will be added to your " + tx_type + "s."
+        respond = {"respond":ai_message}
+        combinedResult = intent | transaction | category | item | respond
     else:
         return JsonResponse({"error": "Couldn't classify the message any of the following: transaction"}, status=400)
     return JsonResponse(combinedResult, status=200)

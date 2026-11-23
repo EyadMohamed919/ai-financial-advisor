@@ -44,9 +44,8 @@ def predict_intent(message: str) -> dict:
     return {
         "message": message,
         "intent": str(intent),
-        "confidence": round(float(confidence), 4),
-        "note": note,
-        "top_3": [
+        "intent_confidence": round(float(confidence), 4),
+        "intent_top_3": [
             {"intent": str(name), "confidence": round(float(prob), 4)}
             for name, prob in ranked[:3]
         ],
