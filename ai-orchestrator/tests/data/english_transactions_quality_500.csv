@@ -1,0 +1,501 @@
+description,type,category,scenario_id,template_family,language,source
+LE 650 gone on trainers at the shoe stall; I have the new pair now.,Expense,Shopping,shopping.clothing_accessories,amount_led,English,synthetic
+My prescribed physical rehabilitation session was paid for at the treatment centre.,Expense,Healthcare,healthcare.care_consultation,passive_settlement,English,synthetic
+Buying fresh fruit at the market used 120 EGP of my cash.,Expense,Groceries,groceries.fresh_ingredients,financial_effect,English,synthetic
+Rent on my small residential house in Tanta has been collected.,Income,Rental Income,rental_income.residential,passive_settlement,English,synthetic
+"Looking back at this week, I collected just my regular mechanic wages from the bus depot.",Income,Salary,salary.employee_base_pay,retrospective_completion,English,synthetic
+My restaurant meal subscription's delivered lunch cost 150 EGP.,Expense,Food & Dining,food_dining.takeaway_delivered,possessive_transaction,English,synthetic
+"This is my internet access bill, not an online course subscription.",Expense,Bills & Utilities,bills_utilities.internet,explicit_role_contrast,English,synthetic
+"For a night out, I bought a ticket to a comedy show.",Expense,Entertainment,entertainment.live_performance,context_fronted,English,synthetic
+The order of curtains sold by my furnishing shop has been paid for.,Income,Business Income,business_income.retail_nonfood,relative_clause,English,synthetic
+Monetary gift accepted from a relative to celebrate my graduation.,Income,Gifts,gifts.education_milestone,formal_record,English,synthetic
+Personal cash gift accepted from a family friend in Cairo.,Income,Gifts,gifts.other_unconditional,formal_record,English,synthetic
+Employment income posted: my paid-leave wages from the printing plant.,Income,Salary,salary.employee_base_pay,formal_record,English,synthetic
+"Rental money from the tailor occupying my shop, collected.",Income,Rental Income,rental_income.commercial_premises,nominal_fragment,English,synthetic
+My weekly raw chicken supply was bought from the butcher.,Expense,Groceries,groceries.fresh_ingredients,passive_settlement,English,synthetic
+Replacement phone case purchased in Mansoura.,Expense,Shopping,shopping.electronics_appliances,nominal_fragment,English,synthetic
+My leisure audiobook subscription cost 120 EGP.,Expense,Entertainment,entertainment.digital_leisure,possessive_transaction,English,synthetic
+My sealed carton of juice for the fridge cost 42 EGP.,Expense,Groceries,groceries.pantry_drinks,possessive_transaction,English,synthetic
+"As a self-employed violinist, I took home the fee for playing at a wedding.",Income,Freelance,freelance.professional_personal,context_fronted,English,synthetic
+Prescription filled: I paid LE 95 for the eye drops.,Expense,Healthcare,healthcare.medicine,status_then_context,English,synthetic
+The mobile provider charged me for renewing my monthly voice plan.,Expense,Bills & Utilities,bills_utilities.telephone,counterparty_active,English,synthetic
+"To celebrate my engagement, my grandmother gave me a cash present.",Income,Gifts,gifts.wedding_family,context_fronted,English,synthetic
+"Needed a belt, found one, paid 190 EGP.",Expense,Shopping,shopping.clothing_accessories,conversational_update,English,synthetic
+I paid 450 EGP for an appointment with a dermatologist in Cairo.,Expense,Healthcare,healthcare.care_consultation,first_person_active,English,synthetic
+"At the payment kiosk, I cleared my natural-gas bill.",Expense,Bills & Utilities,bills_utilities.gas,context_fronted,English,synthetic
+I sold a cabinet through my carpentry business and collected 6800 EGP.,Income,Business Income,business_income.manufacturing,completion_then_settlement,English,synthetic
+Payment for entry to a leisure amusement park.,Expense,Entertainment,entertainment.outings_recreation,formal_record,English,synthetic
+"From selling lamps through my homeware business, I brought in 5200 EGP.",Income,Business Income,business_income.retail_nonfood,context_fronted,English,synthetic
+I chose a reading chair and settled the furniture shop's bill.,Expense,Shopping,shopping.home_leisure_goods,completion_then_settlement,English,synthetic
+This morning the furniture manufacturer paid my regular staff salary.,Income,Salary,salary.employee_base_pay,temporal_fronted,English,synthetic
+Rental proceeds collected for a classroom building I own and lease to a college.,Income,Rental Income,rental_income.residential,formal_record,English,synthetic
+My educational app's paid maths curriculum cost 220 EGP.,Expense,Education,education.instruction,possessive_transaction,English,synthetic
+"I bought a cooked meal from the supermarket's hot-food counter, ready to eat.",Expense,Food & Dining,food_dining.takeaway_delivered,explicit_role_contrast,English,synthetic
+By Friday the organiser had settled my freelance exhibition-curation fee.,Income,Freelance,freelance.creative,temporal_fronted,English,synthetic
+The buyer settled the invoice from my small dairy business.,Income,Business Income,business_income.retail_food,counterparty_active,English,synthetic
+The meal I ordered at the bowling alley cost me 180 EGP.,Expense,Food & Dining,food_dining.onsite_meal,financial_effect,English,synthetic
+The balance I can spend rose by LE 2800 after my freelance animation invoice cleared.,Income,Freelance,freelance.creative,financial_effect,English,synthetic
+"I settled the electricity bill for my Giza flat, 640 EGP.",Expense,Bills & Utilities,bills_utilities.electricity,first_person_active,English,synthetic
+1500 Egyptian pounds in my graduation card! My uncle gave me the cash as a present.,Income,Gifts,gifts.education_milestone,amount_led,English,synthetic
+"Recreational aquarium admission, LE 150 settled.",Expense,Entertainment,entertainment.outings_recreation,nominal_fragment,English,synthetic
+This money belongs to my travel agency's sales revenue; I own the agency.,Income,Business Income,business_income.service_enterprise,explicit_role_contrast,English,synthetic
+"Milk for home, 75 Egyptian pounds at the mini-market.",Expense,Groceries,groceries.dairy,nominal_fragment,English,synthetic
+I picked up a winter coat for 1450 EGP at a shop in Giza.,Expense,Shopping,shopping.clothing_accessories,first_person_active,English,synthetic
+65 EGP bought me a bag of dry lentils for the cupboard.,Expense,Groceries,groceries.pantry_drinks,amount_led,English,synthetic
+My employer in Port Said handed over my wages in cash.,Income,Salary,salary.employee_base_pay,counterparty_active,English,synthetic
+Picked up eggs for the fridge and paid the grocer.,Expense,Groceries,groceries.fresh_ingredients,conversational_update,English,synthetic
+"""The scan is 1200 EGP,"" the hospital cashier said; I paid the charge as the patient.",Expense,Healthcare,healthcare.diagnostics,quoted_counterparty_then_settlement,English,synthetic
+Candle order settled. Sales money in for the business I own.,Income,Business Income,business_income.retail_nonfood,elliptical_update,English,synthetic
+I purchased the antibiotic listed on my prescription.,Expense,Healthcare,healthcare.medicine,first_person_active,English,synthetic
+"By the time I checked my records, my warehouse tenant had already paid me the rent.",Income,Rental Income,rental_income.residential,retrospective_completion,English,synthetic
+My blood test at the local laboratory was paid for.,Expense,Healthcare,healthcare.diagnostics,passive_settlement,English,synthetic
+"Paid order from my ceramics shop, 950 EGP.",Income,Business Income,business_income.retail_nonfood,nominal_fragment,English,synthetic
+I spent LE 950 on a blood-pressure monitor to keep at home.,Expense,Shopping,shopping.electronics_appliances,first_person_active,English,synthetic
+A pair of school shoes left me 700 EGP poorer.,Expense,Shopping,shopping.clothing_accessories,financial_effect,English,synthetic
+"Required engineering course manual, LE 360 purchased.",Expense,Education,education.materials,nominal_fragment,English,synthetic
+Customer payments for laptop repairs were collected at my electronics service business.,Income,Business Income,business_income.service_enterprise,passive_settlement,English,synthetic
+"""Here is your rent,"" said the tenant, handing me LE 9000 for my office suite.",Income,Rental Income,rental_income.commercial_premises,quoted_counterparty_then_settlement,English,synthetic
+"Freelance menu editing, 650 EGP in hand.",Income,Freelance,freelance.language_editorial,nominal_fragment,English,synthetic
+Payment for a patient consultation at a hospital in Alexandria.,Expense,Healthcare,healthcare.care_consultation,formal_record,English,synthetic
+Payment of a personal car-parking charge in central Cairo.,Expense,Transportation,transportation.vehicle_running,formal_record,English,synthetic
+My commuter rail pass was topped up with 200 EGP for travel.,Expense,Transportation,transportation.mass_transit,passive_settlement,English,synthetic
+I took the Cairo metro and paid 15 EGP for my ticket.,Expense,Transportation,transportation.mass_transit,first_person_active,English,synthetic
+The pharmacy charged me LE 160 for my prescribed medicine.,Expense,Healthcare,healthcare.medicine,counterparty_active,English,synthetic
+A Cairo author handed me 1200 EGP for independently indexing her book.,Income,Freelance,freelance.language_editorial,recipient_focus,English,synthetic
+School-exam prep: Arabic literature tutor paid for the lesson.,Expense,Education,education.instruction,elliptical_update,English,synthetic
+The theatre box office charged me LE 250 for the play.,Expense,Entertainment,entertainment.live_performance,counterparty_active,English,synthetic
+My ride to university used LE 80 of my budget.,Expense,Transportation,transportation.hired_ride,possessive_transaction,English,synthetic
+"By the first day of term, I had already settled my child's school fees.",Expense,Education,education.tuition_registration,retrospective_completion,English,synthetic
+The pharmacist renting my commercial premises settled the lease payment with me.,Income,Rental Income,rental_income.commercial_premises,counterparty_active,English,synthetic
+Sales proceeds collected by me as owner of a mobile-accessory shop.,Income,Business Income,business_income.retail_nonfood,formal_record,English,synthetic
+The language institute charged me LE 2400 for an English course.,Expense,Education,education.instruction,counterparty_active,English,synthetic
+"I paid for museum entry on a personal day out, not a university assignment.",Expense,Entertainment,entertainment.outings_recreation,first_person_active,English,synthetic
+My hot breakfast sandwich was paid for at the station cafe.,Expense,Food & Dining,food_dining.onsite_meal,passive_settlement,English,synthetic
+Graduation shoot done. Freelance camera fee in my pocket.,Income,Freelance,freelance.creative,elliptical_update,English,synthetic
+"""LE 55 for the chickpeas,"" said the grocer. I paid for the dry beans to cook at home.",Expense,Groceries,groceries.pantry_drinks,quoted_counterparty_then_settlement,English,synthetic
+My household landline bill came to 95 EGP and is now settled.,Expense,Bills & Utilities,bills_utilities.telephone,possessive_transaction,English,synthetic
+My clinical counselling appointment cost 500 EGP.,Expense,Healthcare,healthcare.care_consultation,possessive_transaction,English,synthetic
+"As owner of a language school, I collected the course fees from enrolled students.",Income,Business Income,business_income.service_enterprise,context_fronted,English,synthetic
+"For cooking this week, I purchased a bottle of sunflower oil.",Expense,Groceries,groceries.pantry_drinks,context_fronted,English,synthetic
+Urine test done. Lab fee settled by me.,Expense,Healthcare,healthcare.diagnostics,elliptical_update,English,synthetic
+"Purchase of a mobile phone for personal use, 8500 EGP.",Expense,Shopping,shopping.electronics_appliances,formal_record,English,synthetic
+"For watching live football online, I renewed my sports-streaming subscription.",Expense,Entertainment,entertainment.digital_leisure,context_fronted,English,synthetic
+My fee for a one-off architectural drawing was paid by the homeowner.,Income,Freelance,freelance.technical,passive_settlement,English,synthetic
+A bus ticket to Mansoura was paid for at the terminal.,Expense,Transportation,transportation.mass_transit,passive_settlement,English,synthetic
+This afternoon I bought an iced coffee from a kiosk.,Expense,Food & Dining,food_dining.served_drink,temporal_fronted,English,synthetic
+The internet provider collected 420 EGP from me for home service.,Expense,Bills & Utilities,bills_utilities.internet,recipient_focus,English,synthetic
+"I renewed a documentary-streaming plan for leisure, with no lessons or assessments.",Expense,Entertainment,entertainment.digital_leisure,explicit_role_contrast,English,synthetic
+LE 1800 for the independent voice-over job has reached me.,Income,Freelance,freelance.creative,amount_led,English,synthetic
+Our office payroll clerk handed me my salary envelope.,Income,Salary,salary.employee_base_pay,recipient_focus,English,synthetic
+Got a cash presant from my cousin for my birthday.,Income,Gifts,gifts.birthday,conversational_update,English,synthetic
+I am travelling on the metro pass I renewed this morning for LE 300.,Expense,Transportation,transportation.mass_transit,retrospective_completion,English,synthetic
+The rent on my studio flat added money to my balance.,Income,Rental Income,rental_income.residential,financial_effect,English,synthetic
+Personal purchase of a second-hand bicycle in Alexandria.,Expense,Shopping,shopping.home_leisure_goods,formal_record,English,synthetic
+"Physical chess set for home, bought for 320 EGP.",Expense,Shopping,shopping.home_leisure_goods,nominal_fragment,English,synthetic
+I had already settled for my diner when I left the family restaurant.,Expense,Food & Dining,food_dining.onsite_meal,retrospective_completion,English,synthetic
+"My freelance fee was settled for configuring a shop's network, outside any employment.",Income,Freelance,freelance.technical,passive_settlement,English,synthetic
+I paid 18000 EGP towards my university tuition in Cairo.,Expense,Education,education.tuition_registration,first_person_active,English,synthetic
+The money in my graduation card was a gift from my neighbours.,Income,Gifts,gifts.education_milestone,relative_clause,English,synthetic
+The cakes sold through my registered bakery generated today's receipts.,Income,Business Income,business_income.retail_food,relative_clause,English,synthetic
+Renewing access to my graded accounting course used 400 EGP.,Expense,Education,education.instruction,financial_effect,English,synthetic
+"""100 EGP to play,"" said the arcade attendant. I paid for the session.",Expense,Entertainment,entertainment.live_performance,quoted_counterparty_then_settlement,English,synthetic
+"Rent income from my privately let parking space, 700 EGP.",Income,Rental Income,rental_income.storage_parking,nominal_fragment,English,synthetic
+30 EGP covered the parking charge; the attendant has my payment.,Expense,Transportation,transportation.vehicle_running,amount_led,English,synthetic
+Pantry restocked with honey; I paid for the jar at a shop in Tanta.,Expense,Groceries,groceries.pantry_drinks,status_then_context,English,synthetic
+"This is a gift from my father, with no repayment or work expected.",Income,Gifts,gifts.other_unconditional,explicit_role_contrast,English,synthetic
+Renewing my phone's call bundle took 70 EGP out of my balance.,Expense,Bills & Utilities,bills_utilities.telephone,financial_effect,English,synthetic
+My juice kiosk's sales total is now in my cashbox.,Income,Business Income,business_income.retail_food,possessive_transaction,English,synthetic
+Home broadband renewed. Payment done for the month.,Expense,Bills & Utilities,bills_utilities.internet,elliptical_update,English,synthetic
+"To replenish my cupboard, I bought canned beans rather than a prepared lunch.",Expense,Groceries,groceries.pantry_drinks,context_fronted,English,synthetic
+The supermarket cashier took my payment for flour.,Expense,Groceries,groceries.pantry_drinks,recipient_focus,English,synthetic
+Yesterday a museum paid my fee for a short freelance research assignment.,Income,Freelance,freelance.professional_personal,temporal_fronted,English,synthetic
+"With nowhere to hang my clothes, I bought a small wardrobe for 3900 EGP.",Expense,Shopping,shopping.home_leisure_goods,causal_context,English,synthetic
+My library job paid its usual monthly salary.,Income,Salary,salary.employee_base_pay,possessive_transaction,English,synthetic
+I paid a nurse for changing my surgical dressing at home.,Expense,Healthcare,healthcare.care_consultation,first_person_active,English,synthetic
+"For my engagement, my sister gave me money as a gift.",Income,Gifts,gifts.wedding_family,context_fronted,English,synthetic
+"Under the tenancy agreement, I collected rent for my upper-floor apartment.",Income,Rental Income,rental_income.residential,context_fronted,English,synthetic
+I supplied a batch of uniforms through my clothing business and collected the invoice.,Income,Business Income,business_income.manufacturing,completion_then_settlement,English,synthetic
+"This payment was for a ferry crossing, not a sightseeing cruise.",Expense,Transportation,transportation.mass_transit,explicit_role_contrast,English,synthetic
+Paid my tution instalment at the university office.,Expense,Education,education.tuition_registration,conversational_update,English,synthetic
+Students' tuition payments came into the private training centre I own.,Income,Business Income,business_income.service_enterprise,counterparty_active,English,synthetic
+A buyer handed me the purchase money at my carpet store.,Income,Business Income,business_income.retail_nonfood,recipient_focus,English,synthetic
+Household purchase of uncooked beef from a local butcher.,Expense,Groceries,groceries.fresh_ingredients,formal_record,English,synthetic
+"Before the film, I purchased a hot dog at the food stand.",Expense,Food & Dining,food_dining.takeaway_delivered,temporal_fronted,English,synthetic
+Sorted the gas bill at the neighbourhood payment point.,Expense,Bills & Utilities,bills_utilities.gas,conversational_update,English,synthetic
+Yesterday I paid 95 EGP for a packet of ground coffee to brew at home.,Expense,Groceries,groceries.pantry_drinks,temporal_fronted,English,synthetic
+Paid for the doctor's follow-up visit in Giza.,Expense,Healthcare,healthcare.care_consultation,conversational_update,English,synthetic
+No invoice here: my cousin just gave me birthday money.,Income,Gifts,gifts.birthday,conversational_update,English,synthetic
+Paid for my cinmea seat at the neighbourhood theatre.,Expense,Entertainment,entertainment.outings_recreation,conversational_update,English,synthetic
+Yoghurt for the fridge. Paid at the corner shop.,Expense,Groceries,groceries.dairy,elliptical_update,English,synthetic
+A specialist consultation for my knee was paid for in cash.,Expense,Healthcare,healthcare.care_consultation,passive_settlement,English,synthetic
+Got tickets for the magic show and paid at the door.,Expense,Entertainment,entertainment.live_performance,conversational_update,English,synthetic
+My digital film rental cost LE 60.,Expense,Entertainment,entertainment.digital_leisure,possessive_transaction,English,synthetic
+"At the end of probation, the bank released my first employee salary.",Income,Salary,salary.employee_base_pay,temporal_fronted,English,synthetic
+"After a full month on the hospital payroll, my wages came in.",Income,Salary,salary.employee_base_pay,context_fronted,English,synthetic
+That's my catering-company salary sorted; the money is in.,Income,Salary,salary.employee_base_pay,conversational_update,English,synthetic
+No purchase involved; my aunt gave me cash as a holiday present.,Income,Gifts,gifts.holiday,explicit_role_contrast,English,synthetic
+The filmmaker paid me 2100 EGP for independently colour-grading her footage.,Income,Freelance,freelance.creative,counterparty_active,English,synthetic
+"I own the flat; this was rent coming from my tenant, not rent I owe.",Income,Rental Income,rental_income.residential,explicit_role_contrast,English,synthetic
+190 Egyptian pounds has gone on renewing my mobile line.,Expense,Bills & Utilities,bills_utilities.telephone,amount_led,English,synthetic
+Caught a shared minibus and handed over the fare.,Expense,Transportation,transportation.mass_transit,conversational_update,English,synthetic
+170 EGP has covered another month of my video-streaming plan.,Expense,Entertainment,entertainment.digital_leisure,amount_led,English,synthetic
+A school in Mansoura handed me my teaching wages.,Income,Salary,salary.employee_base_pay,counterparty_active,English,synthetic
+"First-job celebration. Cash gift from my older sister, gratefully accepted.",Income,Gifts,gifts.other_unconditional,elliptical_update,English,synthetic
+"My family gave me tuition money as a gift, and it is now mine.",Income,Gifts,gifts.education_milestone,counterparty_active,English,synthetic
+Paid the electrcity bill through the local kiosk.,Expense,Bills & Utilities,bills_utilities.electricity,conversational_update,English,synthetic
+"The engineering firm put my November salary through, 18500 EGP.",Income,Salary,salary.employee_base_pay,counterparty_active,English,synthetic
+I checked the water invoice and settled the amount due.,Expense,Bills & Utilities,bills_utilities.water,completion_then_settlement,English,synthetic
+The prescribed inhaler I ordered at the pharmacy has been paid for.,Expense,Healthcare,healthcare.medicine,relative_clause,English,synthetic
+Home by taxi. Fare handed over.,Expense,Transportation,transportation.hired_ride,elliptical_update,English,synthetic
+I repaired the client's spreadsheet as a freelancer and collected the agreed fee.,Income,Freelance,freelance.technical,completion_then_settlement,English,synthetic
+My grandfather gave me LE 500 with no expectation of repayment.,Income,Gifts,gifts.other_unconditional,counterparty_active,English,synthetic
+Payment for a ready-made pasta lunch delivered to my office.,Expense,Food & Dining,food_dining.takeaway_delivered,formal_record,English,synthetic
+I took in 4600 EGP from sales at my stationery shop in Cairo.,Income,Business Income,business_income.retail_nonfood,first_person_active,English,synthetic
+Over the weekend my client settled my freelance copywriting invoice.,Income,Freelance,freelance.language_editorial,temporal_fronted,English,synthetic
+The kiosk that I own and lease out brought me its monthly rent.,Income,Rental Income,rental_income.commercial_premises,relative_clause,English,synthetic
+"Before leaving the surgery, I paid for my dental cleaning.",Expense,Healthcare,healthcare.dental,context_fronted,English,synthetic
+This week I renewed my structured language-learning subscription for LE 180.,Expense,Education,education.instruction,temporal_fronted,English,synthetic
+My catering company's invoice was settled by the wedding venue.,Income,Business Income,business_income.service_enterprise,possessive_transaction,English,synthetic
+Yesterday I paid 700 EGP for an X-ray.,Expense,Healthcare,healthcare.diagnostics,temporal_fronted,English,synthetic
+"""Invoice paid,"" says the customer of my cleaning company. The office-cleaning revenue is now ours.",Income,Business Income,business_income.service_enterprise,quoted_counterparty_then_settlement,English,synthetic
+The money available to me went up when the school released our wages.,Income,Salary,salary.employee_base_pay,financial_effect,English,synthetic
+My rooftop storage unit earned rent which the occupier has now handed over.,Income,Rental Income,rental_income.storage_parking,possessive_transaction,English,synthetic
+"Those were takeaway fries I paid for, not raw potatoes.",Expense,Food & Dining,food_dining.takeaway_delivered,conversational_update,English,synthetic
+A cash wedding gift was handed to me by my cousins.,Income,Gifts,gifts.wedding_family,passive_settlement,English,synthetic
+"For my sister's birthday, I purchased a silver bracelet.",Expense,Shopping,shopping.clothing_accessories,context_fronted,English,synthetic
+"Too tired to cook, I paid the street stall for a hot meal.",Expense,Food & Dining,food_dining.onsite_meal,causal_context,English,synthetic
+"Once the client approved the sketches, my freelance stage-design fee came through.",Income,Freelance,freelance.creative,temporal_fronted,English,synthetic
+The independently commissioned costume sketches brought money into my account.,Income,Freelance,freelance.creative,financial_effect,English,synthetic
+Mum slipped me some gift money for the holiday.,Income,Gifts,gifts.holiday,conversational_update,English,synthetic
+Buying my prescription tablets reduced my cash by 210 EGP.,Expense,Healthcare,healthcare.medicine,financial_effect,English,synthetic
+The paediatrician collected the appointment fee from me for my child's visit.,Expense,Healthcare,healthcare.care_consultation,recipient_focus,English,synthetic
+I cashed my wage cheque from the packaging company.,Income,Salary,salary.employee_base_pay,first_person_active,English,synthetic
+The restaurant buyer settled an invoice with the food-wholesale business I own.,Income,Business Income,business_income.retail_food,recipient_focus,English,synthetic
+Paid the pottery school for a beginner's taught course.,Expense,Education,education.instruction,conversational_update,English,synthetic
+The allergy test used 800 EGP of my available money.,Expense,Healthcare,healthcare.diagnostics,financial_effect,English,synthetic
+A bag of tea leaves for home use was purchased from the grocer.,Expense,Groceries,groceries.pantry_drinks,passive_settlement,English,synthetic
+My ride with a local cab cost 95 EGP.,Expense,Transportation,transportation.hired_ride,possessive_transaction,English,synthetic
+I enrolled in a bookkeeping workshop and paid for my place.,Expense,Education,education.instruction,completion_then_settlement,English,synthetic
+The appliance seller got 2400 EGP from me for a blender.,Expense,Shopping,shopping.electronics_appliances,recipient_focus,English,synthetic
+"Before it expired, I renewed my personal mobile package for LE 150.",Expense,Bills & Utilities,bills_utilities.telephone,context_fronted,English,synthetic
+I purchased admission to an art exhibition for a weekend outing.,Expense,Entertainment,entertainment.outings_recreation,first_person_active,English,synthetic
+My employer's annual performance bonus added 6000 EGP to my income.,Income,Salary,salary.bonus,possessive_transaction,English,synthetic
+"Raw marinated chicken for cooking later, 210 EGP.",Expense,Groceries,groceries.fresh_ingredients,nominal_fragment,English,synthetic
+On Thursday my employer delivered my weekly construction wages.,Income,Salary,salary.employee_base_pay,temporal_fronted,English,synthetic
+A tenant's payment of overdue rent on my office increased my funds.,Income,Rental Income,rental_income.commercial_premises,financial_effect,English,synthetic
+I collected the receipts from my ice-cream kiosk.,Income,Business Income,business_income.retail_food,first_person_active,English,synthetic
+"I collected the lease payment for a clinic unit I own, without providing medical services.",Income,Rental Income,rental_income.commercial_premises,first_person_active,English,synthetic
+I purchased cotton towels from the local homeware store.,Expense,Shopping,shopping.home_leisure_goods,first_person_active,English,synthetic
+The regular pay from my employed pharmacy-assistant role has arrived.,Income,Salary,salary.employee_base_pay,relative_clause,English,synthetic
+"The clinic charged me for a medical hearing test, not for buying headphones.",Expense,Healthcare,healthcare.diagnostics,counterparty_active,English,synthetic
+"The medical college charged me for a first-aid training course, not treatment.",Expense,Education,education.instruction,counterparty_active,English,synthetic
+"I paid for petrol for my motorbike, not for buying the bike itself.",Expense,Transportation,transportation.vehicle_running,first_person_active,English,synthetic
+I filled a bag with potatoes and settled with the vegetable stall.,Expense,Groceries,groceries.fresh_ingredients,completion_then_settlement,English,synthetic
+"I accepted my aunt's cash graduation present, not a loan for university.",Income,Gifts,gifts.education_milestone,completion_then_settlement,English,synthetic
+"My photography studio, which employs a team, collected a commercial booking fee.",Income,Business Income,business_income.service_enterprise,possessive_transaction,English,synthetic
+"Diagnostic ECG, LE 280 paid to the medical lab.",Expense,Healthcare,healthcare.diagnostics,nominal_fragment,English,synthetic
+The cash gift from my in-laws boosted my available funds.,Income,Gifts,gifts.other_unconditional,financial_effect,English,synthetic
+The car-parts factory released 9800 EGP as my basic employee pay.,Income,Salary,salary.employee_base_pay,counterparty_active,English,synthetic
+Today's tram journey in Alexandria cost me LE 10.,Expense,Transportation,transportation.mass_transit,financial_effect,English,synthetic
+"""That comes to 145 EGP,"" my ride-hailing driver said. I settled the fare.",Expense,Transportation,transportation.hired_ride,quoted_counterparty_then_settlement,English,synthetic
+"Instead of cash as a gift, I bought my cousin a handbag.",Expense,Shopping,shopping.clothing_accessories,context_fronted,English,synthetic
+I chose a film at the cinema and settled the ticket price.,Expense,Entertainment,entertainment.outings_recreation,completion_then_settlement,English,synthetic
+Overtime pay from my supermarket employer: 750 EGP collected.,Income,Salary,salary.overtime,nominal_fragment,English,synthetic
+The mechanic renting my workshop premises paid the rent to me.,Income,Rental Income,rental_income.commercial_premises,counterparty_active,English,synthetic
+"""Your gas bill is 90 EGP,"" the collector told me. I paid the household bill.",Expense,Bills & Utilities,bills_utilities.gas,quoted_counterparty_then_settlement,English,synthetic
+The taxi driver charged me LE 120 to get home.,Expense,Transportation,transportation.hired_ride,counterparty_active,English,synthetic
+I drove onto the toll road and settled the toll.,Expense,Transportation,transportation.vehicle_running,completion_then_settlement,English,synthetic
+"Fixed broadband line rental, LE 110 settled.",Expense,Bills & Utilities,bills_utilities.internet,nominal_fragment,English,synthetic
+"Independent professional income from a single tax consultation, now collected.",Income,Freelance,freelance.professional_personal,formal_record,English,synthetic
+"Got the grocries: a bag of sugar for home, paid in cash.",Expense,Groceries,groceries.pantry_drinks,conversational_update,English,synthetic
+"For the tenant's continued use of my shopfront, I collected 5500 EGP.",Income,Rental Income,rental_income.commercial_premises,context_fronted,English,synthetic
+A friend's birthday cash gift left me with a little extra to spend.,Income,Gifts,gifts.birthday,financial_effect,English,synthetic
+I paid the prepaid gas-meter top-up for our kitchen supply.,Expense,Bills & Utilities,bills_utilities.gas,first_person_active,English,synthetic
+This afternoon my printing business collected payment for an order of leaflets.,Income,Business Income,business_income.retail_nonfood,temporal_fronted,English,synthetic
+"Finally, payday at the call centre! I've got my salary.",Income,Salary,salary.employee_base_pay,conversational_update,English,synthetic
+"Gift income: voluntary personal cash present from my brother, no conditions attached.",Income,Gifts,gifts.other_unconditional,formal_record,English,synthetic
+"My scooter was nearly empty, so I put in 150 EGP of fuel before work.",Expense,Transportation,transportation.vehicle_running,causal_context,English,synthetic
+I'm not on their payroll; the factory paid me for a single safety audit as an independent consultant.,Income,Freelance,freelance.professional_personal,explicit_role_contrast,English,synthetic
+They're renting the empty shop from me; the money that arrived is rent.,Income,Rental Income,rental_income.commercial_premises,conversational_update,English,synthetic
+"Without asking for it back, my sister gave me 1300 EGP as a gift.",Income,Gifts,gifts.other_unconditional,context_fronted,English,synthetic
+I ate at the campus canteen and paid for the meal.,Expense,Food & Dining,food_dining.onsite_meal,completion_then_settlement,English,synthetic
+"Following the weekend market, my handmade-soap business collected its sales money.",Income,Business Income,business_income.retail_nonfood,context_fronted,English,synthetic
+I opened my grandmother's card and found the cash she had gifted me.,Income,Gifts,gifts.other_unconditional,completion_then_settlement,English,synthetic
+I got 1000 EGP from my aunt as a birthday gift.,Income,Gifts,gifts.birthday,first_person_active,English,synthetic
+Seat confirmed and paid: 340 Egyptian pounds for my intercity coach trip.,Expense,Transportation,transportation.mass_transit,status_then_context,English,synthetic
+My independent guest lecture earned me an honorarium of 2200 EGP.,Income,Freelance,freelance.professional_personal,possessive_transaction,English,synthetic
+A novel for leisure reading was purchased from a used-book stall.,Expense,Shopping,shopping.home_leisure_goods,passive_settlement,English,synthetic
+My furniture showroom brought in 27000 Egyptian pounds from a sofa sale.,Income,Business Income,business_income.retail_nonfood,possessive_transaction,English,synthetic
+The proceeds of an independent coding assignment added to my savings.,Income,Freelance,freelance.technical,financial_effect,English,synthetic
+"On my way to work, I paid the bus fare.",Expense,Transportation,transportation.mass_transit,context_fronted,English,synthetic
+I collected 6500 EGP from the tenant of my flat in Giza.,Income,Rental Income,rental_income.residential,first_person_active,English,synthetic
+My music-streaming subscription was renewed and paid for.,Expense,Entertainment,entertainment.digital_leisure,passive_settlement,English,synthetic
+Playing billiards at the club cost me 80 EGP.,Expense,Entertainment,entertainment.live_performance,financial_effect,English,synthetic
+"For a privately commissioned family portrait, I collected my artist's fee.",Income,Freelance,freelance.creative,context_fronted,English,synthetic
+"On market day, my produce stall brought me 1450 Egyptian pounds in sales.",Income,Business Income,business_income.retail_food,temporal_fronted,English,synthetic
+"As the property's owner, I collected rent on the cafe premises rather than cafe sales.",Income,Rental Income,rental_income.commercial_premises,context_fronted,English,synthetic
+The clinic paid me 14000 EGP under my employment contract as its resident doctor.,Income,Salary,salary.employee_base_pay,counterparty_active,English,synthetic
+The waiter collected 310 EGP from me for lunch.,Expense,Food & Dining,food_dining.onsite_meal,recipient_focus,English,synthetic
+My furnished room let brought me 2600 Egyptian pounds.,Income,Rental Income,rental_income.residential,possessive_transaction,English,synthetic
+My rented-out warehouse brought in 22000 Egyptian pounds this month.,Income,Rental Income,rental_income.residential,possessive_transaction,English,synthetic
+A single freshly squeezed juice at the juice bar cost me LE 45.,Expense,Food & Dining,food_dining.served_drink,financial_effect,English,synthetic
+Payment for use of my agricultural plot was collected from the tenant farmer.,Income,Rental Income,rental_income.land,passive_settlement,English,synthetic
+Refuelling my car reduced my cash by 600 EGP.,Expense,Transportation,transportation.vehicle_running,financial_effect,English,synthetic
+The slides I designed on a freelance basis have now been paid for.,Income,Freelance,freelance.creative,relative_clause,English,synthetic
+A sightseeing boat-cruise ticket was paid for as a leisure activity.,Expense,Entertainment,entertainment.outings_recreation,passive_settlement,English,synthetic
+A local charity settled my freelance report-editing invoice.,Income,Freelance,freelance.language_editorial,counterparty_active,English,synthetic
+My replacement kettle was purchased at the neighbourhood appliance shop.,Expense,Shopping,shopping.electronics_appliances,passive_settlement,English,synthetic
+I let my furnished apartment for the month and collected the rent.,Income,Rental Income,rental_income.residential,completion_then_settlement,English,synthetic
+"School tuition instalment, 6500 Egyptian pounds settled.",Expense,Education,education.tuition_registration,nominal_fragment,English,synthetic
+My friends gave me cash together as a farewell gift.,Income,Gifts,gifts.other_unconditional,counterparty_active,English,synthetic
+One-off legal drafting fee collected in my capacity as an independent lawyer.,Income,Freelance,freelance.professional_personal,nominal_fragment,English,synthetic
+My garden-supply shop has its money for the pot order now.,Income,Business Income,business_income.retail_nonfood,conversational_update,English,synthetic
+"With the manuscript delivered, my freelance ghostwriting payment came in.",Income,Freelance,freelance.language_editorial,context_fronted,English,synthetic
+I appraised a flat independently and collected my valuation fee from its owner.,Income,Freelance,freelance.professional_personal,completion_then_settlement,English,synthetic
+The electricity statement that arrived last week has been paid.,Expense,Bills & Utilities,bills_utilities.electricity,relative_clause,English,synthetic
+"This is revenue from the repair shop I own, not wages from an employer.",Income,Business Income,business_income.service_enterprise,explicit_role_contrast,English,synthetic
+"On Friday, I paid for a round of mini-golf with friends.",Expense,Entertainment,entertainment.outings_recreation,context_fronted,English,synthetic
+The vegetable seller charged me LE 85 for fresh tomatoes.,Expense,Groceries,groceries.fresh_ingredients,counterparty_active,English,synthetic
+"""Your Excel course fee is 1700 EGP,"" said the training centre. I paid to enrol.",Expense,Education,education.instruction,quoted_counterparty_then_settlement,English,synthetic
+350 EGP went to the physiotherapist for treating my shoulder today.,Expense,Healthcare,healthcare.care_consultation,amount_led,English,synthetic
+My cousin's wedding present to me was money.,Income,Gifts,gifts.wedding_family,possessive_transaction,English,synthetic
+Got the renatl payment for the flat I own in Shubra.,Income,Rental Income,rental_income.residential,conversational_update,English,synthetic
+I'm on the restaurant's payroll; this money was my monthly wage.,Income,Salary,salary.employee_base_pay,explicit_role_contrast,English,synthetic
+Desk lamp purchased. The lighting shop charged me 390 EGP.,Expense,Shopping,shopping.electronics_appliances,status_then_context,English,synthetic
+"""Your edit is paid,"" the podcast host told me; I now have my freelance sound fee.",Income,Freelance,freelance.professional_personal,quoted_counterparty_then_settlement,English,synthetic
+"For the journey to my doctor, I paid the taxi fare.",Expense,Transportation,transportation.hired_ride,context_fronted,English,synthetic
+"I drew my regular university salary for teaching, separate from any private lessons.",Income,Salary,salary.employee_base_pay,first_person_active,English,synthetic
+LE 2300 came through the till of my laundry business today.,Income,Business Income,business_income.service_enterprise,amount_led,English,synthetic
+Operating revenue collected from customers of my car-wash business.,Income,Business Income,business_income.service_enterprise,formal_record,English,synthetic
+The ticket I reserved for the jazz performance has been paid for.,Expense,Entertainment,entertainment.live_performance,relative_clause,English,synthetic
+Purchase of access to an assessed online engineering course.,Expense,Education,education.instruction,formal_record,English,synthetic
+My fee for a supervised driving lesson was paid to the instructor.,Expense,Education,education.instruction,passive_settlement,English,synthetic
+The cash I found in Dad's card is mine now; he gave it to me as a present.,Income,Gifts,gifts.other_unconditional,retrospective_completion,English,synthetic
+Payment of student examination fees at a public university.,Expense,Education,education.examination,formal_record,English,synthetic
+The occupant gave me 3900 EGP as rent for my small house.,Income,Rental Income,rental_income.residential,recipient_focus,English,synthetic
+"To restore my home connection after expiry, I paid the internet renewal charge.",Expense,Bills & Utilities,bills_utilities.internet,context_fronted,English,synthetic
+I paid 180 EGP for a cinema ticket in Cairo.,Expense,Entertainment,entertainment.outings_recreation,first_person_active,English,synthetic
+Last night I collected rent from the occupants of my Zagazig apartment.,Income,Rental Income,rental_income.residential,temporal_fronted,English,synthetic
+Fare payment for a shared taxi to the industrial zone.,Expense,Transportation,transportation.hired_ride,formal_record,English,synthetic
+Payment for a bulk order was collected by my packaging business.,Income,Business Income,business_income.manufacturing,passive_settlement,English,synthetic
+Paid the minibus conductor for the trip to Giza.,Expense,Transportation,transportation.mass_transit,conversational_update,English,synthetic
+The escape-room operator collected 300 EGP from me for a session.,Expense,Entertainment,entertainment.outings_recreation,recipient_focus,English,synthetic
+"New bedsheets, 480 Egyptian pounds out of my pocket.",Expense,Shopping,shopping.home_leisure_goods,nominal_fragment,English,synthetic
+Professional fee collected for independently translating a product manual.,Income,Freelance,freelance.language_editorial,formal_record,English,synthetic
+The family renting my Alexandria apartment settled this month's rent with me.,Income,Rental Income,rental_income.residential,counterparty_active,English,synthetic
+Booked a seat at the puppet show and paid for it.,Expense,Entertainment,entertainment.live_performance,conversational_update,English,synthetic
+I delivered the survey analysis and collected my independent consulting fee.,Income,Freelance,freelance.technical,completion_then_settlement,English,synthetic
+The commission due under my retail employment contract was paid to me.,Income,Salary,salary.bonus,passive_settlement,English,synthetic
+My residential water bill in Alexandria has been settled.,Expense,Bills & Utilities,bills_utilities.water,passive_settlement,English,synthetic
+"This subscription provides assessed lessons, not films for entertainment; I paid for the course.",Expense,Education,education.instruction,explicit_role_contrast,English,synthetic
+My independent social-media audit fee has been collected.,Income,Freelance,freelance.professional_personal,passive_settlement,English,synthetic
+This week my grandmother gifted me 400 Egyptian pounds.,Income,Gifts,gifts.other_unconditional,temporal_fronted,English,synthetic
+Unconditional cash gift from a neighbour for my newborn child.,Income,Gifts,gifts.wedding_family,nominal_fragment,English,synthetic
+My godmother handed me 750 EGP as a personal gift.,Income,Gifts,gifts.other_unconditional,recipient_focus,English,synthetic
+The bakery sold me a loaf of bread to take home for the week.,Expense,Groceries,groceries.pantry_drinks,counterparty_active,English,synthetic
+"Fresh cucumbers for home, paid at the market.",Expense,Groceries,groceries.fresh_ingredients,nominal_fragment,English,synthetic
+Salary settled. It covers my civil-service work for the month.,Income,Salary,salary.employee_base_pay,status_then_context,English,synthetic
+I took the 600 EGP my sister offered as a gift for my new home.,Income,Gifts,gifts.other_unconditional,first_person_active,English,synthetic
+"The order went through my shop, not a private freelance gig; the customer has paid us.",Income,Business Income,business_income.retail_nonfood,conversational_update,English,synthetic
+85 EGP covered breakfast at the corner cafe; I settled before leaving.,Expense,Food & Dining,food_dining.onsite_meal,amount_led,English,synthetic
+The watch I chose as a gift for Dad has been paid for.,Expense,Shopping,shopping.clothing_accessories,relative_clause,English,synthetic
+"Following the payroll delay, my employer's wage payment finally arrived.",Income,Salary,salary.pay_adjustment,context_fronted,English,synthetic
+Last Friday my brother gave me a cash housewarming present.,Income,Gifts,gifts.other_unconditional,temporal_fronted,English,synthetic
+"On my birthday, my uncle handed me a gift envelope containing 800 EGP.",Income,Gifts,gifts.birthday,context_fronted,English,synthetic
+The money my cousin sent for my birthday was an outright gift.,Income,Gifts,gifts.birthday,relative_clause,English,synthetic
+Settled the doctor's appoinment fee this morning.,Expense,Healthcare,healthcare.care_consultation,conversational_update,English,synthetic
+An agency's settlement of my solo captioning invoice increased my balance.,Income,Freelance,freelance.language_editorial,financial_effect,English,synthetic
+I paid 520 EGP for this month's home electricity consumption.,Expense,Bills & Utilities,bills_utilities.electricity,first_person_active,English,synthetic
+My train ticket to Alexandria was purchased for 230 Egyptian pounds.,Expense,Transportation,transportation.mass_transit,passive_settlement,English,synthetic
+Ready-to-eat grilled fish dinner from a takeaway counter.,Expense,Food & Dining,food_dining.takeaway_delivered,nominal_fragment,English,synthetic
+900 EGP secured my place on the online coding course; the fee is settled.,Expense,Education,education.instruction,amount_led,English,synthetic
+There is no employer involved; I collected a fee for independently coaching a speaker.,Income,Freelance,freelance.professional_personal,explicit_role_contrast,English,synthetic
+A personal gift from my former colleague increased my cash balance.,Income,Gifts,gifts.other_unconditional,financial_effect,English,synthetic
+"After delivering the wedding photos, I collected my freelance fee.",Income,Freelance,freelance.creative,context_fronted,English,synthetic
+A replacement household cooking-gas cylinder was paid for.,Expense,Bills & Utilities,bills_utilities.gas,passive_settlement,English,synthetic
+"During the family visit, my mother gifted me 900 EGP.",Income,Gifts,gifts.other_unconditional,temporal_fronted,English,synthetic
+A contribution towards my wedding was given to me outright by an uncle.,Income,Gifts,gifts.wedding_family,passive_settlement,English,synthetic
+My daughter's maths tutor got 300 EGP from me for her lesson.,Expense,Education,education.instruction,recipient_focus,English,synthetic
+Payment of residential gas consumption charges in Cairo.,Expense,Bills & Utilities,bills_utilities.gas,formal_record,English,synthetic
+"After work, I paid for a bowl of lentil soup at the diner.",Expense,Food & Dining,food_dining.onsite_meal,context_fronted,English,synthetic
+"""LE 430 for the sandals,"" the seller said. I paid and took them home.",Expense,Shopping,shopping.clothing_accessories,quoted_counterparty_then_settlement,English,synthetic
+Money for my new baby was gifted to me by my parents.,Income,Gifts,gifts.wedding_family,passive_settlement,English,synthetic
+Retail income collected at the sporting-goods business I own.,Income,Business Income,business_income.retail_nonfood,formal_record,English,synthetic
+The cafe charged me LE 75 for a cappuccino.,Expense,Food & Dining,food_dining.served_drink,counterparty_active,English,synthetic
+Lease income collected for my privately owned workshop premises.,Income,Rental Income,rental_income.commercial_premises,formal_record,English,synthetic
+Just bought the headphones themselves; there's no subscription attached.,Expense,Shopping,shopping.electronics_appliances,conversational_update,English,synthetic
+My solo illustration commission brought in 2400 Egyptian pounds.,Income,Freelance,freelance.creative,possessive_transaction,English,synthetic
+"At the start of the month, the tenant paid rent on my duplex to me.",Income,Rental Income,rental_income.residential,temporal_fronted,English,synthetic
+I stocked up on rice at the neighbourhood grocer for 140 EGP.,Expense,Groceries,groceries.pantry_drinks,first_person_active,English,synthetic
+My dinner at the fish restaurant was paid for in cash.,Expense,Food & Dining,food_dining.onsite_meal,passive_settlement,English,synthetic
+Connection renewed: I settled my household internet subscription in cash.,Expense,Bills & Utilities,bills_utilities.internet,status_then_context,English,synthetic
+I bought salt from the local grocery shop.,Expense,Groceries,groceries.pantry_drinks,first_person_active,English,synthetic
+End-of-month office salary collected in Tanta.,Income,Salary,salary.employee_base_pay,nominal_fragment,English,synthetic
+I'm the patient here; the doctor charged me for the consultation.,Expense,Healthcare,healthcare.care_consultation,explicit_role_contrast,English,synthetic
+Last week I took home the wages from my full-time cleaning job.,Income,Salary,salary.employee_base_pay,temporal_fronted,English,synthetic
+Yesterday the occupant of my Mansoura flat paid me the rent.,Income,Rental Income,rental_income.residential,temporal_fronted,English,synthetic
+"Sundae finished, bill settled: 60 EGP at the ice-cream parlour.",Expense,Food & Dining,food_dining.onsite_meal,status_then_context,English,synthetic
+LE 1000 gifted by my parents for passing my exams.,Income,Gifts,gifts.education_milestone,nominal_fragment,English,synthetic
+Paying my private tutor reduced my cash by 250 EGP.,Expense,Education,education.instruction,financial_effect,English,synthetic
+Bakery employee wages collected for the week.,Income,Salary,salary.employee_base_pay,nominal_fragment,English,synthetic
+Buying exercise dumbbells reduced my available cash by LE 1100.,Expense,Shopping,shopping.home_leisure_goods,financial_effect,English,synthetic
+The wages that my Alexandria employer owed for October are now with me.,Income,Salary,salary.employee_base_pay,relative_clause,English,synthetic
+Shoppers brought LE 3900 into the shoe shop I run and own.,Income,Business Income,business_income.retail_nonfood,counterparty_active,English,synthetic
+"For covering the night shift as an employee, I took home an extra LE 1100.",Income,Salary,salary.overtime,context_fronted,English,synthetic
+A publisher settled my independent proofreading invoice.,Income,Freelance,freelance.language_editorial,counterparty_active,English,synthetic
+I got my fee for a one-off CAD model commissioned from me personally.,Income,Freelance,freelance.technical,first_person_active,English,synthetic
+The tenant has finally settled up for staying in my spare room.,Income,Rental Income,rental_income.residential,conversational_update,English,synthetic
+A street vendor charged me 120 EGP for sunglasses.,Expense,Shopping,shopping.clothing_accessories,counterparty_active,English,synthetic
+"During the fair, I collected the sales proceeds of my leather-goods business.",Income,Business Income,business_income.retail_nonfood,temporal_fronted,English,synthetic
+Topping up the electricity meter used 300 EGP from my wallet.,Expense,Bills & Utilities,bills_utilities.electricity,financial_effect,English,synthetic
+A delivered pizza took 240 EGP out of my food budget.,Expense,Food & Dining,food_dining.takeaway_delivered,financial_effect,English,synthetic
+Attending the dance performance used 200 EGP of my spending money.,Expense,Entertainment,entertainment.live_performance,financial_effect,English,synthetic
+Payment for my solo website accessibility review has come in.,Income,Freelance,freelance.technical,passive_settlement,English,synthetic
+"The gaming platform charged me for a digital game, not a physical console.",Expense,Entertainment,entertainment.digital_leisure,counterparty_active,English,synthetic
+The water company collected LE 180 for my household usage.,Expense,Bills & Utilities,bills_utilities.water,counterparty_active,English,synthetic
+Last night I paid LE 90 for an online game's expansion.,Expense,Entertainment,entertainment.digital_leisure,temporal_fronted,English,synthetic
+My building's separately billed household water consumption cost 160 EGP.,Expense,Bills & Utilities,bills_utilities.water,possessive_transaction,English,synthetic
+"Once the tenancy month ended, I collected my share of rent as co-owner of the flat.",Income,Rental Income,rental_income.residential,temporal_fronted,English,synthetic
+I collected patient fees as the owner of a clinic with employed doctors.,Income,Business Income,business_income.service_enterprise,first_person_active,English,synthetic
+The client whose brochure I laid out has settled my solo design bill.,Income,Freelance,freelance.creative,relative_clause,English,synthetic
+"This was my staff salary from the design agency, not a project fee.",Income,Salary,salary.employee_base_pay,explicit_role_contrast,English,synthetic
+Restaurant bill settled for a personal dinner in Alexandria.,Expense,Food & Dining,food_dining.onsite_meal,formal_record,English,synthetic
+"When I visited Alexandria, my grandmother gave me spending money as a gift.",Income,Gifts,gifts.other_unconditional,temporal_fronted,English,synthetic
+Business receipts from my bicycle shop's retail sales in Alexandria.,Income,Business Income,business_income.retail_nonfood,formal_record,English,synthetic
+My external hard drive purchase came to 2100 EGP.,Expense,Shopping,shopping.electronics_appliances,possessive_transaction,English,synthetic
+A sale at my hardware shop added 850 EGP to my business cash.,Income,Business Income,business_income.retail_nonfood,financial_effect,English,synthetic
+Payroll receipt recorded for my permanent accounting position in Cairo.,Income,Salary,salary.employee_base_pay,formal_record,English,synthetic
+My take-home pay as a bus company employee was 10500 Egyptian pounds.,Income,Salary,salary.employee_base_pay,first_person_active,English,synthetic
+The exam preparation programme cost me 1250 EGP.,Expense,Education,education.instruction,financial_effect,English,synthetic
+The bakery cafe charged me for a plated breakfast eaten there.,Expense,Food & Dining,food_dining.onsite_meal,counterparty_active,English,synthetic
+LE 9200 landed as my monthly teacher salary. Payroll day in Tanta.,Income,Salary,salary.employee_base_pay,amount_led,English,synthetic
+"Since I completed the mapping commission independently, the client settled my LE 3500 fee directly with me.",Income,Freelance,freelance.technical,causal_context,English,synthetic
+The supermarket charged 115 EGP for my breakfast cereal.,Expense,Groceries,groceries.pantry_drinks,counterparty_active,English,synthetic
+I purchased a one-way railway ticket to Tanta.,Expense,Transportation,transportation.mass_transit,first_person_active,English,synthetic
+"I paid tuition as a student, although the university was the one collecting it.",Expense,Education,education.tuition_registration,first_person_active,English,synthetic
+My professional certification exam fee has been paid.,Expense,Education,education.examination,passive_settlement,English,synthetic
+My freelance tranlsation invoice is settled now.,Income,Freelance,freelance.language_editorial,conversational_update,English,synthetic
+I leased my ground-floor unit to a dentist and collected the premises rent.,Income,Rental Income,rental_income.commercial_premises,completion_then_settlement,English,synthetic
+Settlement of a home fibre-internet service bill.,Expense,Bills & Utilities,bills_utilities.internet,formal_record,English,synthetic
+"To prepare for my entrance exam, I paid for a revision class.",Expense,Education,education.instruction,context_fronted,English,synthetic
+I finished my warehouse shifts for the month and collected my employee wages.,Income,Salary,salary.employee_base_pay,completion_then_settlement,English,synthetic
+Purchase of fresh oranges for household consumption.,Expense,Groceries,groceries.fresh_ingredients,formal_record,English,synthetic
+I collected 1750 EGP in sales from my spice stall.,Income,Business Income,business_income.retail_food,first_person_active,English,synthetic
+A prepared salad bowl was purchased for immediate lunch from the deli.,Expense,Food & Dining,food_dining.takeaway_delivered,passive_settlement,English,synthetic
+Purchase of prescribed insulin from a neighbourhood pharmacy.,Expense,Healthcare,healthcare.medicine,formal_record,English,synthetic
+My contracted staff wages at the veterinary practice have been settled.,Income,Salary,salary.employee_base_pay,passive_settlement,English,synthetic
+The monthly pay for my security job was handed over in cash.,Income,Salary,salary.employee_base_pay,passive_settlement,English,synthetic
+Yesterday I paid LE 250 to renew my mobile data bundle.,Expense,Bills & Utilities,bills_utilities.telephone,temporal_fronted,English,synthetic
+I collected the monthly lease money for my land near Fayoum.,Income,Rental Income,rental_income.land,first_person_active,English,synthetic
+I bought the lab workbook required by my chemistry lecturer.,Expense,Education,education.materials,first_person_active,English,synthetic
+I collected a consultation fee from a patient during my independent home visit as a doctor.,Income,Freelance,freelance.professional_personal,first_person_active,English,synthetic
+"Gift arrived yesterday: some cash from my godfather, given outright.",Income,Gifts,gifts.other_unconditional,status_then_context,English,synthetic
+Booking paid and confirmed: I have my ticket to the local music festival.,Expense,Entertainment,entertainment.live_performance,status_then_context,English,synthetic
+Tenancy payment complete: I now have the rent from my Ismailia flat.,Income,Rental Income,rental_income.residential,status_then_context,English,synthetic
+I accepted LE 300 from my grandfather as an Eid gift.,Income,Gifts,gifts.holiday,first_person_active,English,synthetic
+The curtains for my bedroom were paid for at the fabric shop.,Expense,Shopping,shopping.home_leisure_goods,passive_settlement,English,synthetic
+"Dental filling, 900 Egyptian pounds paid by me.",Expense,Healthcare,healthcare.dental,nominal_fragment,English,synthetic
+"After my consultation, I settled the doctor's fee.",Expense,Healthcare,healthcare.care_consultation,context_fronted,English,synthetic
+My salaried sales job brought in its quarterly incentive payment.,Income,Salary,salary.bonus,possessive_transaction,English,synthetic
+"I purchased a new keyboard, not a repair service for the old one.",Expense,Shopping,shopping.electronics_appliances,explicit_role_contrast,English,synthetic
+The restaurant pays me only for renting my premises; this is the rent collected.,Income,Rental Income,rental_income.commercial_premises,explicit_role_contrast,English,synthetic
+Rent for the shop I own was handed to me by its tenant.,Income,Rental Income,rental_income.commercial_premises,passive_settlement,English,synthetic
+"To me, as a salaried laboratory technician, came this month's pay.",Income,Salary,salary.employee_base_pay,recipient_focus,English,synthetic
+Last night I bought a chargre from the mobile-accessory kiosk.,Expense,Shopping,shopping.electronics_appliances,temporal_fronted,English,synthetic
+I collected my monthly wages from the textile factory in Mahalla.,Income,Salary,salary.employee_base_pay,first_person_active,English,synthetic
+"Concert admission, 450 Egyptian pounds paid.",Expense,Entertainment,entertainment.live_performance,nominal_fragment,English,synthetic
+Receipt of employee remuneration for my administrative role at the college.,Income,Salary,salary.employee_base_pay,formal_record,English,synthetic
+Signed up for a welding course and settled the training fee.,Expense,Education,education.instruction,conversational_update,English,synthetic
+The attendance bonus included in my factory employment terms came through.,Income,Salary,salary.bonus,relative_clause,English,synthetic
+"While waiting at the station, I bought a cooked lunch from its restaurant.",Expense,Food & Dining,food_dining.onsite_meal,context_fronted,English,synthetic
+The theatre paid me for independently composing its opening music.,Income,Freelance,freelance.creative,counterparty_active,English,synthetic
+A backdated pay rise from my employer increased this month's wage payment.,Income,Salary,salary.pay_adjustment,financial_effect,English,synthetic
+Monetary present collected from my sister to mark my graduation.,Income,Gifts,gifts.education_milestone,formal_record,English,synthetic
+"For treating my infected tooth, I paid the dentist's procedure fee.",Expense,Healthcare,healthcare.dental,context_fronted,English,synthetic
+I leased a storeroom to a trader and took the rent in cash.,Income,Rental Income,rental_income.residential,completion_then_settlement,English,synthetic
+Independent fee collected for testing an Arabic-learning app's English interface.,Income,Freelance,freelance.technical,formal_record,English,synthetic
+My pay for working reception at the Giza hotel has been credited.,Income,Salary,salary.employee_base_pay,passive_settlement,English,synthetic
+A school paid me rent for the building it leases from me.,Income,Rental Income,rental_income.commercial_premises,counterparty_active,English,synthetic
+"We ran out of drinking water, so I bought another sealed pack for 60 EGP.",Expense,Groceries,groceries.pantry_drinks,causal_context,English,synthetic
+"I bought uncooked fish for my kitchen, spending LE 230.",Expense,Groceries,groceries.fresh_ingredients,first_person_active,English,synthetic
+The proceeds from my online appliance store's sale increased my business balance.,Income,Business Income,business_income.retail_nonfood,financial_effect,English,synthetic
+Salery in. Another month on staff at the food-processing plant.,Income,Salary,salary.employee_base_pay,elliptical_update,English,synthetic
+"On the way home, I bought a cooked rice bowl for 90 EGP.",Expense,Food & Dining,food_dining.takeaway_delivered,context_fronted,English,synthetic
+"From my job at the telecom office, 16000 EGP in wages reached me.",Income,Salary,salary.employee_base_pay,context_fronted,English,synthetic
+My childhood friend gave me birthday cash while visiting Giza.,Income,Gifts,gifts.birthday,counterparty_active,English,synthetic
+Fee receipt for a self-employed land-survey assignment in Giza.,Income,Freelance,freelance.technical,formal_record,English,synthetic
+"As landlord of a small office, I collected the monthly rent.",Income,Rental Income,rental_income.commercial_premises,context_fronted,English,synthetic
+"Because I am on the permanent staff, my employer gave me the 2000 EGP holiday bonus.",Income,Salary,salary.bonus,causal_context,English,synthetic
+Invoice closed and money in hand: my independent data-cleaning assignment is paid.,Income,Freelance,freelance.technical,status_then_context,English,synthetic
+I accepted a cash present from a friend; it wasn't payment for helping her move.,Income,Gifts,gifts.other_unconditional,first_person_active,English,synthetic
+My parents' cash present added 2000 EGP to my savings.,Income,Gifts,gifts.other_unconditional,possessive_transaction,English,synthetic
+"The pharmacy sold me ordinary shampoo for 180 EGP, with no medicine in this purchase.",Expense,Shopping,shopping.home_leisure_goods,counterparty_active,English,synthetic
+A prescribed vaccine at the clinic cost me 650 EGP.,Expense,Healthcare,healthcare.medicine,financial_effect,English,synthetic
+Day out at the zoo. Entry paid.,Expense,Entertainment,entertainment.outings_recreation,elliptical_update,English,synthetic
+My spouse gave me 1200 EGP in cash for my birthday.,Income,Gifts,gifts.birthday,counterparty_active,English,synthetic
+Lunch out in Port Said. Restaurant bill paid.,Expense,Food & Dining,food_dining.onsite_meal,elliptical_update,English,synthetic
+I completed my roster at the hotel and took home my monthly staff pay.,Income,Salary,salary.employee_base_pay,completion_then_settlement,English,synthetic
+My brother handed me cash as an anniversary present.,Income,Gifts,gifts.wedding_family,recipient_focus,English,synthetic
+The takings from my grocery store were collected at closing.,Income,Business Income,business_income.retail_food,passive_settlement,English,synthetic
+Customers settled their orders at the bakery I own.,Income,Business Income,business_income.retail_food,counterparty_active,English,synthetic
+The parents paid me for private maths tutoring I do independently.,Income,Freelance,freelance.professional_personal,counterparty_active,English,synthetic
+"Sales income from my team's design studio, a business I own.",Income,Business Income,business_income.service_enterprise,nominal_fragment,English,synthetic
+"These were dry pasta packets from the shop, not a restaurant meal.",Expense,Groceries,groceries.pantry_drinks,explicit_role_contrast,English,synthetic
+"I paid 65 EGP for a cup of tea served at a cafe, not tea leaves for home.",Expense,Food & Dining,food_dining.served_drink,first_person_active,English,synthetic
+Rental receipt for the unfurnished office I lease to an accountant.,Income,Rental Income,rental_income.commercial_premises,formal_record,English,synthetic
+My home internet bill was paid before the deadline.,Expense,Bills & Utilities,bills_utilities.internet,passive_settlement,English,synthetic
+My espresso at the bookshop cafe came to LE 55.,Expense,Food & Dining,food_dining.served_drink,possessive_transaction,English,synthetic
+My rent from a let holiday apartment in Alexandria has been collected.,Income,Rental Income,rental_income.residential,passive_settlement,English,synthetic
+"My friend's thank-you present was cash, with no service or debt involved.",Income,Gifts,gifts.other_unconditional,possessive_transaction,English,synthetic
+"At the weekend market, I bought a ceramic vase for 260 EGP.",Expense,Shopping,shopping.home_leisure_goods,context_fronted,English,synthetic
+"Backpack sorted, cash handed over at the market.",Expense,Shopping,shopping.clothing_accessories,elliptical_update,English,synthetic
+"At the dairy shop, I paid 135 EGP for cheese to keep in my fridge.",Expense,Groceries,groceries.dairy,context_fronted,English,synthetic
+"At closing, the dental centre I own remitted its consultation receipts to me.",Income,Business Income,business_income.service_enterprise,temporal_fronted,English,synthetic
+I had lunch at a small restaurant in Dokki for 160 EGP.,Expense,Food & Dining,food_dining.onsite_meal,first_person_active,English,synthetic
+That wasn't a salary payment; it's the fee for the single app test I freelanced.,Income,Freelance,freelance.technical,conversational_update,English,synthetic
+"For my statistics class, I purchased the required textbook.",Expense,Education,education.materials,context_fronted,English,synthetic
+"Lesson finished, teacher paid. My music tuition was LE 280.",Expense,Education,education.tuition_registration,status_then_context,English,synthetic
+Payday at the garment workshop left me with another LE 7800.,Income,Salary,salary.employee_base_pay,financial_effect,English,synthetic
+"Having supplied the gate through my metalwork company, I collected its sale price of 12000 EGP.",Income,Business Income,business_income.manufacturing,causal_context,English,synthetic
+The telecom operator deducted 80 EGP for my personal phone plan renewal.,Expense,Bills & Utilities,bills_utilities.telephone,counterparty_active,English,synthetic
+A personal cash present from my father-in-law was given to me.,Income,Gifts,gifts.other_unconditional,passive_settlement,English,synthetic
+The flat I inherited and now let out generated rent that I collected.,Income,Rental Income,rental_income.residential,relative_clause,English,synthetic
+Buying a sack of onions reduced my cash by LE 90.,Expense,Groceries,groceries.fresh_ingredients,financial_effect,English,synthetic
+Yesterday I paid the tailor's shop for a ready-made jacket.,Expense,Shopping,shopping.clothing_accessories,temporal_fronted,English,synthetic
+Keeping my home landline active cost me 75 EGP this quarter.,Expense,Bills & Utilities,bills_utilities.telephone,financial_effect,English,synthetic
+My wallet has extra money thanks to my uncle's unconditional gift.,Income,Gifts,gifts.other_unconditional,financial_effect,English,synthetic
+Letting my vacant office has brought rental money into my account.,Income,Rental Income,rental_income.commercial_premises,financial_effect,English,synthetic
+Admission charge paid for a recreational planetarium show.,Expense,Entertainment,entertainment.outings_recreation,formal_record,English,synthetic
+The rent earned by my separate guest annex has reached me.,Income,Rental Income,rental_income.residential,financial_effect,English,synthetic
+Got a metro tickt and paid at the machine.,Expense,Transportation,transportation.mass_transit,conversational_update,English,synthetic
+Crossing the bridge by car cost me a toll of 20 EGP.,Expense,Transportation,transportation.vehicle_running,financial_effect,English,synthetic
+The frozen vegetables I ordered for home cooking have been paid for.,Expense,Groceries,groceries.fresh_ingredients,relative_clause,English,synthetic
+The school workbook required for my son's class has been paid for.,Expense,Education,education.materials,relative_clause,English,synthetic
+"Till counted, takings collected: those are the receipts from the pet-supply store I own.",Income,Business Income,business_income.retail_nonfood,status_then_context,English,synthetic
+"For an evening with friends, I paid 140 EGP to go bowling.",Expense,Entertainment,entertainment.outings_recreation,causal_context,English,synthetic
+Basement let. This month's rent collected from the occupier.,Income,Rental Income,rental_income.commercial_premises,elliptical_update,English,synthetic
+My tenant handed me LE 4200 for use of my apartment.,Income,Rental Income,rental_income.residential,recipient_focus,English,synthetic
+I paid 220 EGP for dinner at a neighbourhood grill.,Expense,Food & Dining,food_dining.onsite_meal,first_person_active,English,synthetic
+"Takeaway chicken sandwich, 95 Egyptian pounds.",Expense,Food & Dining,food_dining.takeaway_delivered,nominal_fragment,English,synthetic
+Property lease proceeds collected for my commercial unit in Nasr City.,Income,Rental Income,rental_income.commercial_premises,formal_record,English,synthetic
+"Airport bus fare for getting to my flight, 100 EGP.",Expense,Transportation,transportation.mass_transit,nominal_fragment,English,synthetic
+The till at my toy shop grew by LE 2200 from sales.,Income,Business Income,business_income.retail_nonfood,financial_effect,English,synthetic
+The day's sales at my bookshop left the business with fresh revenue.,Income,Business Income,business_income.retail_nonfood,financial_effect,English,synthetic
+The event organiser handed me my independent interpreting fee.,Income,Freelance,freelance.language_editorial,recipient_focus,English,synthetic
+I took 900 EGP for a freelance audio transcription job.,Income,Freelance,freelance.language_editorial,first_person_active,English,synthetic
+Good day at my flower shop; the bouquet order is paid for.,Income,Business Income,business_income.retail_nonfood,conversational_update,English,synthetic
+My postgraduate registration fee was paid to the faculty.,Expense,Education,education.tuition_registration,passive_settlement,English,synthetic
+I attended the ultrasound appointment and settled the clinic bill.,Expense,Healthcare,healthcare.diagnostics,completion_then_settlement,English,synthetic
+The station charged me for a replacement public-transport smart card.,Expense,Transportation,transportation.mass_transit,counterparty_active,English,synthetic
+"Because my vision had blurred, I paid the optometrist for an eye examination.",Expense,Healthcare,healthcare.care_consultation,causal_context,English,synthetic
+"After the lunch rush, I counted the receipts from my own sandwich stall.",Income,Business Income,business_income.retail_food,context_fronted,English,synthetic
+I took in 8000 EGP in rent from my Heliopolis apartment.,Income,Rental Income,rental_income.residential,first_person_active,English,synthetic
+LE 1800 is in my hands for the garage I rent out.,Income,Rental Income,rental_income.storage_parking,amount_led,English,synthetic
+"My workshop completed a batch of doors, and I collected the business's sales invoice.",Income,Business Income,business_income.manufacturing,completion_then_settlement,English,synthetic
+I collected 3200 EGP for editing a client's documentary on my own contract.,Income,Freelance,freelance.creative,first_person_active,English,synthetic
+"Nice, the client has settled up for the subtitles I made freelance.",Income,Freelance,freelance.language_editorial,conversational_update,English,synthetic
+The shipping company finally settled my overdue staff wages. Such a relief.,Income,Salary,salary.pay_adjustment,conversational_update,English,synthetic
+"""Keep it, it's a present,"" my aunt said as she handed me some money.",Income,Gifts,gifts.other_unconditional,quoted_counterparty_then_settlement,English,synthetic
+The coach ticket I booked to Hurghada has been paid for.,Expense,Transportation,transportation.mass_transit,relative_clause,English,synthetic
+"Microbus fare to campus, 12 EGP.",Expense,Transportation,transportation.mass_transit,nominal_fragment,English,synthetic
+The burger I ordered for delivery has been paid for.,Expense,Food & Dining,food_dining.takeaway_delivered,relative_clause,English,synthetic
